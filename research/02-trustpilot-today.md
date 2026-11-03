@@ -93,3 +93,27 @@ Trustpilot's DNA is **company-level** reviews. That heritage shows up as three c
 In the H1'26 principal risks: **"Reliance on search and answer engines."** Trustpilot depends on external search, answer and AI discovery interfaces, and is exposed to changes in user behaviour, click-through patterns, *and the way third-party models access, interpret or display its content*.
 
 That is the strategy problem stated in the company's own words.
+
+---
+
+## Addendum — what Product Review Pages actually are (verified Nov 2026)
+
+Checked directly, because the strategy depends on not rebuilding something that shipped.
+
+**They are consumer-facing and live.** PRPs are public, indexed pages on trustpilot.com displaying product name, product details, product score, individual reviews, business replies and review attributes.
+
+**But they are a restricted beta.** Currently free, limited to a select group of eligible businesses in six English-language markets (UK, US, Australia, New Zealand, Canada, Ireland), in selected categories. Business eligibility requires an active Product Reviews module subscription, registration in an eligible market, and at least one review in the past 12 months. Products must not share an exact title with another product in the catalogue.
+
+**Beta performance:** 418 businesses in May–June 2026; average citation rates rose **1,548% in the first week**. (The H1 results quote ">1,500%" — same figure.)
+
+**Discovery is company-rooted.** A shopper reaches a product page via a **"Popular products" carousel on the brand's public profile**, showing up to 12 of its most-reviewed items with per-SKU ratings. The main site search can surface products; category browse is oriented around companies.
+
+There is **no cross-brand product category browse, attribute filtering or product-vs-product comparison.** Products are findable *through the company that sells them*, which is the company-reviews mental model carried forward. It does not serve the "best X for Y" query class.
+
+**Product reviews do not affect the overall TrustScore.** They are publicly visible but sit outside the headline score.
+
+### Why that last fact is strategically loaded
+
+The Seer study found **59% of ChatGPT answers citing Trustpilot referenced the TrustScore or star rating directly** — it is the single most-quoted thing a Trustpilot profile produces.
+
+So the most-cited signal we generate is structurally disconnected from the product data we're asking businesses to pay to collect. That's defensible as a trust decision (product sentiment shouldn't distort a merchant-trust score) but it is currently an inherited default rather than a deliberate position — and any product-level AI visibility strategy has to answer it explicitly.

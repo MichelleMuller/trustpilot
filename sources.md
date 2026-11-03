@@ -72,3 +72,10 @@ Several SEO/comparison sites (wiserreview, wisernotify, costbench, stormy, zigpo
 - [Trustpilot Widget Examples (2026): TrustBox Types Compared](https://signedreviews.com/blog/trustpilot-widget-examples/)
 - [How to embed Trustpilot reviews on any website (2026)](https://wiserreview.com/blog/embed-trustpilot-reviews/)
 - [Trustpilot Shopify Integration: Complete Setup Guide](https://liquidboost.app/blog/trustpilot-shopify-integration)
+
+## Product Review Pages — verification (Nov 2026)
+
+- [Product review pages (Beta) — Trustpilot Help](https://help.trustpilot.com/s/article/product-review-pages?language=en_US)
+- [Product Reviews: Introduction and FAQ — Trustpilot Support](https://support.trustpilot.com/hc/en-us/articles/204379963-Product-Reviews-Introduction-and-FAQ)
+- [Trustpilot gives individual products their own review pages for AI search — Home of Direct Commerce](https://homeofdirectcommerce.com/news/trustpilot-gives-individual-products-their-own-review-pages-for-ai-search/) — 418-business beta, 1,548% first-week citation lift
+- [Trustpilot Product Reviews: What It Means for Your E-Commerce Brand](https://www.review-collect.com/en/blog/trustpilot-product-reviews-ecommerce)

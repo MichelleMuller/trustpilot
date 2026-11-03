@@ -53,31 +53,53 @@ Richer collection for AI is not a novel idea — **it is a year-old competitive 
 
 ---
 
-## The three bets
+## The bets
 
 ### Bet 1 — Rebuild collection for richness, not ratings
-Move from a star-rating form to a **conversational interface** that elicits genuine sentiment and structured attributes. A form asks you to fill fields; a conversation asks follow-up questions and gets to *why*.
 
-Target: every review produces category-specific attributes, sentiment detail and media — the exact structured data LLMs and agents consume, and that retailers need for syndication.
+Move from a star-rating form to a **conversational interface** that elicits genuine sentiment and structured attributes. A form asks you to fill fields; a conversation asks follow-up questions and gets to *why*. Target: every review produces category-specific attributes, sentiment detail and media — the exact structured data LLMs and agents consume, and that retailers need for syndication.
 
-**Approach:** research and experimentation first. Conversational collection is unproven at scale for reviews; Bazaarvoice went to voice, which is one answer, not the only one. Test completion rate, data richness per review, and review quality before committing.
+**Collection is a timing and channel problem as much as a form problem**, so this bet includes:
+- **SMS alongside email** — higher open rates, better suited to the post-delivery moment
+- **Trigger on the right event** — delivery, or a usage milestone, not a fixed delay after purchase
+- Both compound directly with the trustpilot.com deliverability advantage
 
-**Why it's bet one:** every other bet depends on it. No attribute data, no AI citations. No SKU-level inventory, no syndication conversation. No media, no competitiveness with Bazaarvoice's Google feed.
+**Approach:** research and experimentation before commitment. Conversational collection is unproven at scale for reviews — Bazaarvoice went to voice, which is one answer, not the only one. Test completion rate, data richness per review, and review quality before building.
 
-### Bet 2 — Right moment, right channel
-Collection is a timing and channel problem as much as a form problem.
-- **SMS alongside email** — higher open rates, better for post-delivery moments
-- **Timing optimisation** — trigger on delivery, on usage milestone, not on a fixed delay
-- Compounds directly with the trustpilot.com deliverability advantage
-
-This is where the cost-per-review advantage gets turned into a measurable, sellable number.
-
-### Bet 3 — Consumer-facing product review pages
-Mirror the company reviews play at product level: any consumer can search a product and find its rating, reviews and attribute breakdown on Trustpilot.
-
-Serves both halves of the brief — consumers evaluating products confidently, and businesses getting discoverable product-level content into AI answers.
+**Why it's bet one:** everything else depends on it. No attribute data, no AI citations. No SKU-level inventory, no syndication conversation later. No media, no answer to Bazaarvoice's photo feed into Google.
 
 ---
+
+### Bet 2 — Make products discoverable product-first, not company-first
+
+**What already exists (fact-checked):** Product Review Pages launched 24 Sept 2026. They *are* public, consumer-facing, indexed pages on trustpilot.com showing product name, details, score, reviews, business replies and attributes. So "launch consumer-facing product review pages" is **done** — this bet has to start from there.
+
+**What's actually missing is discovery.** Today a shopper reaches a product page through the **company**: a "Popular products" carousel on the brand's public profile, surfacing up to 12 of its most-reviewed items. That mirrors the company-reviews mental model — find the business, then its products.
+
+It does not answer the query that matters:
+
+> *"best running shoes for flat feet"*
+
+That requires **cross-brand product discovery** — category browse across sellers, attribute filtering, and product-vs-product comparison. None of it exists. We have product *pages*; we don't have product *discovery*.
+
+**This bet is:**
+- **Cross-brand category browse and comparison** — the product-first surface that serves the right-hand column of the query table
+- **Attribute-based filtering** — directly consuming what Bet 1 collects ("runs small", "durable", "worth the money")
+- **Get out of beta.** PRPs are currently free beta, restricted to a select group in six English markets (UK, US, AU, NZ, CA, IE), in selected categories, requiring an active Product Reviews subscription and ≥1 review in 12 months. Coverage is the constraint on everything.
+- **Resolve the TrustScore question.** Product reviews currently **do not affect the overall TrustScore** — while 59% of AI answers citing Trustpilot reference the TrustScore or star rating. The single most-quoted signal we produce is untouched by the product data we're asking businesses to invest in. That needs a deliberate answer, not an inherited default.
+
+**Why it's bet two and not bet one:** discovery is worthless without the attribute data to filter and compare on. Bet 1 produces the inventory; Bet 2 makes it navigable.
+
+---
+
+### Bet 3 — *Open.*
+
+Two bets may be enough — the brief asks for 2–3. If we want a third, the candidates are:
+- **Attribution** — close the citation→revenue loop nobody in the category has
+- **Measured collection advantage** — quantify and productise the trustpilot.com deliverability edge as a competitive number
+- **Syndication groundwork** — first retailer conversations, using SKU inventory as the asset
+
+*To decide.*
 
 ## Trade-offs
 
