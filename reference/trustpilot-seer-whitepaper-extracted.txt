@@ -1,0 +1,628 @@
+What AI says
+about you
+How reviews build trust and get
+your brand recommended by
+ChatGPT, Gemini, and beyond
+                                                                           2
+
+
+
+
+Contents   Introduction                                                        3
+
+           About the study                                                     4
+
+           Key insights                                                        5
+
+           Why AI reaches for reviews                                          6
+
+           AI search engines use review sites for independent validation       7
+
+           Trustpilot is the review source AI engines cite most            10
+
+           How Trustpilot improves AI visibility                               11
+
+           AI shapes your brand narrative with review content                  14
+
+           Conclusion: The new era of authority                            18
+
+           Appendix                                                        20
+                                                                                                                                                       3
+
+
+
+
+The way people find                                                                  AI platforms have become a main research channel
+                                                                                     for consumers in a span of months, not years.
+                                                                                     According to Similarweb’s 2025 Generative AI
+brands is changing.                                                                  Landscape report1, AI platforms attract 7 billion
+                                                                                     monthly web visits, up 76% year over year. AI mobile
+                                                                                     app downloads also grew 319% to 1.9 billion.
+                                                                                     Consumers now use AI every day to research products,
+                                                                                     compare brands, and make purchase decisions. That change
+                                                                                     has consequences.
+                                                                                     For over two decades, brand visibility was a function of search
+                                                                                     engine optimization: Rank well on Google, and the right buyers
+Search driven discovery                              AI driven discovery             would find you. The “right” answer could be easily lost in an
+                                                                                     array of links to choose from, together with a glut of ads.
+
+        The goal                                          The goal                   In AI search, brands no longer compete for a ranking on a page
+        Rank on Google to                                 Become AI’s                of blue links. They compete to be included in a generated
+        be found.                                         recommended answer.        answer. The AI collects signals from multiple sources, weighs
+                                                                                     competing claims, and forms a judgment about which brands
+        The problem                                       The process                to recommend, which to compare, and which to avoid. People
+        Users had to hunt                                 AI vets multiple sources   make brand choices based on AI recommendations, without
+        through ad-clutter and                            to decide which brands     ever visiting brand websites.
+        endless “blue links” to                           to suggest.
+                                                                                     The question “can people find us online?” has been replaced
+        find a real answer.
+                                                          The outcome                by: “when AI is asked about us, what does it say?”
+                                                          Influence the purchase
+                                                          decision before a
+                                                          customer even clicks
+                                                          your website.
+
+
+
+1
+    SimilarWeb: 2025 Generative AI Landscape: The State Of Gen AI
+                                                                                                  4
+
+
+
+
+About
+this study
+Goal of the study
+Understand how AI systems use third-party      “I’ve always been driven by
+reviews and if Trustpilot measurably changes   a curiosity for what’s next.
+how AI describes or recommends brands.         Right now, everyone’s talking about AI, but very
+                                               few have the data to back it up. I’ve noticed a
+                                               massive appetite for verified research in
+                                               this area.
+The scale of the study
+  Prompts sent to 4 major AI platforms:        That’s why we commissioned an independent
+                                               study with Seer Interactive in March 2026,
+                                               analyzing over 800,000 AI responses. I
+  804,491 AI responses analyzed                wanted to move beyond speculation and see
+                                               exactly how human sentiment affects the AI
+  1,926 brands tracked across 8 industries
+                                               recommendation engine.
+  All brands were US based
+                                               This research is for the leaders who want to
+  Testing was done in March 2026
+                                               stop guessing and start shaping what AI says
+                                               about their brand.”
+                                               Ciaran Dynes
+                                               Chief Product Officer
+                                                                                                                                         5
+
+
+
+
+Key insights
+
+
+ AI uses review content                      A Trustpilot profile                        Trustpilot drives a
+ to construct answers                        helps you stand out                         competitive advantage
+
+
+ #2
+ review and trust sites are the second
+                                             1%
+                                             citation rate for brands with no
+                                                                                         +9.5x
+                                                                                         more competitive co-mentions for brands
+ most-cited source category in the study.    Trustpilot profile.                         with optimized Trustpilot profile and a
+                                                                                         high number of reviews compared to
+                                                                                         brands with no profile.
+
+
+ +16x                                        54%
+ the share of AI citations going to review
+ sites grows 16x from the Awareness
+ stage to the Decision stage - the closer
+                                             average citation rate after claiming a
+                                             profile - based on profiles with a median
+                                             of 13 reviews.
+                                                                                         +43x
+                                                                                         largest relative lift in the dataset - travel
+ a consumer is to a purchase, the more AI                                                and vacation brands moving from no
+ leans on review data.                                                                   profile to a claimed profile.
+
+
+                                             75%
+                                             Trustpilot citation rate for businesses
+                                             that optimize their profile and collect a
+                                             median of 81 reviews.
+                                                                                                                                           6
+
+
+
+
+                                                                          Relevance
+                                                                          When a consumer asks an AI about a brand, the question is
+                                                                          usually evaluative:
+
+Why AI reaches                                                               Is this company reliable?
+                                                                             How is their customer service?
+
+
+for reviews                                                                  Would I have a good experience buying from them?
+                                                                          Review content is, by its nature, a direct answer to these
+                                                                          questions. AI doesn’t have to infer sentiment from context
+When someone asks AI whether a company is                                 - the content itself already answers consumer questions.
+
+reliable, the brand’s own website is not enough.
+AI needs independent evidence that reflects
+real customer experience.                                                 Ranking
+                                                                          AI models don’t read the entire web before answering.
+Review content fits that need because it gives AI three useful signals:
+                                                                          They run searches and pull from reputable sources.
+Relevance, Ranking, and Recency.
+                                                                          Trustpilot, with its strong domain rating and AI friendly page
+That is why review platforms often appear in AI-generated answers -
+                                                                          structure tends to rank well when AI searches for brand
+and why Trustpilot can influence how brands are discovered, compared,
+                                                                          information.
+and described.
+                                                                          In the study, 99.5% of the Trustpilot citations observed in
+                                                                          AI responses were due to Trustpilot’s organic strength of
+                                                                          the content - not because the AI deliberately sought
+                                                                          Trustpilot out by name.
+
+
+
+   At Trustpilot, we’ve always believed that timely, genuine,             Recency
+   human experience is the most important signal. Technology
+                                                                          AI systems prioritize information that reflects what is true
+   changes, but the need for a second opinion never will.                 about a brand now, not what was true a year ago.
+                                                                          Review platforms update continuously as customers post
+                                                                          new feedback. This creates a current, customer-first
+                                                                          snapshot of a brand that AI can incorporate into its answers.
+                                                                                                                          7
+
+
+
+
+AI search engines                                                              Key insight
+use review sites for                                                           Review sites are now part of the AI
+                                                                               evidence layer. They ranked as the #2
+
+
+independent validation.                                                        most-cited source category in the study.
+
+
+
+When AI search engines recommend a brand, they
+do not rely only on brand-owned content. They look
+for independent sources that can augment business
+information and validate brand claims.
+In SEER Interactive’s research, trust and review sites were the second most-
+cited source category, ranking behind only the general web.
+
+
+
+General Web                                                                                  76%
+
+
+
+Trust & Review                         14%
+
+
+
+UGC                           5%
+
+
+
+Editorial                3%
+
+
+
+Social              1%
+
+
+
+Data               1%
+                                                                                                            8
+
+
+
+
+How reviews influence
+the conversion funnel                                                         Review citations climb at
+                                                                             evaluation and intent stages
+The study also analyzed how the AI use of
+reviews changes along the conversion funnel.
+
+                                                                                     Awareness
+
+    Awareness: AI uses general information to craft responses.
+    At this early stage, reviews are cited 2% of the time.
+                                                                                     2%
+                                                                                     Citation Rate
+
+
+
+    Evaluation: AI begins to collect additional, third-party information
+                                                                                     Evaluation
+
+                                                                                    16%
+    to inform the response. Review influence jumps 10x during this
+    stage to 16% of all citations.
+                                                                                     Citation Rate
+
+    Intent: This is the point of purchase. Nearly 1 in 4 sources cited
+    were independent review sites (24%).
+                                                                                       Intent
+
+
+The message is clear:
+                                                                                   24%
+                                                                                     Citation Rate
+The later in the funnel a consumer is when they ask AI about you, the more
+reviews will shape the answer. Reviews are one of the most concentrated
+sources of independent signal available, and AI treats them accordingly.
+                                                                                                                                    9
+
+
+
+
+What this means
+for a brand’s AI
+visibility strategy
+
+ Your review strategy is now part                                 Where you build review
+ of your AI visibility strategy.                                  presence matters.
+  As AI-generated answers become an established channel for        As Trustpilot appears consistently most-cited across all four
+  brand research, the sources AI use become important.             major AI platforms studied, a presence there can reach a broad
+  Review sites are one of those sources. AI models are built to    range of AI-generated answers without requiring a separate
+  check claims against independent data, and review content is     strategy for each platform.
+  an important source of independent data.                         It is a single, high-impact lever for all brands.
+                                                                                                                                                                                             10
+
+
+
+
+Trustpilot is the  After identifying trust and review sites as a major
+                   source category, the next question is: Which review
+review source AI sources do AI engines rely on most?                              Across ChatGPT, Google AI Mode, Gemini, and Perplexity, Trustpilot was
+
+engines cite most.                                                                the most-cited review platform tested. This suggests that Trustpilot plays a
+                                                                                  leading role when AI systems look for independent review evidence.
+
+
+
+
+                   ChatGPT                                    Google AI Mode                                    Gemini                                        Perplexity
+
+
+                                                                                                                                            52%
+ 58%                                            49%
+
+
+
+
+                                                                                               21%
+                                                                           17%
+             15%                                            14%   15%                                                                                           15%
+                                                                                                                                                        10%                9%
+                     7%                                                             8%
+                                                                                                          4%     5%                                                                 4%
+                                      3%                                                                                         3%
+                             0%                                                                                          0%
+
+Trustpilot   BBB     G2      Yelp   Capterra   Trustpilot   BBB    G2      Yelp   Capterra   Trustpilot   BBB    G2      Yelp   Capterra   Trustpilot   BBB      G2        Yelp   Capterra
+                                                                                                                                  11
+
+
+
+
+How Trustpilot
+improves AI visibility
+One of the clearest findings from the study is that
+businesses do not need a large review footprint
+                                                                                  The most striking
+to improve AI visibility. A basic Trustpilot profile                            finding in the data is
+with a median of 13 reviews was cited in 54% of AI                             how sharply AI citation
+                                                                               rates change between
+responses - up from just 1% for businesses with no                             No Profile and Minimal
+                                                                                       Profile.
+                                                                                                             Gains continue as
+                                                                                                           review volume grows.
+Trustpilot profile.
+
+
+
+  Key insight
+  The impact shown here is not a gradual         Cohort                  Definition                      AI citation rate
+  improvement. It’s a huge change, and
+  it happens at the lowest threshold of         No Profile      No claimed Trustpilot profile                  1%
+  Trustpilot activity.
+                                              Minimal Profile   Claimed profile, ~13 reviews                  54%
+  Claiming a profile and collecting a small
+  number of reviews is the single highest-
+                                              Active Profile    Claimed profile, ~81 reviews                  75%
+  return action observed in the study.
+                                                                                                                        12
+
+
+
+
+A Trustpilot profile presence
+helps small brands compete
+with mid-sized brands                                                      Reviews can help smaller brands
+                                                                         achieve AI citation rates comparable
+                                                                              to mid-sized businesses.
+
+As part of the study we wanted to understand
+how reviews might impact small businesses
+and mid-sized businesses differently.
+To accomplish this, brands were segmented by domain rating
+- a way to segment these types of companies - and examined
+to see how citation rates changed within each segment when a
+Trustpilot profile was introduced.
+The findings proved that smaller brands can be cited as often as
+larger brands by adding a Trustpilot profile and getting some reviews.
+                                                                                54%
+                                                                                                       53%
+
+
+
+   Key insight
+   The AI citation gap between small and mid-sized brands can
+   be closed by establishing a review presence - something a
+   brand can do in weeks rather than months. This is not a claim
+   that review presence makes brand size irrelevant. This means
+   that, for smaller brands with limited marketing resources, the
+   investment required to reach parity with larger competitors in
+   AI visibility is much smaller than before.
+                                                                          Smaller Brands        Mid-sized Brands
+                                                                         (Domain Rating 0-15)   (Domain Rating 16-55)
+                                                                                                                          13
+
+
+
+
+Standing out                                                         “Co-mention”: When AI recommends
+
+from competitors:                                                    your brand in response to a query about
+                                                                     your competitor (e.g., “What are the best
+
+The “co-mention effect”
+                                                                     alternatives to Brand X?”).
+
+
+
+Brands with highly active profiles are more
+likely to be mentioned when AI is asked
+
+                                                                     9.5x
+about their competitors.
+Direct vs competitive visibility
+   Direct visibility: This refers to citations for your own brand.
+   These rates tend to level off once a brand reaches the
+                                                                     Brands with optimized profiles are mentioned 9.5
+   “Active” cohort.
+                                                                     times more often when consumers ask AI about their
+   Competitive visibility: This refers to appearing in searches
+                                                                     competitors, compared to brands with no profile.
+   for other brands. Unlike direct citations, competitive
+   visibility continues to scale as you increase review volume
+   and profile engagement.
+
+For brands operating in competitive categories, the distinction      Key insight
+matters. Direct visibility protects the share of answers a brand       Large brands: Brands with high review volume and
+commands. Competitive visibility expands the share of                  optimized profile receive 9.5x more co-mentions
+answers a brand appears in.                                            than those with no profile.
+                                                                       Emerging brands: Even smaller brands with active
+                                                                       profiles see 4.9x more co-mentions than those
+                                                                       without a presence.
+                                                                                                                                14
+
+
+
+
+AI shapes your brand
+narrative with review
+content
+The study examined 91,292 ChatGPT responses in
+which Trustpilot was cited, and examined how the
+
+                                                                          59%
+cited content appeared in the answer delivered. AI
+systems use Trustpilot content in the following ways.
+
+     AI uses your TrustScore                                              of ChatGPT answers that cited Trustpilot referenced
+                                                                          the TrustScore or star rating directly.
+     as a credibility shortcut
+The simplest way AI uses Trustpilot content is to reach for the
+
+
+
+                                                                          17%
+headline numbers - the TrustScore, the star rating, and the total
+review count - and present them as quick credibility markers.
+
+The study found:
+   59% of ChatGPT answers that cited Trustpilot referenced the            referenced the number of reviews a brand has.
+   TrustScore or star rating directly.
+   16.6% referenced the number of reviews a brand has.
+   Roughly three out of five Trustpilot-citing responses surfaced a
+   numeric trust signal of some kind.
+
+The practical implication is that the TrustScore is not a vanity metric
+in AI search. It is one of the two most commonly cited pieces of
+content a Trustpilot profile produces, alongside review volume.
+                                                                                                                                           15
+
+
+
+
+      AI reads your reviews and forms
+      an opinion based on them
+AI systems also read the review text itself and synthesize recurring themes.
+When ChatGPT cited Trustpilot, the generated answers often described
+the kinds of experiences customers had reported - not by quoting individual
+reviews, but by summarizing what came up repeatedly across reviews.
+
+Five themes appeared most often in the analyzed responses
+
+                                                                               Key insight
+                                           Share of Trustpilot-citing
+   Theme                                                                         Customer Service is the single most frequent theme
+                                           responses
+                                                                                 by a wide margin - nearly two thirds of Trustpilot-
+   Customer service quality                63%                                   citing responses surfaced it.
+                                                                                 AI systems consistently treat the following topics as
+   Shipping and delivery                   34%                                   relevant to the user experience: service experience,
+                                                                                 fulfillment, product quality, trust concerns, and
+   Product or service quality              33%
+                                                                                 resolution behavior.
+   Scam or legitimacy concerns             30%                                   For brands, these themes are the types of reviews AI
+                                                                                 is looking for. A brand whose reviews speak to all five
+   Refund or return issues                 21%
+                                                                                 produces richer material and more opportunities for
+                                                                                 AI to cite their reviews.
+                                                                                                                                    16
+
+
+
+
+      AI treats missing
+      reviews as a trust gap
+AI systems do not only use Trustpilot when reviews are present.
+In some cases, they also mention Trustpilot when independent
+review evidence is missing.
+In the study, when ChatGPT searched for Trustpilot and found an
+existing profile, Trustpilot was cited in 90–96% of responses. But when
+ChatGPT searched for Trustpilot and found no profile it still mentioned
+Trustpilot in 34.4% of sampled responses - usually to point out the
+
+
+                                                                            34%
+absence of third-party reviews.
+That makes the absence of reviews part of the trust evaluation. A brand
+without a visible review presence is not always treated as neutral. In
+some responses, AI used the lack of Trustpilot reviews as a reason to       When ChatGPT searched for Trustpilot but found
+question whether the business had enough independent validation.            no profile, it still mentioned Trustpilot in 34.4% of
+                                                                            sampled responses - often to highlight the absence of
+The findings point to a practical AI readiness framework: First establish
+                                                                            independent review evidence.
+a review presence, then build a consistent base of fresh reviews, and
+finally use that review content to strengthen how AI systems understand
+and describe the brand.
+                                                                            Key insight
+                                                                            Claiming a profile and collecting an initial base of
+                                                                            reviews does more than increase the chance of
+                                                                            being cited. It also reduces the risk that AI will
+                                                                            describe the brand as lacking visible, independent
+                                                                            customer feedback.
+                                                                                                                               17
+
+
+
+
+A 3-step framework for
+improving AI visibility
+                                              Step 2                                       Step 3
+                                              Build review                                 Win the
+                                              volume                                       comparison game
+ Step 1
+ Establish your                               75%                                          9.5x
+ presence                                     Citation rate for active profiles            More competitive co-mentions than
+                                              with a median of 81 reviews.                 brands without a profile.
+
+ 1%		            53%                          Checklist
+                                                 Collect reviews at consistent
+                                                                                           Checklist
+                                                                                             Maintain a fresh, high-volume
+ Citation rate after claiming a profile and      customer touchpoints.                       review base.
+ collecting a median of 13 reviews.
+                                                 Set targets for review volume, recency,     Track AI mentions in competitor
+ Checklist                                       and coverage.                               and comparison prompts.
+    Claim your Trustpilot profile.               Respond regularly to keep the profile       Use review themes to shape
+    Automate review invitations.                 active and current.                         the brand narrative.
+    Respond to every review, positive            Measure AI citations to understand          Feed customer insights back
+    or negative.                                 visibility gains.                           into the business.
+
+
+         Biggest visibility lift                      Build momentum                              Competitive advantage
+                                                                                                                    18
+
+
+
+
+Conclusion:
+The new era of authority
+AI search hasn’t just changed how people find you, it’s changed
+how they verify you.
+The data from this study is clear: AI models read Trustpilot, and
+rely on our platform to anchor their recommendations in reality.
+
+What we’ve learned
+
+
+   The visibility gap is real                                         The path forward
+   Without a Trustpilot presence, your brand is effectively           In the age of AI, your review profile is no
+   invisible to AI, cited just 1% of the time.                        longer a “nice-to-have” marketing tool.
+                                                                      It’s a strategic data asset.
+                                                                      The organizations that win in this new
+   Presence is the multiplier                                         landscape will be those that treat
+   Simply establishing a profile triggers a 50x jump in visibility,
+                                                                      customer sentiment as a business priority.
+   moving your citation rate to 54%.
+                                                                      Don’t let AI guess who you are.
+
+   Management matters
+   Active engagement earns you 9.5x more co-mentions, putting
+   you on the shortlist when customers look at your rivals.
+Review your brand’s
+AI visibility today
+  Speak to a Trustpilot expert
+                                                                                                                                       20
+
+
+
+
+Appendix
+
+About this study                               The scale of the study                     How it was tested
+Our goal was to answer three questions in        804,491 AI responses analyzed            We divided the 1,926 brands into four
+this study:                                      1,926 Brands tracked across 8            cohorts based on their Trustpilot
+ 1 Reliance on reviews: To what extent                                                    profile activity (from no profile to fully
+                                                 industries.
+   do AI systems rely on third-party                                                      optimized).
+                                                 B2C Industries: Money & Insurance,
+   review data when describing or                                                         To ensure fairness and isolate the effect
+                                                 Shopping & Fashion, Travel &
+   recommending brands?                                                                   of reviews from general SEO strength,
+                                                 Vacation, Home Services, Health &
+2   The Trustpilot effect: Does the              Medical, and Education & Training.       we benchmarked brands using Ahrefs
+    presence of a brand’s Trustpilot profile                                              data. This additional data includes
+                                                 B2B Industries: Electronics
+    measurably change how AI describes                                                    brand search volume, domain authority,
+                                                 & Technology and Business
+    that brand?                                                                           backlinks, and organic traffic and other
+                                                 Services (with specific tagging for
+3   Actionable steps: What can brands                                                     metrics. Benchmarking matters because
+                                                 subcategories like Sales & Marketing
+    do today to shape how they appear in                                                  it isolates the effect of Trustpilot
+                                                 and IT & Communication to ensure
+    AI-generated answers?                                                                 presence from the underlying organic
+                                                 granular analysis).
+                                                                                          strength of the brands being measured.
+To find the answers, Trustpilot                  4 Major AI platforms: ChatGPT |
+                                                                                          Without it, a finding like ‘brands with
+commissioned an independent study by             Google Gemini | Perplexity | Google AI
+                                                                                          profiles get cited more’ would not be
+SEER Interactive in March 2026.                  Overviews.
+                                                                                          possible to separate from the finding,
+                                                 When: March 2026.                        “bigger brands get cited more, and bigger
+                                                 Where: US.                               brands happen to have profiles.”
+                                                 Maintains a claimed, active, and valid
+                                                 Trustpilot profile.
+                                                 Has generated at least one active
+                                                 customer review and possesses a non-
+                                                 zero TrustScore.
+
