@@ -23,12 +23,14 @@ Evaluated on three things:
 | [`research/04-competitive-landscape.md`](research/04-competitive-landscape.md) | Reviews/UGC incumbents, AEO startups, and the platform layer |
 | [`research/05-how-ai-sources-products.md`](research/05-how-ai-sources-products.md) | How LLMs actually get product data, and agentic commerce |
 | [`research/06-strategic-tensions.md`](research/06-strategic-tensions.md) | The open questions the deck has to answer |
+| [`research/07-practitioner-view.md`](research/07-practitioner-view.md) | **Primary source** — Michelle's Yotpo experience + teardown of the live product review flow |
 | [`sources.md`](sources.md) | Every source used |
-| [`reference/`](reference/) | The Trustpilot × Seer white paper (PDF + extracted text) |
+| [`reference/`](reference/) | The Trustpilot × Seer white paper (PDF + extracted text) and product flow screenshots |
 
 ## Status
 
 - [x] Research base
+- [x] Practitioner input
 - [ ] Point of view / strategic bets
 - [ ] Deck outline
 - [ ] Deck

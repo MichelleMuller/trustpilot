@@ -104,3 +104,13 @@ The assignment asks "how would you handle the trade-offs?" — which means namin
 - **Not** chasing non-English locales before the English-language product-level position is proven
 
 A strategy that sacrifices nothing isn't a strategy. The deck should say "no" to at least two of these out loud.
+
+---
+
+## Addendum — revisions from the practitioner view
+
+`07-practitioner-view.md` (Michelle's first-hand Yotpo experience and a teardown of the live product review flow) materially revises three of the tensions above:
+
+- **Tension 2 is not a binary.** Product review volume is the *option* on distribution. SKU-level review inventory is the prerequisite for ever approaching a retailer — company-level reviews have nowhere to live on a retailer PDP. Destination now, distribution later, bought with the volume built in between.
+- **Tension 3 has a sharper edge than "where's the money."** Trustpilot's enterprise commercial motion and its Product Reviews product are aimed at *different customers*. The acute need sits with mid-market and emerging ecommerce — the segment Trustpilot currently prices out.
+- **A fourth consideration the desk research missed entirely:** the weakest link is **collection**, not visibility. And Trustpilot holds an unmeasured structural advantage there — invitations sent from trustpilot.com, with better deliverability and higher consumer response than a competitor sending from a brand's own domain.
