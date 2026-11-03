@@ -123,3 +123,32 @@ Both major platforms now accept **direct merchant feeds**. A brand can submit pr
 - Citation position is organic and **uncontracted** — no deal underpins it
 - Formally disclosed as a principal risk: **"Reliance on search and answer engines"**
 - Fake review submissions rose from 8% to 10% of all submissions YoY
+
+---
+
+## Addendum — the collection-layer race (Nov 2025 onward)
+
+Added after a targeted check on review *collection* features, which the original sweep missed. This matters because collection is where Trustpilot's weakest link sits.
+
+**Bazaarvoice has been competing on collection-for-AI for a full year.** Announced **7 November 2025**, positioned explicitly for "the age of AI-driven discovery":
+
+- **Talk-to-Text** — shoppers speak their reviews; auto-transcribed and editable before submission. Framed as reducing friction to produce "longer, richer, more contextual content" that strengthens visibility in AI search.
+- **Visual Content Coach** — guides shoppers on capturing impactful product images, with examples and creative guidance, to improve representation across AI discovery platforms.
+
+Both auto-enabled for hosted clients on the SPSv2 submission form.
+
+**Yotpo** ships a drag-and-drop review form builder and **AI Smart Prompts** that guide customers on what to write, explicitly to raise review detail and quality.
+
+### Why this matters
+
+Richer, AI-ready review collection is **not a novel idea** — it is a year-old competitive move that Trustpilot has not answered. Against Trustpilot's live form (two optional generic attributes, unprompted media, no variant capture), the gap on the collection layer is wider than the gap on the visibility layer.
+
+The strategic read is not "we have a new idea." It is: **the category has already moved to competing on collection quality, we are behind on it, and we are the only player who can execute it on top of an independent company-level trust layer and a collection channel competitors don't have** (see `07-practitioner-view.md`, §4).
+
+## Addendum — Trustpilot's product review display tooling
+
+Trustpilot **does** offer a Product Reviews TrustBox that pulls reviews by SKU or product ID, alongside Micro Star, Micro Review Count, Mini Carousel, Service Review and Grid widgets. Shopify setup is supported via the enhanced app (GA June 2026) or custom HTML.
+
+Widget access is tier-gated: basic TrustBox on Plus, advanced widgets (carousel, review highlights) on Premium. *Note: reported pricing for these tiers varies across sources ($259/$629 vs. $319/$799) — likely an annual vs. monthly billing difference. Confirm against Trustpilot's own pricing page before using a figure in the deck.*
+
+So on-site display is **not a missing capability** — it's a competitiveness and packaging question. Ecommerce-native competitors ship stronger display tooling at a fraction of the price, which is the live trade-off captured in `../deck/01-strategy-spine.md`.

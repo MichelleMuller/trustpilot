@@ -65,3 +65,10 @@ All research gathered 3 November 2026.
 Trustpilot's H1'26 results, the September press release and the Seer white paper are primary and reliable, though the white paper is commissioned (see `research/03-whitepaper-synthesis.md` for the caveats). Bazaarvoice and OpenAI announcements are primary but promotional.
 
 Several SEO/comparison sites (wiserreview, wisernotify, costbench, stormy, zigpoll, etc.) are themselves AEO-optimised content marketing, which makes them useful for *directional* figures and market framing but weak as authority. Pricing, traffic and G2 scores drawn from them are cross-checked where possible and should be treated as approximate. Anything load-bearing in the final deck should be traced back to a primary source.
+
+## Collection-layer features (added Nov 2026)
+
+- [Bazaarvoice: Improve shopper and GEO discoverability with new review collection features](https://www.bazaarvoice.com/updates/review-collection-features-to-improve-discoverability-for-new-age-ai-shoppers/) — Talk-to-Text and Visual Content Coach, 7 Nov 2025
+- [Trustpilot Widget Examples (2026): TrustBox Types Compared](https://signedreviews.com/blog/trustpilot-widget-examples/)
+- [How to embed Trustpilot reviews on any website (2026)](https://wiserreview.com/blog/embed-trustpilot-reviews/)
+- [Trustpilot Shopify Integration: Complete Setup Guide](https://liquidboost.app/blog/trustpilot-shopify-integration)
