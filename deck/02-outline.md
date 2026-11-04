@@ -11,7 +11,12 @@
 # ACT 1 — The ground moved
 
 ### 1. Cover
-**Trustpilot Product Reviews — a 12–18 month strategy.** Michelle Muller. Dark slide.
+> # Expanding the trust layer to product reviews
+> *A 12–18 month strategy*
+
+Michelle Muller. Dark slide.
+
+*Title splits across two lines: the claim large, the timeframe small. Uses the company's own language — Blair says "trust layer" and "trust infrastructure", never "trust moat" — and names what the deck is actually about.*
 
 ### 2. Trustpilot exists because reputation couldn't travel
 Mühlmann sold cables on eBay, built a strong seller rating, went independent — *"and realised he couldn't take his seller rating with him."* So he built *"something that didn't just exist on eBay, but existed in lots of other places as well."*
