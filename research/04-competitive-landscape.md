@@ -47,6 +47,12 @@ Read it against the Seer data: **Gemini is the one engine where Trustpilot's cit
 
 **Bazaarvoice's structural disadvantage:** it's a closed B2B network. It has no independent consumer destination, no "second opinion" brand equity, and its content lives inside brand- and retailer-owned pages — which is precisely the brand-owned content AI systems reach *past* when they want independent validation.
 
+**And the disadvantage it shares with every other competitor: solicited supply only.** Bazaarvoice, Yotpo, Okendo, Judge.me and Loox can collect only what a brand asks for. A brand triggers an invitation; a customer may respond. **No invitation, no review.** Total possible supply is bounded by what customers choose to request.
+
+Trustpilot has ~64m monthly readers, **100+ reviews posted every minute**, and North America organic reviews **+50% YoY** — people arriving unprompted to review a company nobody asked them about. That supply costs a brand nothing and isn't bounded by an invitation budget.
+
+**None of them can copy it, because none of them has anywhere for a consumer to arrive.** A destination takes two decades and a consumer brand to build. It is the one asset in this market that cannot be bought, built quickly, or competed away — and at product level it is the coverage engine. *(See `07-practitioner-view.md` §4.)*
+
 ### Yotpo
 Positions its reviews platform as feeding LLMs structured high-quality data for AI-first commerce. Strong DTC/Shopify footprint, syndication partnerships including Target, and interop with Bazaarvoice and PowerReviews networks. G2 support score 8.8.
 

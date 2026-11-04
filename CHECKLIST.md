@@ -44,7 +44,7 @@ The spine exists in [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md). Wh
 
 ## 3. Deck build
 
-- [ ] **Decide format** — slides to present from, or a written memo, or both
+- [x] ~~Decide format~~ **Slides.** Artifact deck, 28 slides
 - [ ] **Narrative order.** Current working order: founding insight → the shift → query divergence → why us → why not yet → US → three bets → trade-offs → metrics. Open on *"he couldn't take his seller rating with him"*.
 - [ ] **Slide count and depth** — what's on the page vs. what's in the appendix
 - [ ] **Pick the visuals.** Candidates: the funnel citation chart (2% → 16% → 24%), the presence cliff (1% → 54% → 75%), the company-intent vs product-intent query table, the one-engine-three-payoffs diagram, the provenance tier table, **the roadmap timeline**
@@ -77,6 +77,7 @@ Strong move for three reasons: it demonstrates the product rather than describin
 |---|---|
 | Research base (10 notes + reference material) | ✅ Done |
 | Agentic discoverability definition | ✅ Done — incl. the company-level blueprint. One research gap open (item 1) |
-| Strategy spine, three bets, trade-offs, roadmap, resourcing, metrics | 🟡 Drafted — 2 open decisions |
-| Deck build | ⬜ Not started |
+| Strategy spine — two bets, four initiatives, trade-offs, roadmap, resourcing, monetisation, metrics | ✅ Settled |
+| Deck outline — 28 slides, five acts | ✅ Drafted |
+| Deck build | 🟡 Outline done, slides not built |
 | Collection prototype | ⬜ Not started |

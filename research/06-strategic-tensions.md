@@ -1,5 +1,16 @@
 # Strategic tensions — the questions the deck has to answer
 
+> **Status, 4 Nov 2026 — most of these are now resolved.** Kept for the reasoning trail; the resolutions are below each tension and the final positions live in [`../deck/01-strategy-spine.md`](../deck/01-strategy-spine.md).
+>
+> | Tension | Resolution |
+> |---|---|
+> | 1. Agent or human? | **Both — same corpus, two renderings.** Product pages are the human rendering and the substrate that gets crawled; the MCP is the machine rendering |
+> | 2. Destination or distribution? | **Not a binary.** Destination now; distribution is the option product review volume buys. Licensing to model providers is **off the table** — the CEO considered and rejected it |
+> | 3. Enterprise or SMB? | **Neither framing.** Ecommerce via Shopify is the volume engine; *offerings* is the margin engine and the uncontested one. Two motions, two cost shapes |
+> | 4. Is the premise true? | **At company level yes, at product level not yet** — uniquely *able* to become so |
+> | 5. Citation is a proxy | **Attribution is the metrics layer, not a bet.** Moved to next-steps; the CEO is already on it |
+> | 6. Does scaling risk the moat? | **Resolved by screening.** Everything inbound passes our fraud models — we verify rather than host, which strips incentivised content at ingestion |
+
 Research doesn't produce a strategy; choices do. These are the real forks. Each one has a defensible answer in both directions — which is what makes them the content of the deck rather than background to it.
 
 ---

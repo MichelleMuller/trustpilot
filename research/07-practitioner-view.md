@@ -155,38 +155,49 @@ It also sharpens the risk in **Tension 1**: Trustpilot is currently marketing an
 
 ---
 
-## 4. The domain authenticity advantage — Trustpilot's real unfair edge in collection
+## 4. The real collection advantage: people come to us
 
-This is the asset that doesn't appear anywhere in Trustpilot's own materials, and it may be the most commercially valuable thing they have in this category.
+*Revised 4 Nov 2026. An earlier version of this section led with email deliverability — invitations sent from trustpilot.com landing better than ones sent from a brand's own domain. **That's true but it's the small half of the argument**, and leading with it understates the asset badly.*
 
-**Every competitor sends review requests from the brand's own domain.** Yotpo, Okendo, Judge.me, Loox — the invitation arrives from `noreply@somebrand.com`. Two things follow:
+### The structural point
 
-1. **Deliverability is a constant fight.** A mid-market DTC brand has thin sender reputation, bursty sending patterns and a transactional/marketing mix that trips filters. Review request emails land in spam or Promotions at meaningful rates. Every percentage point lost there is review volume that never existed.
-2. **Consumers discount brand-solicited reviews.** An email from the company asking you to review the company reads as marketing. Response rates reflect that, and so does the perceived independence of the resulting review.
+**Every competitor can only collect what a brand asks for.**
 
-**Trustpilot sends from trustpilot.com.** That changes both:
+Yotpo, Okendo, Judge.me, Loox, Bazaarvoice — all of them are *solicited-supply* businesses. A brand triggers an invitation, a customer may respond. No invitation, no review. Their total possible supply is bounded by what their customers choose to request.
 
-- **Established sender reputation at scale** — hundreds of millions of invitations, a mature domain, consistent infrastructure. Inbox placement is structurally better than a small brand sending on its own behalf.
-- **Recognised, neutral brand in the subject line.** A consumer who'd ignore a request from an unknown merchant will open one from Trustpilot — the brand they already associate with independent second opinions. The ask reads as *"tell the world"*, not *"help us with our marketing."*
+**Trustpilot has a destination people come to unprompted.**
 
-### Why this is strategically significant
+- **~64m monthly readers**
+- **100+ reviews posted every minute**
+- **North America organic reviews +50% YoY** — against paying customers +11%
 
-In a business where **review volume is the entire asset**, a structurally higher conversion rate per invitation is a compounding advantage:
+Consumers arrive at trustpilot.com to write about a company nobody asked them to review. **That supply costs a brand nothing and isn't bounded by their invitation budget.**
 
-- **Lower effective cost per review.** Trustpilot can produce more reviews from the same invitation volume. Against Judge.me at $15/mo, Trustpilot can't win on list price — but it can win on *cost per review actually collected*, which is the number that matters to a brand.
-- **It's exactly what the presence cliff needs.** The Seer data says the enormous visibility jump happens at ~13 reviews. If Trustpilot converts invitations at a materially higher rate, it gets brands over that threshold faster than anyone — the first-value moment arrives sooner, which is a product-led growth argument *and* a retention argument.
-- **It compounds with the independence story.** The same neutrality that makes consumers more willing to write a review is what makes the resulting review more credible to an LLM. One asset, two payoffs.
-- **It's the collection-side counterpart to the citation-side moat.** The research established that independence is what AI reaches past brand-owned content to find. The same independence is why consumers answer the email. Trustpilot's neutrality isn't just a distribution advantage — it's a *supply* advantage.
+### Why no competitor can copy it
+
+Not because they lack the feature — because **they have nowhere for a consumer to arrive.** Yotpo has no destination. Okendo has no destination. Bazaarvoice's content lives inside brand- and retailer-owned pages, which is precisely the brand-owned content an AI reaches *past*.
+
+A destination takes two decades and a consumer brand to build. **It's the one asset in this market that cannot be bought, built quickly, or competed away.**
+
+### Why it matters most at product level
+
+Today that organic supply flows almost entirely to **company** profiles, because that's what exists to review. People already come to us to talk about businesses.
+
+**Product pages give them something to talk about at SKU level** — and the same unprompted behaviour starts producing product-level coverage, without a brand having to buy an invitation for it.
+
+That's the coverage engine nobody else has. It's also why Initiative 2 (the consumer destination) isn't a separate nice-to-have: **traffic to product pages is literally how product-level organic supply gets created.**
+
+### The secondary advantage: deliverability
+
+Still real, just smaller. Competitors send review requests from the brand's own domain — thin sender reputation, bursty sending, spam filters, and a consumer who reads it as marketing. We send from trustpilot.com: mature sender reputation, and an ask that reads as *"tell the world"* rather than *"help our marketing."*
+
+Worth quantifying as a competitive number, because no competitor can produce it. **But it improves the conversion rate on solicited supply. The organic supply is the thing they can't have at all.**
 
 ### What to do with it
 
-It's currently **invisible and unmeasured**. Nothing in Trustpilot's marketing, pricing or product surfaces it. Turning it into a strategic asset means:
-
-- **Quantifying it.** Benchmark invitation→review conversion rate against competitors sending on brand domains. If the gap is real and large, it's the single most persuasive slide in a competitive deal — and it's a metric nobody else can replicate.
-- **Pricing on it.** If Trustpilot produces more reviews per invitation, invitation caps are the wrong pricing lever — they tax the exact advantage. Current plans meter invitations (50 / 100 / 300 / 1,000). That is pricing the input where Trustpilot is strong and the customer cares about the output.
-- **Making it the land motion.** Higher collection conversion is how you get a mid-market brand to the 13-review threshold inside a trial, and the presence cliff is how you show them what it bought.
-
----
+- **Measure organic vs. solicited review mix**, and track it at product level as PRPs roll out
+- **Price accordingly** — invitations meter *solicited, verified-purchase* supply, which is the controlled, directable half. Organic supply is the free compounding half, and it's a reason the destination deserves investment rather than being treated as a cost centre.
+- **Make it the competitive slide.** "They collect what brands ask for. People come to us."
 
 ## 5. What this changes
 
@@ -198,4 +209,4 @@ Four revisions to the strategic picture in `06-strategic-tensions.md`:
 
 2. **Destination vs. distribution isn't a binary.** Product review volume is the option on distribution. Building SKU-level inventory now is what makes a retailer conversation possible later. The deck can commit to destination in the 12–18 month window *while explicitly stating* that it's buying the right to a distribution play after it.
 
-3. **The weakest link is collection, not visibility.** Trustpilot is marketing an AI-visibility outcome built on attribute-rich, media-rich, verified product data — and running a submission form where attributes, media and verification are absent or optional. Fixing collection is the unglamorous initiative that everything else depends on, and it's the one with a genuine unfair advantage (domain trust) waiting to be exploited.
+3. **The weakest link is collection, not visibility.** Trustpilot is marketing an AI-visibility outcome built on attribute-rich, media-rich, verified product data — and running a submission form where attributes, media and verification are absent or optional. Fixing collection is the unglamorous initiative everything else depends on, and it sits on an advantage no competitor can copy: **a destination people come to unprompted.**
