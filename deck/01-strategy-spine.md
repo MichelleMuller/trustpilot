@@ -283,7 +283,21 @@ And it strengthens as Initiative 1 lands: **a better flow means every invitation
 
 **And catalogue size is the wrong tiering dimension** — a brand can have two products and fifty variants, or two thousand products and none. What actually binds is **order volume**: you can only invite people who bought, and that's what plan tiers already proxy.
 
-**Which exposes the real point: for a long-tail catalogue, invitations can never solve coverage.** 2,000 products and 500 orders a month will not reach thirteen reviews per product however many invitations you buy — the purchasers don't exist. Coverage comes from three places and only one is invitations: **variant-aware collection** for few-products-many-variants (capture *which variant did you buy*, so fifty variants need tagged reviews rather than fifty times the volume), **syndication** for the thin tail, and **invitations** for concentrated volume. *That is a better argument for Initiative 3 than the revenue one — it's the only mechanism that reaches catalogues invitations structurally cannot.*
+**Which exposes the real point: for a long-tail catalogue, invitations can never solve coverage** — 2,000 products and 500 orders a month will not reach thirteen reviews per product however many invitations you buy, because the purchasers don't exist.
+
+**And syndication doesn't rescue it.** Bringing reviews across from Yotpo or Okendo moves the same thin pile; a brand with few orders has few reviews anywhere. Syndication adds volume only where a brand has *more* reviews elsewhere — which for most product brands means **Amazon, Walmart and Target** — and those retailer-shopper reviews belong to the retailer, not the brand. A brand can bring what **it** collected; it cannot bring what a Walmart shopper wrote on Walmart.
+
+So the honest answer is that coverage has a floor:
+
+| Catalogue shape | What solves it |
+|---|---|
+| Few products, many variants | **Variant-aware collection** — tag the variant, don't multiply the volume |
+| Many products, high order volume | **Invitations**, as today |
+| Committed to another platform | **Syndication** — reaches brands we otherwise can't sell to |
+| Thin volume, sells through retail | Partly unreachable — their equity sits on retailer PDPs |
+| **Genuinely low sales** | **Not solvable, and shouldn't be.** A business with few customers should have a thin trust signal. |
+
+**Naming that floor is worth more than claiming to clear it.** And where volume can't grow, the lever is signal per review — finding the **per-product presence cliff** (if it's three rather than thirteen, far more of the tail is reachable than we assume), attribute inheritance from parent and category, and **trust signals that aren't reviews** — return rates, repeat purchase, resolution behaviour. The CEO's own *"other trust signals"* expansion, and for thin catalogues probably the only answer.
 
 **Syndication becomes a new ARR line.** Brands on Yotpo, Okendo, Judge.me or Loox can choose to **also** syndicate to Trustpilot, for a fee — reviews screened by our fraud models, carried with a trust score, present on PRPs and in the MCP. **Verified presence where AI looks, without changing their collection stack.**
 

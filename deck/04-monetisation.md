@@ -39,19 +39,33 @@ Which exposes something more important than a pricing question.
 
 **Why it holds up:** the better the flow gets, the more each invitation returns. Product work becomes pricing power.
 
-### The coverage problem invitations cannot solve
+### The coverage problem, honestly
 
-**For a long-tail catalogue, invitation volume is not the answer and never will be.** A brand with 2,000 products and 500 orders a month cannot reach thirteen reviews per product by sending more invitations — the purchasers don't exist.
+**For a long-tail catalogue, invitation volume is not the answer.** A brand with 2,000 products and 500 orders a month cannot reach thirteen reviews per product by sending more invitations — the purchasers don't exist.
 
-So coverage has to come from three places, and only one of them is invitations:
+**And syndication doesn't fix it either.** Bringing reviews across from Yotpo or Okendo just moves the same thin pile: a brand with few orders has few reviews *anywhere*. Syndication adds volume only where the brand has **more** reviews somewhere else than on its own site — and for most product brands that means **Amazon, Walmart and Target**, where retailer-shopper reviews live.
 
-| Catalogue shape | What actually solves coverage |
+**Which we largely cannot reach.** A brand owns the reviews **it** collected, wherever they're displayed, and can bring those. It does not own reviews written by Walmart shoppers on Walmart. Those belong to the retailer and its review platform, and outbound syndication networks exist precisely to feed retailer PDPs, not to drain them.
+
+So the honest picture:
+
+| Catalogue shape | What solves coverage |
 |---|---|
-| **Few products, many variants** *(a mattress in six sizes, a tee in thirty colourways)* | **Variant-aware collection**, not more invitations. Capture *which variant did you buy* so one product's reviews carry variant-specific attributes. Fifty variants don't need fifty times the reviews — they need the reviews tagged. **This is a collection-flow design problem (Initiative 1), not a pricing one.** |
-| **Many products, thin volume** | **Syndication** (Initiative 3). Bringing in reviews collected elsewhere is how the tail gets covered at all. |
-| **High volume, concentrated** | **Invitations.** The existing model, working as intended. |
+| **Few products, many variants** | **Variant-aware collection** — capture *which variant did you buy*, so fifty variants need reviews **tagged**, not fifty times the volume. A collection-flow design problem (Initiative 1), not a pricing one. |
+| **Many products, high order volume** | **Invitations.** The existing model, working as intended. |
+| **Committed to another collection platform** | **Syndication** (Initiative 3) — reaches brands we otherwise cannot sell to, and brings the reviews they *did* collect. |
+| **Thin volume, sells through retail** | Their review equity sits on retailer PDPs. **Brand-collected reviews can come; retailer-shopper reviews cannot.** Partly unreachable. |
+| **Genuinely low total sales** | **Not solvable — and it shouldn't be.** A business with few customers should have a thin trust signal. Manufacturing coverage where no experience exists is the one thing that would break the asset. |
 
-**That's a better argument for syndication than the revenue one.** It isn't only a new ARR line — **it's the only mechanism that covers catalogues invitations structurally cannot reach.**
+**That last row belongs in the deck.** A strategy claiming to solve every case is less credible than one that names its floor.
+
+### Getting more from fewer reviews
+
+Where volume genuinely can't grow, the lever isn't more reviews — it's more signal per review, and more signal from outside reviews:
+
+- **Find the per-product presence cliff.** The company-level curve is 1% → 54% at ~13 reviews. The product-level threshold is unmeasured by anyone. **If it's three rather than thirteen, the long tail is far more reachable than we assume** — and that single number changes how much of this problem exists.
+- **Attribute inheritance.** Variant-level signal rolls up to the parent; category-level priors inform sparse products. Modelling, not collection.
+- **Trust signals that aren't reviews.** Return rates, repeat-purchase rates, resolution behaviour — available at scale without anyone writing anything. This is the CEO's own stated expansion: *"we're interested in **other trust signals** as well."* For thin catalogues it may be the only answer, and it's already on the roadmap.
 
 ### 2. Widgets — free
 Display is a commodity. Judge.me ships unlimited reviews and display tooling at $0–15/mo; our widget offering is weaker *and* costs more. Charging for it loses deals on the layer where we have no advantage, and it suppresses the thing we want — our content on more sites, more visible.
