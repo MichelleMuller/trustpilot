@@ -79,3 +79,7 @@ Several SEO/comparison sites (wiserreview, wisernotify, costbench, stormy, zigpo
 - [Product Reviews: Introduction and FAQ — Trustpilot Support](https://support.trustpilot.com/hc/en-us/articles/204379963-Product-Reviews-Introduction-and-FAQ)
 - [Trustpilot gives individual products their own review pages for AI search — Home of Direct Commerce](https://homeofdirectcommerce.com/news/trustpilot-gives-individual-products-their-own-review-pages-for-ai-search/) — 418-business beta, 1,548% first-week citation lift
 - [Trustpilot Product Reviews: What It Means for Your E-Commerce Brand](https://www.review-collect.com/en/blog/trustpilot-product-reviews-ecommerce)
+
+## CEO interview
+
+- [Scaling Up S10 E2 — "The Business of Building Trust", Adrian Blair, CEO Trustpilot — TDM Growth Partners](https://tdmgrowthpartners.com/insight/scaling-up-s10-e2-the-business-of-building-trust-adrian-blair-ceo-trustpilot-lsetrst/) — *quotes taken from the episode page summary; verify against audio before quoting in the deck*

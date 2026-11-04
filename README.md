@@ -25,6 +25,7 @@ Evaluated on three things:
 | [`research/06-strategic-tensions.md`](research/06-strategic-tensions.md) | The open questions the deck has to answer |
 | [`research/07-practitioner-view.md`](research/07-practitioner-view.md) | **Primary source & positioning** — Michelle's Yotpo experience, the strategic frame, and a teardown of the live product review flow |
 | [`research/08-prp-live-investigation.md`](research/08-prp-live-investigation.md) | **Live browser investigation** — robots.txt, sitemaps, and whether PRPs are reachable at all |
+| [`research/09-ceo-strategic-direction.md`](research/09-ceo-strategic-direction.md) | **Adrian Blair's stated strategy** — where ours aligns, and the three places it argues |
 | [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md) | **The strategy** — positioning, three bets, trade-offs, metrics |
 | [`sources.md`](sources.md) | Every source used |
 | [`reference/`](reference/) | The Trustpilot × Seer white paper (PDF + extracted text) and product flow screenshots |

@@ -55,69 +55,97 @@ Richer collection for AI is not a novel idea — **it is a year-old competitive 
 
 ## The bets
 
-### Bet 1 — Rebuild collection for richness, not ratings
+**One engine, three payoffs.** Collection is the bet. AI visibility, the consumer product surface and eventual retailer syndication are all downstream of the same inventory.
 
-Move from a star-rating form to a **conversational interface** that elicits genuine sentiment and structured attributes. A form asks you to fill fields; a conversation asks follow-up questions and gets to *why*. Target: every review produces category-specific attributes, sentiment detail and media — the exact structured data LLMs and agents consume, and that retailers need for syndication.
-
-**Collection is a timing and channel problem as much as a form problem**, so this bet includes:
-- **SMS alongside email** — higher open rates, better suited to the post-delivery moment
-- **Trigger on the right event** — delivery, or a usage milestone, not a fixed delay after purchase
-- Both compound directly with the trustpilot.com deliverability advantage
-
-**Approach:** research and experimentation before commitment. Conversational collection is unproven at scale for reviews — Bazaarvoice went to voice, which is one answer, not the only one. Test completion rate, data richness per review, and review quality before building.
-
-**Why it's bet one:** everything else depends on it. No attribute data, no AI citations. No SKU-level inventory, no syndication conversation later. No media, no answer to Bazaarvoice's photo feed into Google.
-
----
-
-### Bet 2 — Make products discoverable product-first, not company-first
-
-**What already exists (fact-checked):** Product Review Pages launched 24 Sept 2026. They *are* public, consumer-facing, indexed pages on trustpilot.com showing product name, details, score, reviews, business replies and attributes. So "launch consumer-facing product review pages" is **done** — this bet has to start from there.
-
-**What's actually missing is discovery.** Today a shopper reaches a product page through the **company**: a "Popular products" carousel on the brand's public profile, surfacing up to 12 of its most-reviewed items. That mirrors the company-reviews mental model — find the business, then its products.
-
-It does not answer the query that matters:
-
-> *"best running shoes for flat feet"*
-
-That requires **cross-brand product discovery** — category browse across sellers, attribute filtering, and product-vs-product comparison. None of it exists. We have product *pages*; we don't have product *discovery*.
-
-**This bet is:**
-- **Cross-brand category browse and comparison** — the product-first surface that serves the right-hand column of the query table
-- **Attribute-based filtering** — directly consuming what Bet 1 collects ("runs small", "durable", "worth the money")
-- **Get out of beta.** PRPs are currently free beta, restricted to a select group in six English markets (UK, US, AU, NZ, CA, IE), in selected categories, requiring an active Product Reviews subscription and ≥1 review in 12 months. Coverage is the constraint on everything.
-- **Resolve the TrustScore question.** Product reviews currently **do not affect the overall TrustScore** — while 59% of AI answers citing Trustpilot reference the TrustScore or star rating. The single most-quoted signal we produce is untouched by the product data we're asking businesses to invest in. That needs a deliberate answer, not an inherited default.
-
-**Why it's bet two and not bet one:** discovery is worthless without the attribute data to filter and compare on. Bet 1 produces the inventory; Bet 2 makes it navigable.
+```
+                    +-------------------------+
+                    |   BET 1 - COLLECTION    |
+                    |  richness + ratings,    |
+                    |  right time, right      |
+                    |  channel                |
+                    +-----------+-------------+
+                                |
+          +---------------------+---------------------+
+          v                     v                     v
+   AI VISIBILITY        CONSUMER PRODUCT         SYNDICATION
+   attribute + rating   DISCOVERY (Bet 2)        (the 18mo+ option)
+   data AI can cite     needs volume and         SKU inventory is the
+                        coverage to exist        ticket to a retailer
+```
 
 ---
 
-### Bet 3 — *Open.*
+### Bet 1 — Enhance collection: richness *and* ratings
 
-Two bets may be enough — the brief asks for 2–3. If we want a third, the candidates are:
-- **Attribution** — close the citation→revenue loop nobody in the category has
-- **Measured collection advantage** — quantify and productise the trustpilot.com deliverability edge as a competitive number
-- **Syndication groundwork** — first retailer conversations, using SKU inventory as the asset
+**Both, deliberately.** They serve different jobs and the strategy needs each:
 
-*To decide.*
+- **Richness** — attributes, sentiment, media. Answers product-intent queries ("does it run small", "is it durable"), powers attribute filtering on a consumer surface, and is what a retailer needs for syndication.
+- **Ratings coverage** — breadth of rated SKUs across the catalogue. **59% of AI answers citing Trustpilot quote the TrustScore or star rating**, 16.6% quote review counts. The numeric signal is the single most-reproduced thing we produce. Deep reviews on a handful of SKUs don't serve it; coverage does.
+
+**The design tension to resolve, not dodge:** rich conversational collection takes longer per review, so it yields fewer. Simple ratings yield coverage. The form should be **progressive** — a near-frictionless rating first, conversational depth for those who continue. Optimise the floor for coverage and the ceiling for richness instead of trading one against the other.
+
+**How:**
+- A **conversational interface** in place of a static form — asks follow-ups, gets to *why*, and produces structured attributes as a by-product rather than as an optional field users skip
+- **Right time, right channel** — SMS alongside email, triggered on delivery or a usage milestone rather than a fixed delay. Compounds with the trustpilot.com deliverability advantage.
+- **Attributes elicited, not offered** — conversationally drawn out rather than presented as a skippable star row
+
+**Approach:** research and experimentation before building. Bazaarvoice went to voice (Talk-to-Text, Nov 2025); that's one answer, not the only one. Test completion rate, coverage, richness per review and review quality.
+
+**Why it's the bet:** no volume, no consumer product page worth visiting. No attributes, no AI citation and no syndication conversation. Everything downstream is gated on this.
+
+---
+
+### Bet 2 — Consumer-facing product discovery
+
+**Fact-checked, and it changes the shape of this bet.** PRPs launched 24 Sept 2026 and *are* public consumer-facing indexed pages. But the live investigation (`../research/08-prp-live-investigation.md`) found:
+
+- **Site search returns companies only** — no product search, no product tab, no cross-brand results
+- **No product sitemap exists**
+- **robots.txt disallows `/product-reviews/` to every crawler**, Googlebot and OAI-SearchBot included *(needs one confirmation)*
+
+So the bet isn't "launch product pages." It's three things:
+
+1. **Fix the plumbing.** Unblock crawling, add a product sitemap, exit the restricted beta (six English markets, selected categories, subscription-gated). Cheapest, fastest, highest-leverage work in the plan.
+2. **Build product-first discovery.** Cross-brand category browse, attribute filtering off Bet 1's data, product comparison. Today a shopper reaches a product only *through* the company that sells it — a 12-item carousel on the brand profile. That cannot serve *"best running shoes for flat feet."*
+3. **Resolve the TrustScore question.** Product reviews sit outside the TrustScore entirely, while the TrustScore is what AI quotes most. Needs a deliberate position, not an inherited default.
+
+**Sequencing:** (1) starts immediately; (2) is gated on Bet 1's volume — discovery with thin coverage is worse than no discovery.
+
+---
+
+### Bet 3 — Repackage: free the commodity, charge for the outcome
+
+**Widgets need updating — and then giving away free.**
+
+Today we meter inputs and gate display: invitations capped by plan (50/100/300/1,000), TrustBox widgets tier-gated behind Plus and Premium. **That prices what competitors give away and under-prices the thing only we have.** Judge.me ships unlimited reviews and display tooling at $0–15/mo; our widget offering is weaker *and* costs more.
+
+**The move:**
+- **Update the widgets and make them free.** Display is commodity. Charging for it loses deals to Judge.me and Okendo, and suppresses the thing we actually want — our content on more sites, more visible, driving more collection.
+- **Stop metering invitations.** Caps tax our single biggest structural advantage: trustpilot.com deliverability and consumer response. We should want more invitations sent, not fewer.
+- **Monetise the scarce layer instead** — AI visibility and citation performance, product discovery placement, competitive and attribute insight, Enterprise intelligence tooling.
+
+**Why this resolves the earlier trade-off properly.** The first draft said "discoverability first, widgets later" and accepted churn risk to ecommerce-native competitors. Free widgets removes that risk rather than absorbing it: customers get the display tooling they ask for in the sales call, *and* we stop defending a commodity we were losing on anyway.
+
+**What it costs:** real near-term revenue from widget-driven upgrades, and a harder pricing conversation in transition. That's the trade.
+
+---
 
 ## Trade-offs
 
-### Trade-off 1 — Discoverability before on-site widgets
+### Trade-off 1 — Give widgets away and move monetisation up the stack
 
-**Fact check first:** we *do* have a Product Reviews TrustBox that pulls by SKU/product ID. So this isn't "build widgets or not" — it's **where the next increment of investment goes**.
+**Superseded by Bet 3.** The earlier framing — "optimise discoverability first, promise widgets later" — accepted churn risk to Judge.me and Okendo as the price of focus. Making widgets free and updating them removes the risk instead of absorbing it.
 
-Customers who collect product reviews through us will want to display them on their own site, and our widget offering is weaker and more expensive than ecommerce-native competitors (Plus/Premium gating; Judge.me and Okendo ship better display tooling for far less).
+The real trade-off underneath is a **pricing** one:
 
-**The call: optimise for discoverability on AI surfaces first, with a committed roadmap promise on widgets.**
-
-| For discoverability first | Against |
+| For free widgets + uncapped invitations | Against |
 |---|---|
-| It's the defensible position — widgets are commodity, independent AI citation isn't | Widgets are what the customer asks for in the sales call |
-| Aligned to where consumer behaviour is actually moving | Risks churn to competitors with better display tooling |
-| Builds the SKU inventory that unlocks syndication later | Weakens the on-site conversion story, which is how mid-market brands justify spend |
+| Display is commodity; we were losing on it anyway | Gives up near-term revenue from widget-driven tier upgrades |
+| More widgets live = more of our content visible = more collection | Harder pricing conversation during transition |
+| Stops invitation caps taxing our deliverability advantage | Enterprise may resist repackaging that changes their line items |
+| Moves monetisation to the layer only we can supply | Requires AI-visibility value to be *provable* — which is why measurement matters |
 
-**Mitigation:** be explicit with customers about sequencing rather than silent about the gap. Ship a credible widget improvement inside the window even if it isn't the headline investment.
+**The bet underneath the bet:** that independent AI visibility is durable enough to carry the price. If that's wrong, we've given away revenue for nothing. It is the single biggest commercial risk in this plan and the deck should say so.
 
 ### Trade-off 2 — Incentivised reviews: the line we don't cross
 
