@@ -36,7 +36,27 @@ The right-hand column is **larger in volume, closer to purchase, and where compa
 
 **The collection advantage.** Every competitor sends review requests from the brand's own domain — thin sender reputation, spam filters, and a consumer who reads it as marketing. We send from trustpilot.com. Better deliverability, higher response, and the ask reads as *"tell the world"* rather than *"help our marketing."* In a business where volume is the asset, that's a structurally lower cost per review collected. **It is currently unmeasured, unpriced and unmentioned anywhere in our materials.**
 
-### 4. Why it isn't won yet — the collection layer is thin
+### 4. The conversion problem — human equity has to become machine equity
+
+Two decades of accumulated trust equity — 400m+ reviews, a brand every UK adult knows — was built for a world where a **person** read the page. **In an agent-mediated world, trust equity a machine can't parse doesn't convert.** It still exists; it stops doing work.
+
+This is why **59% of AI answers quote the TrustScore**. Not because the number is the most meaningful thing we produce — because it's the most **machine-readable** thing we produce. A clean, comparable scalar. It converts, so it gets used.
+
+| Human equity | Converts? |
+|---|---|
+| TrustScore, review count | ✅ Clean scalars — hence 59% and 16.6% quotation |
+| Review prose | 🟡 Lossily, and only from the few reviews actually retrieved |
+| **Attribute ratings** | ❌ Optional at collection — near-zero fill |
+| **Verification and fraud posture** | ❌ Not exposed as a readable field |
+| **Recency** | ❌ Not surfaced, despite being one of the three factors that decide citation |
+
+**The bottom three rows are the strategy.** Real equity, already earned, not converting.
+
+It's the founding insight with one word changed: Mühlmann built this because **reputation that can't travel is worthless**. In 2026, **reputation that can't be parsed is worthless.**
+
+---
+
+### 5. Why it isn't won yet — the collection layer is thin
 Our live product review form (teardown: `research/07-practitioner-view.md`):
 - Two generic attributes — **marked optional**
 - Media capture: three empty boxes, no prompt, no guidance
@@ -46,7 +66,7 @@ Our live product review form (teardown: `research/07-practitioner-view.md`):
 
 **We are marketing an AI-visibility outcome that depends on attribute-rich, media-rich, verified data — while running a form that makes all three optional.**
 
-### 5. Why now — we are a year behind on collection
+### 6. Why now — we are a year behind on collection
 Bazaarvoice shipped **Talk-to-Text** (spoken reviews, auto-transcribed) and **Visual Content Coach** in **November 2025**, explicitly positioned for AI discoverability. Yotpo ships AI Smart Prompts that guide customers on what to write.
 
 Richer collection for AI is not a novel idea — **it is a year-old competitive move and we haven't answered it.** Our advantage isn't the idea. It's that we can execute it on top of a trust layer and a collection channel they don't have.
