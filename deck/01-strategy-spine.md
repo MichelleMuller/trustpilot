@@ -42,25 +42,25 @@ The right-hand column is **larger in volume and it's where comparison happens** 
 
 **The collection advantage.** Every competitor sends review requests from the brand's own domain — thin sender reputation, spam filters, and a consumer who reads it as marketing. We send from trustpilot.com. Better deliverability, higher response, and the ask reads as *"tell the world"* rather than *"help our marketing."* In a business where volume is the asset, that's a structurally lower cost per review collected. **It is currently unmeasured, unpriced and unmentioned anywhere in our materials.**
 
-### 4. The conversion problem — human equity has to become machine equity
+### 4. What AI reaches for — and where we supply it
 
-Two decades of accumulated trust equity — 400m+ reviews, a brand every UK adult knows — was built for a world where a **person** read the page. **In an agent-mediated world, trust equity a machine can't parse doesn't convert.** It still exists; it stops doing work.
+Two decades of trust equity was built for a world where a **person** read the page. **Equity a machine can't parse doesn't convert** — it still exists, it just stops doing work.
 
-This is why **59% of AI answers quote the TrustScore**. Not because the number is the most meaningful thing we produce — because it's the most **machine-readable** thing we produce. A clean, comparable scalar. It converts, so it gets used.
+The Seer study tells us precisely what AI uses when it cites a review source. **We need all of it at both levels, and at product level we have almost none of it.**
 
-| Human equity | Converts? |
-|---|---|
-| TrustScore, review count | ✅ Clean scalars — hence 59% and 16.6% quotation |
-| Review prose | 🟡 Lossily, and only from the few reviews actually retrieved |
-| **Attribute ratings** | ❌ Optional at collection — near-zero fill |
-| **Verification and fraud posture** | ❌ Not exposed as a readable field |
-| **Recency** | ❌ Not surfaced, despite being one of the three factors that decide citation |
+| What AI uses | What the study found | Where we stand |
+|---|---|---|
+| **A score** | **59%** of Trustpilot-citing answers quote the TrustScore or star rating | Strong at company. Most products have none. |
+| **A count** | **16.6%** quote review volume; ~3 in 5 surface some numeric signal | Strong at company. Thin at product. |
+| **Thematic detail** | Five themes dominate: service **63%**, shipping **34%**, quality **33%**, legitimacy **30%**, refunds **21%** | **Derived** from text at company level, where there are thousands of reviews to derive from. At product level there aren't — so it must be **collected**. |
+| **Recency** | One of three named factors — *"if your reviews are stale and many months old, then it's much less likely to get cited"* | **Free at company**: 200k reviews a day means a page is never stale. **Not free at product**, where five reviews from 2023 can sit unflagged. |
+| **Volume past a threshold** | **1% → 54%** at ~13 reviews **→ 75%** at ~81 | Proven at company. **The product-level threshold is unmeasured by anyone** — and finding it would size the whole opportunity. |
 
-**The bottom three rows are the strategy.** Real equity, already earned, not converting.
+**One the study didn't test, which the agent era adds: verified purchase.** Trustpilot already holds it as `isVerified`, `verificationLevel` and `reviewSource`, and shows a badge to humans. It is **not exposed as a machine-readable signal**, and schema.org has no slot for it — so the MCP is where it becomes readable. In an internet filling with synthetic review text, it's the most defensible thing we could hand an agent.
 
-It's the founding insight with one word changed: Mühlmann built this because **reputation that can't travel is worthless**. In 2026, **reputation that can't be parsed is worthless.**
+**Note what the two cleanly-converting signals have in common:** both are **counts and scores**. They convert because there's nothing to interpret. Everything below them needs either volume we don't have at product level, or a mechanism we haven't built.
 
----
+> **Seer told us what AI reaches for. We supply it at company level and barely at product level — and the queries are moving to products.**
 
 ### 5. Why it isn't won yet — the collection layer is thin
 Our live product review form (teardown: `research/07-practitioner-view.md`):
