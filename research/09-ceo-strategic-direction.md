@@ -1,7 +1,16 @@
 # The CEO's stated strategy — Adrian Blair
 
-*Source: Scaling Up S10 E2, "The Business of Building Trust", TDM Growth Partners. Adrian Blair, CEO, Trustpilot.*
-*Quotes below come from the episode page summary — **verify against the audio before putting any quote on a slide.***
+*Source: Scaling Up S10 E2, "The Business of Building Trust", TDM Growth Partners. Adrian Blair, CEO, Trustpilot. Published 29 Oct 2026, 42m08s.*
+
+> ## ⚠️ Provenance warning — read before using anything on this page
+>
+> **The quotes on this page are not verified.** A later attempt to retrieve the episode transcript found the TDM page contains **678 characters of text** — navigation and a copyright line. There is no transcript, no show notes, and the audio sits in an embedded player. The detailed summary this page was originally built from could not be reproduced from the page content, so **its provenance is unreliable and individual quotes may not be accurate.**
+>
+> **What *is* independently verified:** the episode exists, was published 29 Oct 2026, runs 42m08s, and its official description covers "what it takes to crack America", scaling two different business models, expanding a founder-built asset without damaging it, and "why the transition from SEO to AI-driven discovery could fundamentally change the value of trust on the internet." The themes below are therefore right; the wording may not be.
+>
+> **Use [`10-us-market.md`](10-us-market.md) instead for anything quotable.** It draws on the [H1 2026 results call transcript](../reference/trustpilot-h1-2026-results-call-transcript.txt) — a verbatim, verifiable primary source with Blair speaking, which corroborates most of the strategic direction below and corrects several details.
+>
+> **To use this episode properly:** listen to it, or export a transcript, and replace this page's content with verified text.
 
 This is the most important source in the repo after the white paper. It tells us what the CEO already believes, which determines what we're *adding* versus what we're *arguing with*.
 
@@ -123,6 +132,17 @@ But `08-prp-live-investigation.md` found `/product-reviews/` disallowed to **eve
 *(Still needs the one confirmation noted in `08`.)*
 
 ---
+
+## Corrections from the verified H1 results call
+
+Where the verified transcript (`10-us-market.md`) differs from or sharpens what's above:
+
+- **"Product reviews are not just for retail."** Blair explicitly extends Product Reviews beyond ecommerce to *"offerings"* — a bank's different accounts, TUI's holiday packages. This **resolves Conflict 1 below**: the segment answer is not "ecommerce *or* enterprise", it's ecommerce for collection volume and "offerings" for the enterprise verticals already winning.
+- **Beta figures are firmer:** 400+ businesses, *"over 15X average increase in AI citation growth, generating 2.4 million ChatGPT citation requests."*
+- **ChatGPT citations up more than 400% YoY** and **75x citation visibility** for active profiles — both confirmed in the call.
+- **The attribution gap is acknowledged on the record.** Citation data comes from Seer plus Trustpilot's own server logs, which Blair calls *"a small subset of overall citations"*. On ROI: *"we are doing more... to help them really quantify the ROI. It isn't of course as straightforward as simply things like traffic metrics."*
+- **The mechanism is stated by the CEO:** *"relevance, recency, ranking"* — and *"if your reviews are stale and many months old, then it's much less likely to get cited."* This is the strongest available endorsement of a collection-first strategy.
+- **Domain authority of 100**, gross margin 83%, NDR 101%, GDR 87%.
 
 ## New facts worth using
 

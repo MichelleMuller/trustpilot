@@ -1,0 +1,796 @@
+                Trustpilot Half Year 2026 Results call | 15th September, 2026
+
+
+Moderator:
+Good morning everybody, and thank you for joining us today for Trustpilot's half year 2026 results call.
+The presentation will commence shortly. After the presentation, we will conduct a question and answer
+session. If you wish to ask a question, you will be able to submit these via the ask a question button on
+the SparkLife page. I would now like to hand the call over to Adrian Blair, chief executive officer to open
+the presentation. Please go ahead.
+
+Adrian Blair:
+Good morning everyone. Thank you for joining us on the webcast today for Trustpilot's first half 2026
+results. Hanno and I look forward to walking you through what was next in first half with strong growth
+and strategic progress. Before we get into the numbers, I want to put on record my sincere thanks to
+our outgoing CFO, Hanno Damm, for his extraordinary contribution to Trustpilot over the last 11 years.
+Hanno has been instrumental in taking a startup into the era of profitable growth we're now in. I'm sure
+I speak for everyone on this call in wishing Hanno well for the future. Following on from that, I'm
+delighted to introduce our new CFO, Marcus Roy, who joined us yesterday following an extremely
+successful five years as CFO of The Economist Group. Welcome Marcus.
+
+Marcus Roy:
+Thanks Adrian and good morning everyone. I'm delighted to be joining Trustpilot as CFO. I look forward
+to meeting many of you in the coming days. I'm honored to play a part in the business's future success
+and we'll now pass back to Adrian and Hanno to take you through today's results.
+
+Adrian Blair:
+Thanks Marcus and welcome on board. And given Marcus' short tenure, Hanno of course will be
+supporting me on today's call. As usual, I run through operational highlights before handing over to
+Hanno for the financials. I'll then finish up with a deeper look at strategic progress. Three headlines for
+today's results. First, the business is delivering financially. We grew bookings 18% in constant currency,
+with particularly outstanding performance in North America up 27%. This drove adjusted EBITDA to
+increase by 46% to $26.3 million, and a margin of 17.4%. Second, we're winning in enterprise. Annual
+recurring revenue from customers paying over $20,000 a year grew 35%, with a host of new product
+features increasing our appeal to large businesses across sectors. Third, AI is deepening our influence.
+Trustpilot is the number one cited review platform globally according to research by Seer Interactive.
+We saw a more than 400% year-on-year increase in ChatGPT citations.
+Let's take a deeper look now at operational performance. As you know, a strong growth flywheel
+underpins our business. In essence, Trustpilot products collect customer feedback and turn it into
+impact on the actions of people and businesses. Because the feedback has impact, people are motivated
+to write it and businesses want to engage with Trustpilot. Increasingly, that impact extends to AI as well
+
+
+
+                                                                                              Page 1 of 17
+as people. In H1, our users submitted 20% more reviews year on year and our data set expanded to 394
+million active reviews. Just after the period closed in July, we celebrated crossing the major milestone of
+400 million reviews on the platform. Impressions of our brand on other websites grew 15% year on year,
+and Trustpilot reviews received 29 billion Google impressions in the first half. This flywheel of more
+consumers writing and reading reviews, more businesses deeply engaging with the platform, continues
+to reinforce itself around the world and underpins all the growth you'll hear about today.
+So bookings grew 18% on a constant currency basis with healthy growth across focus markets, including
+an outstanding performance in North America. Key verticals driving growth in the period included
+lending, insurance, health and wellbeing, and utilities. Gross retention remained at the record 87% level
+we delivered in 2025. On the new sales side, enterprise momentum is excellent. We're increasingly
+seeing large multinational brands prioritize AI search optimization. We recently won Expedia as a
+customer, and spending time with businesses like that has made clear to me that they understand LLMs
+need relevant, authoritative, and recent review data to recommend their offerings. Customer logos
+paying more than $20,000 per year grew 29% year on year, and we also saw significant growth in
+customers signing contracts over $100,000 in the half. As this enterprise base expands, it becomes much
+more relevant to view our growth through a global lens. With large multinational customers, we're
+seeing a natural shift in how some of these accounts manage their billing relationships, a dynamic I'll
+come back to on the next slide.
+Because of the inherent operating leverage in our model, this top line growth translated into a 46%
+increase in adjusted EBITDA to $26.3 million, delivering a margin of 17.4% up 2.8 percentage points year
+on year. Later, Hanno will take you through where we're seeing the operating leverage come through in
+more detail. But let me now touch on each region individually. Starting with the UK, where we delivered
+bookings of $64 million up 11% on a constant currency basis. The net retention rate here remains above
+the group average and with a 60% contribution margin, the UK continues to demonstrate the highly cash
+generative profile the wider group can grow into its scale. Sales growth was particularly strong among
+customers paying more than $20,000 per year, up 27% year on year. Notable customer wins included
+Halfords, Space NK, and EE. Growth was particularly strong in the telecoms, automotive, and electronics
+verticals, which all grew well in excess of 20%.
+Our business in the UK is incredibly diversified across the economy, with revenue above $1 million in 41
+separate industry verticals and the top 10 accounting for just 39% of total ARR. With overall market
+penetration still low at around 5%, the runway for growth remains significant in both the number of
+customers and the revenue per customer. A growing number of our largest enterprise customers are
+moving their billing relationships overseas as they expand internationally. Expedia is a good example, a
+global deal won by our UK team, but billed out of the US, and therefore captured in our North America
+bookings figure. Overall, this had a 1 to 2 percentage point impact on reported UK growth. It's a
+reminder that particularly on the enterprise side, customer billing location is not a perfect proxy for
+underlying market penetration, given how these multinational accounts actually operate.
+Turning now to Europe and the rest of the world, we delivered strong bookings growth of 19% at
+constant currency to $68 million, with growth across the region in both number of customers and
+average contract value. DACH, that is Germany, Austria, and Switzerland, delivered a particularly strong
+performance up 30% in constant currency year on year. As a result of the sustained momentum, our
+DACH ARR has now surpassed $20 million and Germany's our third biggest country after the UK and the
+US. We recorded our best ever H1 sales from customers paying more than $20,000 per year, and the
+share of bookings from that cohort in DACH was up five percentage points to 59%. We continue to win
+enterprise accounts across the region, including Bending Spoons and Isybank in Italy.
+
+
+
+
+                                                                                             Page 2 of 17
+Moving to North America, which comprises the US and Canada, we delivered outstanding bookings
+growth of 27% on a constant currency basis. As I touched on earlier, this top line figure is also supported
+by the expansion of our multinational base with billing relationships in North America. We saw excellent
+new business momentum and new business sales up 76% year-on-year. Both sides of the flywheel
+strengthened in the half with organic reviews up 50% year-on-year and the number of paying customers
+11% higher year on year. We welcome notable enterprise clients in the half, including Bed Bath &
+Beyond, Intact Insurance, and Sunrun. I'll now hand you over to Hanno to take you through the
+financials in more detail.
+
+Hanno Damm:
+Thank you, Adrian, and good morning everyone. We delivered another strong half for bookings, EBITDA
+growth, margin, and continued cash generation. Let's go through the numbers in more detail. Bookings
+grew 18% in constant currency to $171 million in H1, continuing a clear and consistent track record of
+top line growth. Our LTM net dollar retention rate was 101%. As you can see on the right, we continue
+to scale profitably. Adjusted EBITDA grew 46% to a record $26.3 million, a record margin of 17.4%,
+which is up 2.8 percentage points year-on-year at the top end of our guidance, and we delivered $16
+million of adjusted free cash flow in the period. Our LTM gross dollar retention rate remains strong at
+87% through H1. Since 2023, we have placed significant focus on improving gross retention and
+delivered a three percentage point improvement over the past three years. Within that, it's worth
+highlighting the UK's particularly strong gross retention rate of 88%. Net expansion of 14% brought net
+dollar retention to 101% from 103% in the LTM ending H1 '25 as we completed the annualization of
+previously flagged package migrations. Retention rates of 100% plus reflect the strength of our growth
+flywheel, product innovation, and our enterprise strategy. This chart shows the compounding power of
+our subscription model with each new cohort of bookings stacking on top of a highly retentive
+expanding existing base. The mix-shift towards our highest margin enterprise segment continues to
+accelerate. Customers paying us over $20,000 a year now represent 47% of total bookings, up from 27%
+back in H1 2023.
+The underlying unit economics of these accounts also remain excellent, with gross dollar and net dollar
+retention for the segment well ahead of the group. Momentum in the US has been particularly notable
+here. The proportion of ARR coming from customers paying over $20,000 a year in the US is now
+approaching similar levels to the UK, which stands at 49% of ARR, albeit the US is coming from a much
+lower base. That's a real marker of how quickly North America is scaling and how our value proposition
+there is strengthening.
+Let's look at the income statement from a management view down to adjusted EBITDA, excluding stock-
+based compensation, G&A ,and non-recurring items. As always, an IFRS statement and reconciliations
+are in the appendix. We delivered revenue of $151. 4 million and a gross margin of 83%, up 0.8
+percentage points year-on-year, reflecting infrastructure and hosting optimizations as volume scales
+partially offset by continued investment in our customer success teams following the sales
+reorganization. Sales and marketing was $41 million, or 27% of revenue in line with H1 '25. We continue
+to make investments into new customer acquisition and are improving efficiency every year. Technology
+and content improved to 23% of revenue, down half a percentage point, as revenue growth outpaced
+our continued investment in technology capabilities, including our nearshore engineering partnership
+and new AI adoption capabilities. We rolled out Claude across our tech product and finance team
+towards the end of the period, and we see this as a foundational investment with potential to expand to
+additional teams in H2, which we expect to build efficiency gains over time.
+G&A was 14% of revenue, down 1. 2 percentage points, reflecting good underlying cost discipline. Whilst
+this slide presents the income statement as management views it, it's worth spending a few minutes
+
+
+
+                                                                                             Page 3 of 17
+explaining the non-recurring items on the face of the income statement. We excluded the previously
+announced Italian regulatory fine, which we are robustly appealing. We also excluded a provision
+relating to a historical US sales tax exposure. We identified this following revised external advice on
+state indirect tax nexus rules where sales tax hadn't been applied to certain customer invoices. This has
+resulted in a $2.6 million restatement of prior period and $0.8 million in the current period. The
+adjustment has no impact on current period trading performance, adjusted EBITDA, or our FY26
+guidance. We delivered record adjusted EBITDA of $26.3 million, up 46%, and a margin of 17.4%, up 2.8
+percentage points year-on-year, which keeps us firmly on the path to our 25% adjusted EBITDA margin
+target in 2028 and 30% in 2030.
+The clearest measure of underlying performance is cash generation. We delivered $16 million of
+adjusted free cash flow up 5% year-on-year. Our cash flow is very seasonal, with H1 burdened by the
+company bonus payment, and H2 typically much stronger, so it makes sense to look at it for the entire
+fiscal year. Last year, we also benefited from a rent-free period in the London office and higher interest
+income on our cash balances, while this year we paid more cash taxes as the business becomes more
+profitable. Adjusted diluted free cash flow per share was up 13% to 3.9 cents. As we said before, for the
+full year, we expect our free cash flow margin to be slightly below our adjusted EBITDA margin. We
+closed the period with $21.9 million in cash after returning $25.8 million to shareholders through
+buybacks in H1, plus a further $16.5 million purchased by our employee benefit trust.
+Moving down the P&L, the non-cash IFRS stock-based compensation charge was $9.8 million, up from
+$6.3 million a year ago. This consists of an $8.2 million non-cash charge reflecting the annualization of
+high performance RSUs, our new share safe scheme, new senior leadership LTIP awards and accelerated
+executive severance agreements. Additionally, the charge includes an associated social security charge
+of $1.5 million. Despite this higher charge, total diluted share count continued to fall, down 5% year-on-
+year to 424 million, as grants were more than offset by forfeitures, employee benefit trust utilization,
+and our ongoing buyback program. We anticipate a similar SBC charge in H2, given new execs joining the
+team.
+This brings me to the capital allocation framework, which remains consistent and unchanged. First, we
+invest in organic growth. $13 million were invested in the business in H1, deliberately deploying capital
+into go-to-market, product innovation and trust and content integrity. Second, we retain flexibility for
+strategic M&A that can accelerate our roadmap. Finally, we return excess capital to shareholders, having
+executed $25.8 million of buybacks during the first half. We're halfway through executing the 30 million
+pound program we announced in March, which consists of 7.5 million pounds EBT purchases and 22.5
+million pounds of outright buybacks. As of September 11th, we've completed 50 million pounds. We will
+complete this program prior to announcing another share buyback. As noted in the statement, we also
+recently identified a technical point relating to demonstrated distributable reserves impacting certain
+share purchases on the prior buyback programs, which we will remediate in Q4. More details can be
+found in the statement in note 10. Since we started our buyback program in 2024, we have returned
+$141 million to shareholders and repurchased 11% of the shares outstanding at the program's start.
+Turning to the outlook, following a strong first half, we maintain our guidance for high teens constant
+currency revenue growth for the full year alongside a two to three percentage point increase in adjusted
+EBITDA margin. We remain confident in delivering sustainable growth and operating leverage over the
+long term, given the significant market opportunity ahead of us.
+Finally, as this is my last results presentation, I want to take this opportunity to reflect on my tenure at
+Trustpilot. It's been about 11 years since Peter, the founder, and I met for the first time in New York to
+talk about Trustpilot and its massive potential. During this time, Trustpilot has grown elevenfold from
+
+
+
+
+                                                                                                Page 4 of 17
+$30 million ARR at the end of 2015 to circa $330 million today. We have taken it from loss-making to
+approaching 20% EBITDA margin and created an amazing business.
+The opportunity ahead remains vast, and with the AI tailwind, we're just getting started. I feel privileged
+to have helped lead such a fantastic organization and remain incredibly bullish on Trustpilot's future.
+With that, I'll hand back to Adrian.
+
+Adrian Blair:
+Thanks. Thanks, Hanno. So, in 2026, as we said in March, we have three clear priorities, scaling trust,
+accelerating with AI, and growing enterprise, all in service of one goal: to build trust in the age of AI. Let
+me take each of these in turn, starting with trust.
+We think about this in three parts. First, review integrity. Our focus remains on an AI-led moderation
+approach complemented by human expertise. We're continuously strengthening top-of-funnel
+detection to ensure the content on Trustpilot remains authentic and reliable. We removed 3.9 million
+fake reviews in the first half, a 28% increase year-on-year, with the vast majority of those removed
+entirely automatically. Second, business misuse. We're continuing to take steps to remove ineligible
+businesses and warn consumers about bad actors. By bringing together fraud, technology, and
+engineering teams to build a dedicated rules engine spam domain model, we're seeing exceptional
+results. Our automated systems remove domains and detect policy breaches at scale, and we've
+reduced threat response times down to a matter of hours.
+As a result, we've seen 83% year-on-year increase in business profile warnings, reflecting the growing
+strength of our detection and enforcement approach. These warnings do more than command
+consumer attention, as they actively signal to large language models that a brand may be
+untrustworthy.
+The third strand of our approach to trust is regulatory and policy engagement. We continue to see the
+regulatory landscape around reviews evolving as bodies like the CMA and FTC move into enforcement of
+rules they introduced in recent years. We welcome this and are well-equipped to navigate this changing
+environment.
+For a deeper dive into the entire trust and safeguarding ecosystem, I encourage you to take a look back
+at the replay of the May 2026 Trust Capital Markets event that's available now on our investor site.
+Moving to the second priority of accelerating with AI. Large language models prioritize the relevance,
+ranking, and recency of reviews. A recent research study from Seer Interactive showed that Trustpilot is
+the number one cited review platform globally. Research from Forrester in July highlighted that
+Trustpilot often outranks owned and paid media, heavily influencing large language models' opinions of
+brands and how they show up in results.
+As you can see on the slide, we recently reached a Semrush Domain Authority score of 100, the
+maximum possible, up from 95 last year, and a score that belongs exclusively to the world's most
+authoritative sites. This is calculated on a logarithmic scale, making a five-point jump at the top end
+extremely substantial.
+Where a business has no Trustpilot profile at all, AI is increasingly highlighting the absence of
+independent validation as a real trust gap. By contrast, having an active profile drives up to 75 times
+greater citation visibility than having none at all, making Trustpilot essential for any business looking to
+enhance their AI visibility.
+Turning to our third priority of accelerating with enterprise, we're driving an unprecedented level of
+product innovation velocity with two major B2B release windows planned for 2026, alongside
+continuous feature improvements in between.
+
+
+
+                                                                                                Page 5 of 17
+In April, we released AI search analytics, an in-app review collector, invitation optimizer, and custom
+dashboards. We also launched a new lower cost digital-only starter pricing plan. While still early, this is
+already showing good momentum.
+We have a second major release window this month focused on helping our customers get AI
+recommended. I want to highlight two specific updates here that are particularly important for
+enterprise customers.
+First, multi-domain user management. Previously, user management was focused on individual domains.
+But to help large enterprises operating across large domain portfolios, we're now launching a
+centralized space to operationalize feedback. This allows tracking of sentiment and performance side-
+by-side across every brand in one view.
+Second, review collection via QR codes. This allows businesses to capture feedback in the moment,
+creating a faster feedback loop and building review volume. By tagging these codes with specific
+location IDs, customers will be able to track performance across physical touchpoints.
+In between, we're continuing to ship updates, including our refreshed product review pages, which I'll
+cover next, and our expanded Shopify partnership. Back in June, we announced Trustpilot is now a
+Shopify key product partner, and through our upgraded Shopify 2.0 app, merchants can seamlessly
+embed Trustpilot directly within their native ecosystem.
+We've had a basic product review offering for a long time and have just released a couple of major
+upgrades. First, a universal product catalog pools all product variants, such as size or color, into a single
+aggregated score, and product review pages give each product its own Trustpilot profile page. These
+product review pages are currently available across all English-speaking markets, and we're rolling them
+out in all other languages from the 1st of October.
+It's important to note that product reviews are not just for retail. Most businesses divide what they do
+up into different offerings. For example, a bank with different accounts, or TUI, who are using product
+reviews for specific holiday offerings.
+We tested these across a wider cohort of over 400 businesses during a beta trial and saw an over 15X
+average increase in AI citation growth, generating 2.4 million ChatGPT citation requests.
+Product reviews are an opportunity for many different customer types to become more visible in AI
+search, particularly in comparison inquiries. They're available as an add-on module for those already on
+paid plans. Our focus on large enterprise customers continues to deliver financially. Customers paying
+over $20,000 a year have grown at a compound 34% annual rate since H1 2023. ARR from this segment
+is up 174% over the same period.
+Ultimately, the tangible financial impact of the product innovation we've just been discussing is showing
+up directly in these numbers, given the immense value customers get from the product. We're also
+seeing strong regional outperformance, particularly in the US, where $20,000-plus customer growth is
+up 43% year-on-year. As product value and AI visibility grow, our ability to attract and expand these
+large, high-value enterprise accounts accelerates alongside it.
+To ensure we continue accelerating this enterprise momentum and scale efficiently, we recently
+reorganized our sales operations. On the customer acquisition side, we introduced a new outsourced
+business development model. By shifting top-of-funnel lead generation to external specialists, internal
+sales teams can now focus on converting qualified pipeline and closing new relationships.
+On the customer value side, we've split our existing roles to better serve the growing customer base. We
+introduced a dedicated customer success role focused entirely on onboarding and product adoption.
+
+
+
+
+                                                                                               Page 6 of 17
+Alongside them, we now have dedicated account managers with a deep commercial focus on cross-
+selling, upgrading, and driving net revenue retention growth.
+It's early days, and changes of this sort always take time to bed in, but we believe this model sets us up
+best to scale into the opportunity ahead.
+Now to bring all this to life, the enterprise momentum, the product value, and the importance of
+independent trust signals, I want to highlight a fantastic recent example from Navy Federal Credit Union
+near Washington, D.C. What stands out most to me is how their chief marketing officer, Pam Piligian,
+describes our partnership. She notes that when it comes to brand metrics, trust is at the absolute top of
+the pyramid, but a brand can no longer just tell people, "Trust me", they have to provide independent
+proof. That's exactly what Trustpilot delivers. We've a short video now to play here.
+
+Video: Pam Piligian:
+We are a credit union. We're 92 years young, founded to serve active duty veterans and their families.
+We offer a full suite of retail banking products. We talk about brand metrics. Trust is at the top of the
+pyramid. Trust is the metric that matters the most. And we talk a lot about it has to be earned, not
+given.
+I can't say, "Trust me." We have to earn it. So putting our own data on the website that says, "We say
+95% of our members are happy," we felt like wouldn't have a lot of credibility. So we wanted to make
+sure that we went to a third party outside, which is how we got to Trustpilot, to say, "Help us. We want
+the data that we get from our members to be visible to people."
+Without those metrics that really showed we had done what we promised to from a third party,
+Trustpilot, it was hard for somebody to believe.
+
+Video: Adrian Blair:
+Large language models are becoming a really important way that people decide who they can trust. How
+have you seen the feedback that you're getting on Trustpilot play into those large language models and
+help you there?
+
+Video: Pam Piligian:
+Well, it shows up because it's a third-party endorsement. It's not just us saying what the service was like,
+but it is exactly our members saying what it was like. So it will show up in those different models.
+What we have found is a lot of our content still matters, third-party content matters, influencers matter,
+as well as these third-party endorsements, which, for us, the Trustpilot is a very high source of
+credibility.
+
+Video: Adrian Blair:
+If you had to summarize the impact of Trustpilot on Navy Federal in just one sentence, what would it
+be?
+
+Video: Pam Piligian:
+It would be earned trust. It's proof that we did what we said we would.
+
+Adrian Blair:
+
+
+
+
+                                                                                              Page 7 of 17
+So to wrap up before we open the line for your questions, financially, we achieved 18% constant
+currency bookings growth while increasing adjusted EBITDA by 46% and margin by 2.8 percentage
+points.
+Strategically, we firmly established Trustpilot as the leading AI trust signal. We're the number one cited
+review platform globally, backed by a perfect domain authority score of 100. We're moving faster than
+ever to capitalize on this accelerating product innovation.
+The enterprise focus is proving highly effective, with ARR from customers paying more than 20K, up 35%
+year-on-year. We're excited about the trajectory we're on, the value we're delivering to businesses and
+consumers, and the huge market opportunity ahead as AI continues to grow. We remain well-positioned
+for the second half of the year.
+With that, thank you all. We're now ready to take your questions.
+
+Moderator:
+We will now begin the question and answer session. If you wish to ask a question, please use the Ask a
+Question button on the SparkLive page. We will pause for a moment to allow the queue to assemble.
+Our first question comes from Olivia Venciago at Barclays. "Can you walk us through why no upgrade ...
+" Apologies, team. "Can you walk us through why no upgrade in the full year guidance and how we
+should think about shape in H2? Can you walk us through dynamics region in EBITDA margin? Think UK
+is accretive, but is US still dilutive? When should this change?"
+
+Hanno Damm:
+Well, I think we've been given pretty clear guidance of 2-3 percentage point margin improvement for
+the full year, and we're well on track on this. In the half year, we had 2.8 percentage point improvement
+on the margin and we're well on plan to deliver this, as well as reaffirming the guidance for the full year
+and the longer term outlook, of course, of 25% EBITDA margin in 2028 and 30 by '30.
+As you think about seasonality between H1 and H2, obviously we talked about the sales reorganization
+happening in H1. The H1 margin tends to be lower than the H2. We typically have sort of a steady
+margin progression in the business. If you followed it for a while, you'll sort of see that trend basically
+repeating every year. And so, I don't think the progression should be a surprise to anyone.
+I mean we talked about regional profitability and contribution margin, highlighting the strength in the
+UK in particular, but we also talked about the US being very profitable on a contribution margin basis. If
+you reallocate your product and tech and G&A expenses, I think you'll also find that then the implied
+EBITDA margin for each of these regions is a breakeven or positive.
+
+Moderator:
+Thank you. Our next question comes from Hai Huynh. There's a couple of questions here. "So, number
+one, adjusted free cash flow fell from 85% to 61%. What level do you regard as normalized once billing
+benefits exceptional bonus, UK tax credits, and lease payments settle?
+
+Hanno Damm:
+Yeah, like I said in the prepared remarks, I think it makes sense to look at cash flow on a trailing 12
+months or a 12-month basis, really, or rolling 12-month basis, and it's always around a point lower than
+the adjusted EBITDA margin.
+
+
+
+
+                                                                                               Page 8 of 17
+Last year, obviously, we had some H1 benefits with the free rent. The interest income, as we've utilized
+balance sheet cash to buy back shares and brought it down to more appropriate levels for the scale of
+business, has come down, and that has impacted the free cash flow. As the business continues to grow,
+that will be a less and less relevant factor in overall cash generation, of course.
+The working capital benefits of the prepayments are now at a normalized level, which will sort of offset
+CapEx.
+And so, for your modeling, I think using adjusted EBITDA margin and then taking a point off of that as a
+proxy for free cash flow for the full year is a good starting point, and then taking into account the
+seasonality. So obviously the implied H2 margin will be materially higher than the H1 margin given those
+seasonalities.
+
+Moderator:
+The second question, "What was the parent company's distributable reserve balance in the newly filed
+interim accounts? How much headroom will remain after completing the current 22.5 million-pound
+buyback?
+
+Hanno Damm:
+So I don't have the headroom off the top of my head. I think we're in the process of doing another
+interim dividend from A/S, our Danish operating entity, to the PLC in September, and then we'll
+continue to file updated PLC financials. Those will then cover the remainder of the existing buyback and
+provide additional headroom.
+Then as we progress through the year and the time, we'll continue to do interim dividends
+... To generate distributor reserves up at PLC and then utilize those for buybacks.
+
+Moderator:
+Third question, "Trustpilot spent $42.5 million on conventional buybacks and EBT purchases against 16
+million of adjusted free cash flow. What minimum cash and liquidity buffer will the board maintain, and
+what level of EBT purchases should we model going forward?"
+
+Hanno Damm:
+So we don't look at EBT purchases and buybacks as materially different. I think we look at it combined.
+That's why I referenced the 30 million program at the beginning of the year and the split between those
+two, we're certainly agnostic to that. The EBT obviously provides a great way to offset dilution from
+satisfying share grants that have been issued in the past and that are vesting and to mop up excess
+liquidity upon vesting when employee vesting happens and there's shares sold to cover the taxes. So I
+wouldn't break those out separately.
+In the beginning of the buyback program in 2024, we had a ton of cash on the balance sheet as a result
+of the IPO and the business became profitable and cash flow positive. So we generated more and more
+cash, and we've used excess cash from free cash flow, but also from the balance sheet to bring down
+those balances. Obviously I'm not going to get pinned down on a number of what's the right amount of
+cash. We're managing this.
+The business, as you pointed out earlier, has seasonality in cash flow. So in H1, we probably need a
+higher cash balance. In H2, we're continuing to generate more and more cash flow. So I think we're
+actively considering this as the business progresses, and grows, and continues to become more and
+more profitable and cash generative.
+
+
+
+                                                                                            Page 9 of 17
+Moderator:
+Thank you. Our next question is from Joe George at JP Morgan. "Could you please talk about the
+disconnect between the very strong adjusted EBITDA growth plus 46% year-on-year and the slower FCF
+growth, 5% year-on-year? How confident are you for the free cash flow conversion through full year '26
+as a whole?"
+
+Hanno Damm:
+Thank you. I'm not sure what's more to say beyond the question I just answered and the prepared
+remarks, but I can continue to emphasize that obviously we have good forecast ability of our free cash
+flow. In the back half of the year we are accruing expenses, for example, for the company bonus, which
+is a burden on EBITDA, but it's not a cash outflow.
+In the first half of the year, all that cash flows out of the business. We also have obviously visibility
+around the timing of tax payments, et cetera, and we have good forecast ability on our lease payments.
+So I'm very confident with the guidance I gave you for the full year free cash flow of about point below
+adjusted EBITDA and then the implied meaningful uptick in free cash flow in the second half.
+
+Moderator:
+Thank you. Our next question is from Gareth Davies at DB. "Sometimes when a shifting sales model, you
+get a little short term disruption. Has there been any detrimental impact in the more established
+businesses as a result of the sales team shift?"
+
+Adrian Blair:
+So look, I think our teams have done an exceptional job of performing strongly through the period. You
+can see that in our results, 18% constant currency bookings growth. That means I joined the business
+almost exactly three years ago. I remember sitting here reporting a couple of days after joining first half
+of 2023, we'd grown by 16% constant currency bookings. So we're actually growing faster now than we
+did back then.
+Now of course with the sales reorganization, every moment of time and energy that's spent on that is
+time that isn't spent talking to customers. So there's always some opportunity cost. As I say, these things
+are always something that an organization has to go through and get out the other side of. So we've
+been doing that, but I'm just impressed that the team has performed strongly through it. As I say, these
+changes are all about setting ourselves up for scale on the new business side because we've got a vast
+opportunity to go into, and we need a mixed model to go after that.
+So I think about the combination of digital acquisition, which we've expanded with the launch of our
+startup plan that's going very well. I think about Agentic AI, I think about outsourcing and of course, in-
+house capability that we still have. So we've got this mixed approach to go after an opportunity that is
+absolutely vast.
+Then on the customer success side, we've got an increasingly diverse and complex portfolio of products,
+as discussed on this call, a lot of new product coming up. So we really need that segmentation of roles
+between CS that is all about helping the customer use the product and account management that is
+more about the commercial side and the renewals. So I think we've done a good job of executing that in
+the period, delivering strong results at the same time, and setting ourselves up for the future, most
+importantly.
+
+Moderator:
+
+
+
+                                                                                             Page 10 of 17
+We have a follow-up from Joe George at JP Morgan. "What gives you the confidence that requisite
+controls are in place to ensure no further provisions will be required in relation to historical US sale
+taxes?"
+
+Hanno Damm:
+Yeah, thanks, George. Joe. Sorry. So we've done a lot of work obviously in the half leading up to the
+provision that we made. We retained external advice from a big four firm. We looked at this together
+with our auditors and gone through this on a state-by-state basis and looked at the historical invoicing
+that we had done and where we should have applied taxes. So we feel that we have a robust provision
+now on the balance sheet that will cover the potential past liabilities.
+
+Moderator:
+Thank you. Our next question comes from Jessica Pok at Peel Hunt. "Is there an incremental cost to
+having outsource business development capability? Can you give me color on the shape of the $100,000
+contracts and what they normally consist of, e.g. Multiple international domains, deeply complex
+integrations? How are the new clients using your platforms at this level?"
+
+Adrian Blair:
+Yeah, happy to talk to both of those, Jessica. So in terms of outsourcing, the model is more efficient in
+the sense that you can do more activity at lower cost. As I said in my earlier answer, the whole rationale
+of this is to have a model that is suited to the scale of the opportunity. When we look at the size of our
+addressable market across the geographies, we're still very, very low penetration rates, particularly in
+the US, but also in the UK and our other focus markets.
+So we've got a very, very long way to go. We've got multiple, multiple industries with businesses that
+have a need for Trustpilot, and we need a cost-effective way to go out and capture that. As I say, that's
+not all about outsourcing, it's also about digital acquisition. We're increasingly looking to AI and how we
+can use AI to go after it more efficiently along with substantial in-house teams as well. It's all about cost
+effectively addressing that scale of opportunity. Then secondly, you ask about customers paying more
+than $100,000 a year. So what gets businesses to those sorts of price points are a combination of a few
+things.
+First of all, the sheer scale and size of the customer, meaning that our product is going to have very
+significant impact on them. Then we've got the grade of the product they're buying. So typically
+businesses at that scale would be on our enterprise plan, which contains all of the key features and is
+the most expensive.
+Then you've got territories, countries, and then you've got domains or brands that the business wants to
+use us across. Typically, once a customer gets to that level, they're using us across the full value
+proposition. So we talk about when we speak to businesses, we talk about build trust, grow, and
+improve.
+So you collect feedback, you respond to it to build trust with customers, you showcase your feedback in
+the Trustpilot brand to help your business grow, and then you look at our analytics products to help you
+improve. Typically, a customer at that level will be using us across all of those things, making us very
+important both on the marketing side and on the customer experience side for the customer.
+
+Moderator:
+
+
+
+
+                                                                                              Page 11 of 17
+Thank you. We have a couple of questions in from Sean Keeley, so I'm going to break these up. Number
+one, "Clearly you can provide visibility of citation uplifts for brands with an active Trustpilot profile.
+Where do you get that data from? Does it come in directly from Google or OpenAI, for example?"
+
+Adrian Blair:
+Yeah, so the answer to that is we do two things. First, we look at external sources like Seer Interactive,
+which I talked about a couple of times in the prepared remarks. Secondly, and this is where the 75%
+figure comes from, we look at our own server logs, which tell us every time we get a request from one of
+the large language models. Now those internal server logs aren't a perfect representation of citations
+because the models are training on our data.
+They're not just doing real-time inference. What that means is they're very often citing Trustpilot
+without it actually hitting our server logs. So the data we see in our server logs is a small subset of
+overall citations, but we combine those two things, the external sources and our internal server logs to
+give us a good impression of what's going on.
+The consistent theme across all of that is that relevance recency ranking are the key things. So in other
+words, having a large enough volume of reviews such that the LLM can surface an answer using reviews
+that is exactly relevant to the user's query, then having reviews that are recent. So if your reviews are
+stale and many months old, then it's much less likely to get cited by a large language model.
+Thirdly, ranking, which is the authority of the source effectively, which is where Trustpilot itself with that
+domain authority of a hundred we are talking about, the authority of us as a source becomes important.
+So all of that means that basically the more feedback and the more frequent feedback companies are
+getting, the more likely they are to be showing up in large language model search.
+
+Moderator:
+Follow up from Sean. "Is there more that you can do to support brands looking to assess their return on
+investment on their spend? For example, click throughs from AI overviews, subsequent purchase
+behavior, or even trying AI search patterns into spend on the other paid media sources?"
+
+Adrian Blair:
+Yeah, so we are doing more with customers in this area. You'll have seen an ROI study that we did a
+while back with Forrester that showed a 401% ROI on average on customer's investment in Trustpilot,
+but we are doing more particularly with larger customers to help them really quantify the ROI.
+It isn't of course as straightforward as simply things like traffic metrics because so much of the value is
+from citations or from the growth that they're driving through featuring Trustpilot in their own media,
+so getting a higher ROI on media budgets. So it's not as simple as just looking at, for example, how much
+traffic they're getting through Trustpilot. When you add up all these sources, it's really substantial value
+creation, and we think that's only increasing as AI takes off.
+
+Moderator:
+Thank you. The final question, "Can you run us through in some detail what has happened with
+distributable reserves and what the likely impacts are, and if you expect to be able to plan or launch a
+further buyback in the future?"
+
+Hanno Damm:
+
+
+
+
+                                                                                              Page 12 of 17
+Yeah, so the impact on the financial performance is nil. It's a technical issue that we need to cure, but it
+doesn't change any of the numbers or any of the cash balances or whatever. Also, I think what's really
+important to note and state for the record is that the total amount of buybacks do not exceed the total
+amount of distributable reserves that were available in the period.
+I think what happened is largely an issue around when and what we demonstrated in the PLC filings in
+terms of available distributable reserves, and then having done subsequent interim dividends that were
+not reflected in the filings while the buybacks were ongoing and utilizing those reserves, which
+happened to other companies as well. As you'll see in the note 10, in the context of the first buyback,
+we actually executed the buyback prior to having the reserves, which were then subsequently generated
+through the share capital reduction in May of 2024.
+All that was due to a technical accounting mistake where we had erroneously included share-based
+compensation reserves in the amount of retained earnings that we deemed distributable, which upon
+further review we identified as wrong. They shouldn't have been included. So we thought at the time
+that we had demonstrated sufficient reserves when in fact we hadn't, and we should have filed interim
+updates on those PLC financials to also demonstrate them.
+So obviously we will now remediate this. There's a well trodden path on remediation in the UK. Once it's
+all remediated, we'll continue to... Obviously the business is generating profit and retained earnings. We
+can then demonstrate such with PLC interim financials and full year financials that we continue to file
+and that will then allow us to continue to do buybacks.
+
+Adrian Blair:
+Well, I guess the key point there is this has no impact on our trading and on our actual cash or anything
+to do with future performance.
+
+Moderator:
+A couple of questions from David Nolan now from Morgan & Stanley. Number one, " North America new
+business sales were up 76% year-on-year. Is that level of acceleration broad-based and sustainable, or
+did H1 benefit from unusually strong large deal timing?"
+
+Adrian Blair:
+So we were thrilled by the pace of growth. I think a few things to unpick. So first of all, the market
+opportunity for us is vast and the growth flywheel, as we call it, is clearly accelerating. So when we look
+at all of our flywheel metrics, whether it's review volume or trust box impressions, they're absolutely
+flying in the US. So we can really see the proposition catching on there.
+We saw very significant growth in the enterprise segment. There was a tailwind from some of those
+billing relationships that we mentioned shifting from the UK to the US, but overall we expect to continue
+... need to perform very strongly in the US, which is a huge opportunity for us.
+
+Moderator:
+And the second question from David Noland, group NDR is 101% while larger customers historically have
+stronger retention and expansion. As enterprise mix increases, should we expect group NDR to trend
+back up from here in financial year 2027?
+
+Adrian Blair:
+
+
+
+
+                                                                                              Page 13 of 17
+Yeah, so there's a lot going on under the hood with NDR. As you correctly point out, the enterprise
+segment has the most attractive NDR, and that's part of the reason why it's strategically our priority and
+our fastest growing segment. We also, as we mentioned, launched in the period digital acquisition of our
+starter plan. So that's having a very beneficial increase at the low end on logo growth, but those low end
+logos obviously have lower net revenue retention rates.
+The way I look at it is we always target NRR of 100% plus. And what's great about the business today
+versus a few years ago is it's off a base of gross retention that is far healthier. So we're at 87% GRR,
+where a few years ago that number was 84%, and that is a much healthier basis on which to deliver
+long-term sustainable NRR.
+What gives me confidence in it is the level of product innovation in the business. We talk, for example,
+about product reviews, which is an add-on module that customers need to buy with huge value
+associated with it. So that's the sort of thing we're going to continue to do to bridge the 87% GRR with
+the 100% plus NRR that we aim to deliver going forward.
+
+Moderator:
+Thank you. We're going to go back to Gareth Davies at DB. Accepting that the UK is selling globally and
+would be healthy teens including that benefit, the 11% felt a little sluggish, penetration only 5%. What
+gives you the confidence that this is a business that can still grow teens or should we now see this as a
+single digit 10% growth profile looking forward? How much does the uncertain macro backdrop impact?
+
+Adrian Blair:
+Well, think about some of the stats we've been sharing today, Gareth. I mean, we saw enterprise growth
+of what, 27%. We can see our GRR, gross retention in the UK is exceptionally strong, above the group
+average 88%. NRR is also ahead of the group average. The contribution margin, as Hannah pointed out,
+is really exceptional at 67%. And what I've also pointed out today is how incredibly broad based that
+growth is in the UK. So we've got over 40 different industry verticals where Trustpilot makes at least a
+million dollars of ARR in the UK. If you think about that for a second, I used to run a business where we
+built the entire company off one of those industry verticals, which was the accounting vertical. We've
+got paying customers more than a million of ARR in more than 40 different industries. And that's why
+we're very clear that the UK penetration is still extremely low, around 5%. The business has a very long
+way to go here.
+The way we look at growth across regions is always to optimize group performance, as we say. So the
+question I think to ask is how are we going to deliver long-term mid-teens bookings growth globally for
+Trustpilot? And that's ultimately what we're aiming for and optimizing for rather than the growth of any
+particular market. And as we've seen in the US a few years ago, it was growing more slowly, now it's
+accelerated. So individual markets will fluctuate, but we always aim to deliver and optimize for group
+performance at the end of the day.
+I should also add, we've got next week, our biggest ever customer event in the UK coming up, Trustpilot
+Horizon, where we'll be launching some of our new B2B products that I mentioned on this call. That's
+had an absolutely fantastic take up. So we're still very bullish about this market and pushing hard to
+acquire more new customers.
+
+Moderator:
+Thank you. And a final follow-up from Gareth. In the US, can you talk a little around sub-sector
+momentum? Any sub-sectors stand out as particularly strong? Any new areas of focus that have opened
+up?
+
+
+
+                                                                                             Page 14 of 17
+Adrian Blair:
+Sure. Yeah, happy to do that. So we saw great growth in insurance, in wellbeing, in software technology.
+So we're starting to see, as in the UK, that our growth is catching on across different industries. Often
+the way it works is one or two leading companies in a sector will start using Trustpilot. Others will see
+that and then it will catch on within that industry. So we're still more concentrated in the US than we are
+in the UK, for example. So financial services in the US, insurance, credit, banking, absolutely fantastic
+vertical for us, but that is gradually broadening. And as I say, we saw great growth in software wellbeing,
+parts of retail, like appliances and electronics doing extremely well too. But one of the lovely things
+about this company and running it is we're constantly choosing between attractive options. We have
+many different paths to deliver growth and that includes different verticals within the US market.
+
+Moderator:
+Thank you. And a couple of questions from Chris Lewicks. Number one, on revenue, H1 came in at 19%
+constant currency against a full year high teens guide. Given the revenue base for H2 is largely locked in
+by H1 bookings, is the implied H2 deceleration a statement about booking momentum?
+
+Hanno Damm:
+No, I mean I think it's a reflection on this year's bookings performance. I mean, as you rightly point out,
+revenue in the back half is largely a function of bookings last year and year to date. And I think the
+guidance remains kind of high teens for revenue and our bookings growth is mid-teens guidance. And
+then adjusted EBITDA margin improvement of two to three percentage points. I don't think it sort of
+speaks to or implies any massive deceleration in any of these metrics.
+
+Moderator:
+Thank you. And Chris's second question. ChatGPT citations were up 400% plus year-on-year, 75 times
+citation visibility for active profiles. Where does that show up commercially? Is it converting into higher
+win rates or shorter sales cycles or price? Is there evidence AEO is expanding willingness to pay or is it
+mainly a retention argument so far?
+
+Adrian Blair:
+So in a sense it's all of the above. I mean, when we talk about 35% growth in customers paying more
+than 20K, almost every conversation we'll have had with those businesses involves AEO at some level,
+large language models, how they're showing up. Is it supporting willingness to pay? Absolutely. It's
+helping in those conversations. It's helping with our GRR. I think it's just becoming a core part of our
+proposition of how we go to market. And the great thing is we're not saying anything that is going
+against the flow. If you look at any kind of best practice around answer engine optimization, what
+everybody says is you should be engaging with real customer feedback out in the open in a way that
+larger language models can actually access. So we're helping businesses to do that in practice and we're
+operating the world's largest open customer feedback platform. So yes, it's a fantastic time to be doing
+that.
+
+Moderator:
+Thank you. And final one from Chris. On the US, you've given us 60% contribution margin for the UK. Can
+you give the equivalent for North America or at least the direction of travel?
+
+Hanno Damm:
+
+
+
+                                                                                             Page 15 of 17
+Yeah, I think we've given a number at the full year and we'll probably update again at the full year, but
+it's continuing to improve as the business grows. Keep in mind though, in particular in periods of very
+strong new business growth, the margin expansion is not as quick because the new business obviously
+comes at a higher acquisition cost, which is reflected in the sales and marketing costs while the
+retention costs are all reflected in our gross margin. And so we're extremely pleased with the
+performance of the US, the 75% plus new business growth that we've seen year to date, which is a sort
+of testament to the ability to monetize the AO tailwinds. But in periods of strong new business growth,
+the margin expansion is less pronounced given that that comes with sales and marketing expense and
+commission expense that are higher in the period while the revenue from those bookings will then
+follow subsequently and then drive the margin and retention in the subsequent years.
+
+Moderator:
+Thank you. Our next question comes from Roger Phillips at Investec. Why did you do a sales
+reorganization in H1 in the first instance? Is top of funnel so good now that Trustpilot has critical mass in
+the US that you can afford to outsource new business generation, or is pipeline conversion something to
+be improved with internal sales resource? In other words, can you phase this direction completely in
+different ways? So what was the reasoning? Thank you.
+
+Adrian Blair:
+Yeah. I mean, I think I've already commented on why we did this part that you're referring to on new
+business, which is all about having a go-to-market that is suitable, that's designed for the scale of the
+opportunity. And as I say, it's not only about outsourcing, it's having a mixed model. The mix is digital,
+outsourcing, in-house, and we're starting to see good results from adding some AI into that mix as well.
+So it's a mixed model, but outsourcing was the new component for us in H1 that this reorg entailed.
+I think as it speaks to the US, it just highlights the need for something like this, which is we're talking
+about the largest economy on the planet. We believe we've got a proposition that is accessible to
+ultimately dozens of different industries across that economy. We're never going to have a large enough
+group of people in a place like New York, which is where most of our team are based, to go after as
+much of that opportunity as we can. So it's all about finding the most scalable, cost-effective way to
+address an opportunity of that size. And as I say, it's ultimately a mixed approach, mixing digital
+outsourced and in-house, which is what we've now got.
+
+Moderator:
+Thank you. And our final question today is a follow-up from Sean Keeley. In terms of product plans from
+here, what's next in the business information, research, or operational insights part of the offering? Are
+there steps that you could take, e.g. to allow customers to access your audience for market research
+purposes?
+
+Adrian Blair:
+So as we said, we've got a lot coming up this year. We've got a major event next week where we're
+planning to announce some of these enterprise features that we've talked about on this call, particularly
+multi-domain in the product is important for some of the largest brands because they'll be operating
+lots of different domains. On Trustpilot at the moment, they have to log in separately for every one.
+Now they'll be able to see an overview with all of their brands. We are improving our analytics products
+as well. You mentioned how we're planning to deepen those. Well, we're looking at search query
+insights. So when people are typing something into a large language model, what insights can a business
+
+
+
+                                                                                             Page 16 of 17
+get about that that's going to help them with product development, for example. So that's the sort of
+thing we're working on at the moment. We've got a lot of ideas for 2027 and no doubt we'll have
+another very busy agenda for next year.
+
+Moderator:
+There are no further questions, so that concludes today's results presentation. Thank you all for joining.
+Have a nice day.
+
+
+
+
+                                                                                            Page 17 of 17
+

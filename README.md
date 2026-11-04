@@ -26,9 +26,10 @@ Evaluated on three things:
 | [`research/07-practitioner-view.md`](research/07-practitioner-view.md) | **Primary source & positioning** — Michelle's Yotpo experience, the strategic frame, and a teardown of the live product review flow |
 | [`research/08-prp-live-investigation.md`](research/08-prp-live-investigation.md) | **Live browser investigation** — robots.txt, sitemaps, and whether PRPs are reachable at all |
 | [`research/09-ceo-strategic-direction.md`](research/09-ceo-strategic-direction.md) | **Adrian Blair's stated strategy** — where ours aligns, and the three places it argues |
+| [`research/10-us-market.md`](research/10-us-market.md) | **The US thesis** — biggest audience, smallest business, and the Shopify rail. Built on the verified H1 call transcript |
 | [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md) | **The strategy** — positioning, three bets, trade-offs, metrics |
 | [`sources.md`](sources.md) | Every source used |
-| [`reference/`](reference/) | The Trustpilot × Seer white paper (PDF + extracted text) and product flow screenshots |
+| [`reference/`](reference/) | Seer white paper, **H1 2026 results call transcript**, product flow screenshots |
 
 ## Status
 

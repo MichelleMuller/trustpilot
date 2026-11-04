@@ -83,3 +83,13 @@ Several SEO/comparison sites (wiserreview, wisernotify, costbench, stormy, zigpo
 ## CEO interview
 
 - [Scaling Up S10 E2 — "The Business of Building Trust", Adrian Blair, CEO Trustpilot — TDM Growth Partners](https://tdmgrowthpartners.com/insight/scaling-up-s10-e2-the-business-of-building-trust-adrian-blair-ceo-trustpilot-lsetrst/) — *quotes taken from the episode page summary; verify against audio before quoting in the deck*
+
+## US market and the verified results call
+
+- [Trustpilot H1 2026 Results Call — full transcript (PDF)](https://assets.ctfassets.net/wonkqgvit51x/6XuKDqxpppgqjYfdwdkRF0/d9c4fccd8cd425f929a367c92fc136cb/Transcript_-_Trustpilot_Half_Year_2026_Results_call.pdf) — **primary, verbatim, quotable.** Local copy in `reference/`
+- [trustpilot.com traffic overview — Semrush](https://www.semrush.com/website/trustpilot.com/overview/)
+- [The value of customer ratings and reviews in advertising in the US — Trustpilot](https://uk.business.trustpilot.com/guides-reports/build-trusted-brand/the-value-of-customer-ratings-and-reviews-in-advertising-in-the-us)
+- [Shopify Statistics 2026: GMV, Merchants, Market Share](https://www.clickpost.ai/en-us/blog/shopify-statistics)
+- [Amazon and Shopify Now Control 50% of US E-Commerce](https://novadata.io/resources/news/amazon-shopify-50-percent-us-ecommerce-2026)
+- [How Many Ecommerce Stores Are in The USA? (2026 Data)](https://resourcera.com/data/retail/ecommerce-stores-in-usa/)
+- [Online Review Statistics 2026: Data From 227 Shopify Stores — Growave](https://www.growave.io/online-review-statistics-2026)
