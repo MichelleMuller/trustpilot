@@ -29,7 +29,9 @@ Evaluated on three things:
 | [`research/11-offerings-vs-ecommerce.md`](research/11-offerings-vs-ecommerce.md) | **Two motions, two jobs** — why offerings is the one uncontested part of this market |
 | [`research/10-us-market.md`](research/10-us-market.md) | **The US thesis** — biggest audience, smallest business, and the Shopify rail. Built on the verified H1 call transcript |
 | [`agentic-discoverability/`](agentic-discoverability/) | **Defines Bet 2** — how agents evaluate products, the protocol landscape, what Trustpilot exposes today, and what we'd ship |
-| [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md) | **The strategy** — positioning, three bets, trade-offs, metrics |
+| [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md) | **The strategy** — positioning, bets, trade-offs, roadmap, metrics |
+| [`deck/02-outline.md`](deck/02-outline.md) | **The deck outline** — 27 slides, five acts |
+| [`deck/03-metrics-options.md`](deck/03-metrics-options.md) | **Metrics menu** — leading, middle, lagging, with a recommended three |
 | [`sources.md`](sources.md) | Every source used |
 | [`reference/`](reference/) | Seer white paper, **Scaling Up CEO transcript**, **H1 2026 results call transcript**, product flow screenshots |
 

@@ -1,6 +1,6 @@
 # Deck outline — slide by slide
 
-**25 slides, five acts.** The deck turns on one hinge, slide 9 — everything before it earns the thesis, everything after it executes it.
+**27 slides, five acts.** The deck turns on one hinge, slide 9 — everything before it earns the thesis, everything after it executes it.
 
 > **Trustpilot has won the destination. The next 12–18 months is about being wherever the consumer makes the buying decision — and the engine that gets us there is product reviews.**
 
@@ -78,7 +78,7 @@ A quality claim, not a visibility claim — and only an independent source can m
 > **The engine that gets us there is product reviews.**
 
 Full-bleed statement slide, accent background. The only slide with no supporting content.
-*Callback at slide 25.*
+*Callback at slide 27.*
 
 ### 10. Two assets no competitor has
 **The pairing** — Bazaarvoice, Yotpo, Okendo and PowerReviews have product reviews and no independent company-level trust layer. We have both. *"Is this seller legitimate"* and *"is this product any good"* from one independent source.
@@ -111,47 +111,74 @@ The rail is built: **Shopify Key Product Partner**, ~2.86m storefronts, >14% of 
 ---
 
 # ACT 3 — The bets
-*Three, mapped to the mission already stated.*
+*Two bets. Three initiatives build coverage and authority; one converts it into something machines can read.*
 
-### 15. Three bets
-> *"Get trust signals in very large quantity, make them as trusted as possible, and get them into as many places as possible."*
+### 15. Two bets
+> *"Get trust signals in **very large quantity**, make them **as trusted as possible**, and get them into **as many places as possible**."*
 
-Collection → verified depth. Syndication → breadth. Agents → how both reach the decision.
+| | **Bet 1 — Product review collection** | **Bet 2 — MCP** |
+|---|---|---|
+| **What it buys** | Coverage and authority | **Human equity → machine equity** |
+| **Initiatives** | Collection flow · Consumer page · Syndication in | Build the MCP |
 
-### 16. Bet 1 — Collection: richness *and* ratings
-Both, deliberately. Richness answers product-intent queries and feeds attribute filtering. Ratings coverage feeds the scalar AI quotes most.
-Progressive form: frictionless rating at the floor, conversational depth at the ceiling. Right moment, right channel — SMS alongside email, triggered on delivery.
-**Governing metric: per-SKU attribute coverage.**
+**Neither works alone.** Coverage a machine can't read is invisible. A machine-readable layer over a thin catalogue has nothing worth reading. **Both, or neither.**
 
-### 17. What better collection looks like **← your slide [ASSET]**
-The conversational interface. Side-by-side with the current form if it fits: **static form vs conversation.** Attributes elicited, not offered as a skippable row.
+### 16. Bet 1 — Coverage and authority
+Three ways to get there: **collect more, surface it better, and let others bring theirs.**
+
+Why coverage is the whole game: at company level we won by **covering the entity space** and addressing it with a key the world already uses. Absence became a signal *because* presence was the norm — ChatGPT flags a missing profile **34.4%** of the time. **At product level we have neither coverage nor identity.** And if reviews now build the candidate set, no review data means not in the set at all.
+
+### 17. Initiative 1 — Enhance the collection flow for attribute coverage
+Conversational elicitation instead of a static form. Attributes drawn out, not offered as a skippable row. Progressive: frictionless rating at the floor, depth at the ceiling. Right moment, right channel — SMS alongside email, triggered on delivery.
+
+**And the unlock: let brands use us *alongside* what they already have.** A brand on Yotpo or Judge.me shouldn't have to rip and replace to collect through Trustpilot — they add us. **That removes the switching barrier entirely**, and it's how coverage scales fast. It also makes the free widgets and uncapped invitations (slide 22) coherent: if we're not monetising collection, we don't care who else is collecting too.
+
+**The brand's advantage:** reviews collected through trustpilot.com convert better than reviews requested from the brand's own domain — better deliverability, and an ask that reads as *"tell the world"* rather than *"help our marketing."*
+
+### 18. What better collection looks like **← your slide [ASSET]**
+The conversational interface, side by side with the current form.
 *Live demo hook: QR code to try it.*
 
-### 18. Bet 2 — The trust infrastructure agents rely on
-*Good for the consumer. Good for the brand.*
-We're the evidence an agent **quotes**; not yet the infrastructure it **relies on**. Our APIs answer *"give me my reviews"* — OAuth-gated, one business. An agent asks *"which of these twelve, and what's the evidence?"*
-Ships: **MCP server**, attributes as a filterable dimension, provenance and freshness as the headline product, **open not gated**.
+### 19. Initiative 2 — Double down on the consumer product page
+Already in flight — the job is to make it work. **PRPs need real traffic**, because traffic is what makes the pages authoritative, and authority is what gets them cited. 99.5% of our citations are organic: **won by pages that exist and rank.**
 
-### 19. Bet 3 — The verification layer for the category
-Invert syndication. We can't build Bazaarvoice's 1,750-retailer outbound network — we become the place everyone syndicates **to**. The Google Seller Ratings model: Google collects nothing and became the destination.
-**And everything inbound passes our fraud models.** We don't host other platforms' reviews — **we verify them.**
+Today: restricted beta, selected categories, **no product search on trustpilot.com**, no product sitemap, discovery only through a 12-item carousel on the brand profile. Exit the beta, finish the rollout, make products findable.
 
----
+### 20. Initiative 3 — Pilot syndication *to* Trustpilot **← the controversial one**
+Flag it as controversial, then make the case.
+
+We can't build Bazaarvoice's 1,750-retailer outbound network. **We become the place everyone syndicates *to*** — the Google Seller Ratings model, where Google collects nothing and became the destination.
+
+**Pilot with a handful of partners who are also competitors.** What it buys:
+- **Coverage, fast** — the binding constraint on everything
+- **It cements us as the third-party destination** in the brand's mind — the neutral place their reviews go, whoever collected them
+- **More data to train on** — attribute extraction, category sentiment, and the fraud models that are already our deepest moat
+
+**Everything inbound carries a trust score and passes our fraud models.** We don't host other platforms' reviews — **we verify them.** Tiers on slide 24.
+
+### 21. Bet 2 — Build the MCP: convert human equity into machine equity
+Two decades of trust equity, in a form machines read lossily or not at all. **The MCP is the conversion layer.**
+
+Commerce is standardising on it — **Adobe made MCP the default agent protocol for Commerce; Microsoft shipped one for Dynamics 365 at NRF 2026.** The most-cited review source on the internet has no presence on it. An agent wired into either can query catalogue, price and inventory through a standard interface, then has nowhere standard to go for trust data.
+
+Ships: product lookup and comparison tools, **attributes as a filterable dimension**, provenance and freshness as first-class fields, **open not gated** — where Bazaarvoice's equivalent is enterprise-only.
+
+*Good for the consumer. Good for the brand.* The agent gives a better answer because the evidence is independent; the brand is present at the moment of decision *because* the consumer can rely on it.
 
 # ACT 4 — Trade-offs
 *What this costs, and the line we won't cross.*
 
-### 20. What we stop doing
+### 22. What we stop doing
 *"Not quite SaaS… it's more about the data and the infrastructure."* **Stop funding the display and workflow layer. Fund the data layer.**
 Clearest cut: **ship one free updated widget set, then freeze.**
 **Honest cost:** widgets are what customers ask for in the sales call.
 
-### 21. The line we don't cross
+### 23. The line we don't cross
 No incentivised reviews, and we accept losing business over it.
 **Walmart, Target and Google all require incentivised reviews removed** — revenue today for inventory that can't travel tomorrow. And a brand gets more from an influencer's narrative than a bought five-star.
 **"Our reviews get cited by AI because we don't allow that."**
 
-### 22. Verified at the door
+### 24. Verified at the door
 | Tier | Screened by us | Carries the score |
 |---|---|---|
 | Verified — first party | ✓ | ✓ |
@@ -166,16 +193,19 @@ Screening lets us **strip incentivised content at ingestion** rather than refusi
 # ACT 5 — Execution
 *The plan, the measures, and what would make us stop.*
 
-### 23. The 12–18 month roadmap
+### 25. The 12–18 month roadmap
 Four columns: **0–6** unlock and fix what's cheap · **6–12** collection at scale, MCP v1 · **12–18** coverage and the queryable layer · **beyond** cross-brand comparison, outbound syndication, trust signals beyond reviews.
 Offerings runs as a parallel low-cost track from month one.
 
-### 24. How we'll know it's working
-Three headline metrics *(to finalise)* plus the tree: collection quality → agent and AI visibility → commercial.
-**Kill criteria per bet** — the slide that shows this is a plan, not a pitch.
+### 26. How we'll know it's working
+**The impact, stated first:**
+> **Product Reviews makes Trustpilot a must-have for visibility — for your brand *and* your products — in the age of AI.**
+
+Then the measures. *(Full menu in [`03-metrics-options.md`](03-metrics-options.md); three headline numbers to pick.)*
+**Kill criteria per initiative** — the slide that shows this is a plan, not a pitch.
 **The unclaimed position:** nobody has closed citation → AI-referred visit → conversion. Trustpilot already observes AI-sourced visitors arrive with unusually high intent and doesn't measure it.
 
-### 25. Callback
+### 27. Callback
 > **Trustpilot has won the destination. The next 12–18 months is about being wherever the consumer makes the buying decision — and the engine that gets us there is product reviews.**
 
 Dark slide. Same words as slide 9, now earned.
@@ -188,9 +218,9 @@ Dark slide. Same words as slide 9, now earned.
 |---|---|
 | **6** | *"Best sneakers for walking in London"* across engines — tell me what they show and I'll write the callouts |
 | **11** | Product-review form screenshots — already in `reference/screenshots/` |
-| **17** | Conversational collection interface — the prototype, once built |
+| **18** | Conversational collection interface — the prototype, once built |
 
 ## Open before build
 
-- Three headline metrics for slide 24
+- Three headline metrics for slide 26 — see [`03-metrics-options.md`](03-metrics-options.md)
 - Speaker notes as a full script? *(Recommended — keeps the slides visual)*
