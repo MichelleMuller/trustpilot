@@ -27,6 +27,7 @@ Evaluated on three things:
 | [`research/08-prp-live-investigation.md`](research/08-prp-live-investigation.md) | **Live browser investigation** — robots.txt, sitemaps, and whether PRPs are reachable at all |
 | [`research/09-ceo-strategic-direction.md`](research/09-ceo-strategic-direction.md) | **Adrian Blair's stated strategy** — verbatim from the full transcript; where ours aligns and where to be careful |
 | [`research/10-us-market.md`](research/10-us-market.md) | **The US thesis** — biggest audience, smallest business, and the Shopify rail. Built on the verified H1 call transcript |
+| [`agentic-discoverability/`](agentic-discoverability/) | **Defines Bet 2** — how agents evaluate products, the protocol landscape, what Trustpilot exposes today, and what we'd ship |
 | [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md) | **The strategy** — positioning, three bets, trade-offs, metrics |
 | [`sources.md`](sources.md) | Every source used |
 | [`reference/`](reference/) | Seer white paper, **Scaling Up CEO transcript**, **H1 2026 results call transcript**, product flow screenshots |

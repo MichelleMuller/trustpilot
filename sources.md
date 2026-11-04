@@ -93,3 +93,20 @@ Several SEO/comparison sites (wiserreview, wisernotify, costbench, stormy, zigpo
 - [Amazon and Shopify Now Control 50% of US E-Commerce](https://novadata.io/resources/news/amazon-shopify-50-percent-us-ecommerce-2026)
 - [How Many Ecommerce Stores Are in The USA? (2026 Data)](https://resourcera.com/data/retail/ecommerce-stores-in-usa/)
 - [Online Review Statistics 2026: Data From 227 Shopify Stores — Growave](https://www.growave.io/online-review-statistics-2026)
+
+## Agentic discoverability
+
+- [Bazaarvoice launches Authentic Discovery API](https://www.globenewswire.com/news-release/2026/04/02/3267381/19098/en/bazaarvoice-launches-authentic-discovery-api-to-ensure-brand-and-retailer-reviews-are-visible-to-ai-search-and-shopping-agents.html) — April 2026
+- [Understanding the Authentic Discovery API — Bazaarvoice developers](https://developers.bazaarvoice.com/v1.0-AuthenticDiscoveryAPI/docs/home)
+- [Dynamics 365 Commerce MCP Server for AI Agents — Microsoft](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/29/dynamics-365-commerce-introduces-agentic-capabilities-with-model-context-protocol-mcp/)
+- [Adobe Made MCP the Default Agent Protocol for Commerce](https://www.paz.ai/blog/adobe-mcp-commerce-default-agent-protocol)
+- [draft-soden-wellknown-mcp-commerce — IETF](https://datatracker.ietf.org/doc/draft-soden-wellknown-mcp-commerce/)
+- [Agentic Commerce: UCP, AP2, ACP, MCP and the Product Data Layer AI Agents Need](https://crystallize.com/blog/agentic-commerce)
+- [AI Agent Protocol Ecosystem Map 2026](https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp)
+- [llms.txt complete guide for 2026: does it actually work?](https://dataforaisearch.com/learn/llms-txt-complete-guide)
+- [llms.txt vs WebMCP vs SDF vs CAP: AI Agent Standards Compared (2026)](https://www.platinum.ai/ai-agent-web-standards)
+- [How AI Shopping Agents Rank Products (and How to Win) (2026)](https://eevy.ai/blog/how-ai-shopping-agents-rank-products)
+- [The rise of Agent Experience (AX)](https://www.aiacceleratorinstitute.com/the-rise-of-agent-experience-ax/)
+- [Machine-Readable Product Data: The New Retail SEO for AI Shopping Agents](https://www.bspk.com/post/machine-readable-product-data-the-new-retail-seo-for-ai-shopping-agents)
+- [Trustpilot Product Reviews API — developer docs](https://developers.trustpilot.com/product-reviews-api/)
+- [Trustpilot Private Products API — developer docs](https://developers.trustpilot.com/private-products-api/)
