@@ -366,4 +366,3 @@ Guardrails stated anyway, because they'll be asked for: no transaction economics
 - **Not** building an outbound retailer syndication network in this window — Bet 3 buys the option, it isn't the option
 - **Not** building a consumer shopping destination
 - **Not** licensing data to model providers — considered and rejected by the CEO on mission grounds
-- **Not** llms.txt as a strategy — 10% adoption via platform defaults, Google doesn't read it, no confirmed ranking effect

@@ -63,7 +63,7 @@ Bazaarvoice's equivalent is enterprise-only. Agents reward **coverage**. An open
 
 | When | What | Gate |
 |---|---|---|
-| **0–3 mo** | Product JSON-LD extended to attributes; provenance fields surfaced; llms.txt as housekeeping | None — ship now |
+| **0–3 mo** | Product JSON-LD extended to attributes; provenance fields surfaced | None — ship now |
 | **3–6 mo** | **MCP server, v1** — product lookup and comparison tools | Needs enough attribute coverage to be worth querying |
 | **6–12 mo** | Open agent endpoint; provenance as a named, documented promise | Needs Bet 1 volume |
 | **12–18 mo** | Agent surface partnerships, the way they opened to Meta Muse | Needs a track record |
@@ -97,7 +97,6 @@ Bazaarvoice's equivalent is enterprise-only. Agents reward **coverage**. An open
 
 ## What this bet is not
 
-- **Not llms.txt.** 10% adoption driven by platform defaults, Google doesn't read it, no confirmed ranking effect. A day's work, not a strategy.
 - **Not a payments or checkout play.** ACP and AP2 are the transaction layer. OpenAI already retired Instant Checkout in March 2026. Not our layer.
 - **Not licensing data to model providers.** Blair considered *"licence it out piecemeal and to the highest bidder"* and rejected it on mission grounds.
 - **Not a consumer shopping destination.** Serving agents is how we serve the consumer half of the brief without colliding with *"we don't monetise at all through engagement metrics."*

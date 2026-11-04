@@ -32,22 +32,13 @@ A lot of standards are being announced. Most don't matter to Trustpilot. Here's 
 
 ---
 
-## Probably noise: llms.txt
+## Asked and answered: llms.txt
 
-A Markdown index at the domain root, proposed by Jeremy Howard (Answer.AI) in September 2024, giving AI systems a curated map of a site's important content.
+A Markdown file at the domain root giving AI systems a curated index of a site's important content — robots.txt's opposite number. Proposed by Jeremy Howard (Answer.AI), September 2024.
 
-**The honest assessment:**
-- Adoption reached **10.13% of 300,000 surveyed domains** by May 2026 — but largely through **platform defaults** (Mintlify auto-generation, Shopify turning it on), not deliberate adoption
-- **Google doesn't read or act on it**
-- **No confirmed effect on AI search rankings or citations**
-- Still a community convention, **not a W3C or IETF standard**
-- Real usage is IDE agents — Cursor, Claude Code, Copilot — fetching documentation
+**It dominates the AEO content landscape, so expect it to come up. The short answer:** adoption reached ~10% of 300,000 surveyed domains by May 2026, but largely via platform defaults (Shopify, Mintlify) rather than deliberate choice; **Google doesn't read or act on it**; there's **no confirmed effect on AI search rankings or citations**; and it remains a community convention, not a W3C or IETF standard. Real usage is IDE agents fetching documentation.
 
-**Verdict:** cheap to ship, near-zero evidence of return. Worth doing as housekeeping; **not worth a slide**. If anyone asks, the answer is "a day of work, and we'd do it, but it isn't the bet."
-
-*(Other emerging candidates — WebMCP, SDF, CAP — are at the same or earlier stage. Watch, don't build.)*
-
----
+**Verdict: ship it as housekeeping, don't think about it again.** It's a day of work and it isn't a strategy. *(Same posture for WebMCP, SDF and CAP — earlier stage, watch, don't build.)*
 
 ## The boring one that actually works: schema.org / JSON-LD
 
@@ -72,4 +63,4 @@ Trustpilot already emits Review, AggregateRating, Organization and LocalBusiness
 | **2** | **Rich attribute data in product JSON-LD** | The surface that provably works today, extended from headline score to filterable attributes |
 | **3** | **Open agent-queryable endpoint** | See `03` — today's APIs are auth-gated and built for the wrong consumer |
 | **4** | Track UCP, NIST, FIDO | Provenance standards are where Trustpilot's interest lies |
-| **5** | llms.txt | Housekeeping. Not a slide. |
+| **5** | llms.txt and similar conventions | Housekeeping. Not a slide. |
