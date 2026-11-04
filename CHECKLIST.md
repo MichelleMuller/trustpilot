@@ -34,9 +34,10 @@ The spine exists in [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md). Wh
 
 - [ ] **Resourcing.** What does Bet 1 cost, and what gets stopped to fund it? The trade-offs section is strong on product trade-offs and silent on cost — and the brief explicitly asks how trade-offs get handled.
 - [ ] **Who pays for verification** of syndicated content — the partner platform, or the brand?
+- [x] ~~Cross-brand comparison in this window?~~ **No — next step beyond 18 months. In the roadmap.**
 - [ ] **US framing:** does the US slide lead with **offerings** (financial services, where the CEO's evidence is) or **ecommerce** (where volume and product-intent demand are)? Pick one.
 - [ ] **Three headline metrics.** The metric tree is complete; it needs a top three that fit on one slide.
-- [ ] **Sequencing across 12–18 months** — a single timeline view across all three bets plus the repackaging.
+- [x] ~~Sequencing across 12–18 months~~ **Done — roadmap section in the deck spine, with a "beyond 18 months" next-steps block.**
 - [ ] Confirm PRP rollout status — H1 call says all languages from 1 Oct, help centre still says six English markets
 
 ---
@@ -46,7 +47,7 @@ The spine exists in [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md). Wh
 - [ ] **Decide format** — slides to present from, or a written memo, or both
 - [ ] **Narrative order.** Current working order: founding insight → the shift → query divergence → why us → why not yet → US → three bets → trade-offs → metrics. Open on *"he couldn't take his seller rating with him"*.
 - [ ] **Slide count and depth** — what's on the page vs. what's in the appendix
-- [ ] **Pick the visuals.** Candidates: the funnel citation chart (2% → 16% → 24%), the presence cliff (1% → 54% → 75%), the company-intent vs product-intent query table, the one-engine-three-payoffs diagram, the provenance tier table
+- [ ] **Pick the visuals.** Candidates: the funnel citation chart (2% → 16% → 24%), the presence cliff (1% → 54% → 75%), the company-intent vs product-intent query table, the one-engine-three-payoffs diagram, the provenance tier table, **the roadmap timeline**
 - [ ] **Appendix** — Seer methodology, competitive landscape, the agentic-discoverability detail
 - [ ] Decide what to do with the product-flow teardown screenshots — they're strong evidence of the collection gap
 

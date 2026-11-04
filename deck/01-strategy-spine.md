@@ -341,9 +341,52 @@ There's a real distinction inside "destination" that the deck should not blur:
 | **Per-product pages** — look up a product, see independent evidence. The per-SKU analogue of company profiles. | **Low.** Direct extension of what already exists. | **In scope** |
 | **Cross-brand discovery** — category browse, "best X for Y", side-by-side comparison across sellers | **Higher.** We'd be ranking competing products against each other, which is closer to marketplace behaviour. | **Open — to decide** |
 
-The second is where *"no vested interest in which provider a transaction happens with"* bites hardest. It's defensible — ranking strictly on review evidence is exactly what a neutral party should be able to do — but it is a genuinely new behaviour for Trustpilot and deserves a deliberate yes or no rather than drifting into it.
+The second is where *"no vested interest in which provider a transaction happens with"* bites hardest. It's defensible — ranking strictly on review evidence is exactly what a neutral party should be able to do — but it is genuinely new behaviour for Trustpilot.
 
-**Decision needed:** do we build cross-brand product comparison, or stop at per-product pages in this window?
+**Decision: per-product pages in this window; cross-brand comparison is a next step beyond it.** It needs the coverage from Bets 1 and 3 before it would work anyway — comparison across a thin catalogue is worse than none — and deferring it means we don't ask the business to take a neutrality decision at the same time as three delivery bets. See the roadmap.
+
+## The roadmap
+
+**Sequencing logic:** repackaging unlocks collection, collection fills the pages, the pages and the agent layer are the same corpus rendered twice, and syndication accelerates coverage once screening is in place. **Nothing downstream ships before the data is worth consuming.**
+
+### Months 0–6 — unlock, and fix what's cheap
+
+| Workstream | What ships |
+|---|---|
+| **Repackage** *(Trade-off 1)* | Widgets updated and made free. Invitation caps removed. Monetisation moved to the visibility and insight layer. **First, because it's what produces the volume everything else needs.** |
+| **Measure** | Baseline **per-SKU attribute coverage** — the number that governs the whole plan and that nobody has looked at |
+| **Identity** | Product identity resolution: GTIN-first with a deterministic fallback. Prerequisite for canonical URLs, syndication matching and agent lookup. |
+| **Plumbing** | Exit PRP beta, complete the non-English rollout, add a product sitemap, extend product JSON-LD to attributes, surface provenance fields |
+| **Collection** | Conversational collection: research and experimentation, first A/B against the current form |
+| **Syndication** | Partner conversations; design the screening pipeline |
+
+### Months 6–12 — collection at scale, agent layer v1
+
+| Workstream | What ships |
+|---|---|
+| **Collection** | Conversational flow rolled out *(subject to the month-6 kill criterion)*. SMS alongside email. Trigger on delivery and usage milestones. |
+| **Agents** | **MCP server v1** — product lookup and comparison tools |
+| **Syndication** | First partner **pilot**, not launch — with a per-partner model calibration period |
+| **Trust** | Provenance tiering live: verified first-party, verified syndicated, rejected |
+
+### Months 12–18 — coverage and the queryable layer
+
+| Workstream | What ships |
+|---|---|
+| **Syndication** | Partners scaling; syndicated coverage reported as a share of catalogue |
+| **Agents** | Open agent endpoint. Provenance and freshness as a documented, named promise. |
+| **Agents** | Active surface partnerships, on the Meta Muse precedent |
+| **Measurement** | The attribution loop: citation → AI-referred visit → conversion. The unclaimed position in the category. |
+
+### Beyond 18 months — the next steps this buys
+
+These are **not** in the window, and saying so is the point — each one is earned by the work above rather than promised alongside it.
+
+| Next step | What earns it |
+|---|---|
+| **Cross-brand product discovery and comparison** | Needs the catalogue coverage from Bets 1 and 3. Comparison over a thin catalogue is worse than none. Also a deliberate neutrality decision the business shouldn't be asked to take alongside three delivery bets. |
+| **Outbound syndication to retailer PDPs** | Earned by solving SKU matching *inbound*, where we control the destination and failure is cheap. This is how we eventually approach a Walmart or a Target — with inventory and a proven matching capability, not a pitch. |
+| **Trust signals beyond reviews** | The CEO's own stated expansion — *"we're interested in other trust signals as well."* Attributes are the first one; this is where the next ones go. |
 
 ## Metrics — how we know it's working
 
