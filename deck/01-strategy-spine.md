@@ -90,164 +90,215 @@ The CEO has already named the destination. Our job is to say *how Product Review
 
 ## The bets
 
-**One engine, three payoffs.** Collection is the bet. AI visibility, the consumer product surface and eventual retailer syndication are all downstream of the same inventory.
+Blair's own statement of the mission is three clauses, and they are the three bets:
+
+> *"Get trust signals like reviews **in very large quantity**, make them **as trusted as possible**, and **get them into as many places as possible**."*
 
 ```
-                    +-------------------------+
-                    |   BET 1 - COLLECTION    |
-                    |  richness + ratings,    |
-                    |  right time, right      |
-                    |  channel                |
-                    +-----------+-------------+
-                                |
-          +---------------------+---------------------+
-          v                     v                     v
-   AI VISIBILITY        CONSUMER PRODUCT         SYNDICATION
-   attribute + rating   DISCOVERY (Bet 2)        (the 18mo+ option)
-   data AI can cite     needs volume and         SKU inventory is the
-                        coverage to exist        ticket to a retailer
+  BET 3 — SYNDICATE IN              BET 1 — COLLECTION
+  other platforms' product          richness + ratings coverage,
+  reviews flow into Trustpilot      right moment, right channel
+            |                                   |
+            v                                   v
+      CATALOGUE COVERAGE  <---------->  VERIFIED DEPTH
+      (broad, labelled)                 (deep, provenance-backed)
+                         \          /
+                          v        v
+                     BET 2 — AGENTS
+            queryable product truth: attributes,
+               provenance, freshness, at scale
+                            |
+                            v
+                  cited, compared, chosen
+                            |
+                            v
+           we learn the pipes --> syndicate OUT (18mo+)
 ```
+
+**One engine, one distribution layer, one accelerator.** Collection produces verified depth. Inbound syndication produces breadth. Agents are how both reach the point of decision.
 
 ---
 
-### Bet 1 — Enhance collection: richness *and* ratings
+### Bet 1 — Collection: richness *and* ratings
 
-**Both, deliberately.** They serve different jobs and the strategy needs each:
+**Both, deliberately.** They serve different jobs:
 
-- **Richness** — attributes, sentiment, media. Answers product-intent queries ("does it run small", "is it durable"), powers attribute filtering on a consumer surface, and is what a retailer needs for syndication.
-- **Ratings coverage** — breadth of rated SKUs across the catalogue. **59% of AI answers citing Trustpilot quote the TrustScore or star rating**, 16.6% quote review counts. The numeric signal is the single most-reproduced thing we produce. Deep reviews on a handful of SKUs don't serve it; coverage does.
+- **Richness** — attributes, sentiment, media. Agents **filter on attributes before they rank**, and represent products as attribute vectors. External evidence is unambiguous: detailed reviews outperform brief ones, and reviews mentioning specific attributes carry more weight.
+- **Ratings coverage** — breadth of rated SKUs. **59% of AI answers citing Trustpilot quote the TrustScore or star rating**; 16.6% quote review counts. The numeric signal is the most-reproduced thing we produce.
 
-**The design tension to resolve, not dodge:** rich conversational collection takes longer per review, so it yields fewer. Simple ratings yield coverage. The form should be **progressive** — a near-frictionless rating first, conversational depth for those who continue. Optimise the floor for coverage and the ceiling for richness instead of trading one against the other.
+**And sentiment beats raw volume.** *"100 reviews averaging 4.6 stars outperforms 1,000 reviews averaging 4.1 stars in most agent algorithms."* A strategy that optimised only for review count would be optimising the wrong variable.
+
+**The design tension, resolved rather than dodged:** rich collection takes longer per review and yields fewer; simple ratings yield coverage. The form becomes **progressive** — a near-frictionless rating first, conversational depth for those who continue. Floor optimised for coverage, ceiling for richness.
 
 **How:**
-- A **conversational interface** in place of a static form — asks follow-ups, gets to *why*, and produces structured attributes as a by-product rather than as an optional field users skip
-- **Right time, right channel** — SMS alongside email, triggered on delivery or a usage milestone rather than a fixed delay. Compounds with the trustpilot.com deliverability advantage.
-- **Attributes elicited, not offered** — conversationally drawn out rather than presented as a skippable star row
+- A **conversational interface** replacing the static form — asks follow-ups, gets to *why*, produces structured attributes as a by-product rather than as an optional star row users skip
+- **Right moment, right channel** — SMS alongside email, triggered on delivery or a usage milestone, not a fixed delay. They've started here with QR-code collection; richness is the untouched half.
+- Compounds with the **trustpilot.com deliverability advantage** — competitors send from the brand's own domain and fight spam filters and consumer scepticism; we send from the brand consumers associate with independent second opinions
 
-**Approach:** research and experimentation before building. Bazaarvoice went to voice (Talk-to-Text, Nov 2025); that's one answer, not the only one. Test completion rate, coverage, richness per review and review quality.
+**The number:** the agent-experience benchmark is **95%+ attribute fill rate**. Ours is near zero, because attributes are optional. That gap is the clearest single metric in the deck.
 
-**Why it's the bet:** no volume, no consumer product page worth visiting. No attributes, no AI citation and no syndication conversation. Everything downstream is gated on this.
+**Why it's bet one:** no attribute data, no agent filtering. No coverage, no syndication inventory. Everything downstream is gated here.
 
----
-
-### Bet 2 — Consumer-facing product discovery
-
-**Fact-checked, and it changes the shape of this bet.** PRPs launched 24 Sept 2026 and *are* public consumer-facing indexed pages. But the live investigation (`../research/08-prp-live-investigation.md`) found:
-
-- **Site search returns companies only** — no product search, no product tab, no cross-brand results
-- **No product sitemap exists**
-- Discovery runs *through the company*: a 12-item "Popular products" carousel on the brand profile
-
-So the bet isn't "launch product pages." It's three things:
-
-1. **Fix the plumbing.** Add a product sitemap, exit the restricted beta, complete the non-English rollout. Cheapest, fastest work in the plan.
-2. **Build product-first discovery.** Cross-brand category browse, attribute filtering off Bet 1's data, product comparison. Today a shopper reaches a product only *through* the company that sells it — a 12-item carousel on the brand profile. That cannot serve *"best running shoes for flat feet."*
-3. **Resolve the TrustScore question.** Product reviews sit outside the TrustScore entirely, while the TrustScore is what AI quotes most. Needs a deliberate position, not an inherited default.
-
-**Sequencing:** (1) starts immediately; (2) is gated on Bet 1's volume — discovery with thin coverage is worse than no discovery.
+*CEO's own words: "relevance, recency, ranking... if your reviews are stale and many months old, then it's much less likely to get cited."* All three are collection problems.
 
 ---
 
-### Bet 3 — Repackage: free the commodity, charge for the outcome
+### Bet 2 — Agents: be the data they query, not the page they scrape
 
-**Widgets need updating — and then giving away free.**
+*Fully worked out in [`../agentic-discoverability/`](../agentic-discoverability/).*
 
-Today we meter inputs and gate display: invitations capped by plan (50/100/300/1,000), TrustBox widgets tier-gated behind Plus and Premium. **That prices what competitors give away and under-prices the thing only we have.** Judge.me ships unlimited reviews and display tooling at $0–15/mo; our widget offering is weaker *and* costs more.
+**"Be open" is not a bet — we're already open and it's already working** (ChatGPT citations +400%, top-10 most-cited domain). The bet is becoming **agent-readable**, which we are not.
 
-**The move:**
-- **Update the widgets and make them free.** Display is commodity. Charging for it loses deals to Judge.me and Okendo, and suppresses the thing we actually want — our content on more sites, more visible, driving more collection.
-- **Stop metering invitations.** Caps tax our single biggest structural advantage: trustpilot.com deliverability and consumer response. We should want more invitations sent, not fewer.
-- **Monetise the scarce layer instead** — AI visibility and citation performance, product discovery placement, competitive and attribute insight, Enterprise intelligence tooling.
+Our machine surface today is built for the wrong consumer. The APIs answer *"let me pull my own review data"* — asked by a paying customer, OAuth-authenticated, about a business they own. An agent asks *"which of these twelve should I recommend, and what's the independent evidence?"* — unauthenticated, across brands, at runtime. **There is no front door.**
 
-**Why this resolves the earlier trade-off properly.** The first draft said "discoverability first, widgets later" and accepted churn risk to ecommerce-native competitors. Free widgets removes that risk rather than absorbing it: customers get the display tooling they ask for in the sales call, *and* we stop defending a commodity we were losing on anyway.
+Agents filter → rank → format. **We are strong only at format** — the credible thing quoted *after* the decision. We're absent from the two steps that actually decide it.
 
-**What it costs:** real near-term revenue from widget-driven upgrades, and a harder pricing conversation in transition. That's the trade.
+**What we ship:**
+1. **A Trustpilot MCP server.** Commerce is standardising on MCP — Adobe made it the default for Commerce, Microsoft shipped one for Dynamics 365 at NRF 2026, an IETF draft is formalising discovery. The most-cited review source on the internet is absent. Most concrete, most demonstrable item in the plan.
+2. **Attributes as a filterable dimension**, in the API and extended into product JSON-LD beyond the headline score.
+3. **Provenance and freshness as the headline product.** `isVerified`, `verificationLevel`, `reviewSource` already exist as fields. Package them as the promise: not *"here's a 4.6"* but *"here's a 4.6, verified this way, this fresh, behind fraud models that removed 3.9m fakes last half."*
+4. **Open, not gated** — see the competitive note below.
+
+**Why agents and not a consumer shopping surface:** serving agents meets the consumer half of the brief *where consumers actually are*, without colliding with *"we don't monetise at all through engagement metrics."* We don't build a destination that needs traffic to justify itself.
+
+**Dependency, stated plainly:** an agent surface over a sparse catalogue is worse than none. **Bet 1 gates Bet 2.**
 
 ---
+
+### Bet 3 — Syndicate *in*: become the place product reviews come to
+
+**The inversion.** We cannot build Bazaarvoice's 1,750-retailer outbound network in 18 months. We don't have to — we can become the place everyone syndicates **to**.
+
+**The precedent is Google Seller Ratings.** Google collects no reviews. It aggregates from approved partners — Trustpilot, Yotpo, Bazaarvoice, Loox, Junip — and became the destination without ever doing collection. Trustpilot is entitled to the same move for AI visibility: top-10 most-cited domain, domain authority 100.
+
+**It is the open-platform thesis, inverted.** Blair's line is *"get them into as many places as possible."* This is *get everything into the place AI already looks.*
+
+**What it buys:**
+- **Coverage, fast.** Discovery and citation both need catalogue breadth. Organic collection builds it slowly; inbound syndication builds it now.
+- **A commercial surface we don't have.** We can serve brands who will never switch collection vendors — which only makes sense once we've stopped monetising collection (see Trade-off 1).
+- **More data to learn on** — attribute extraction and category sentiment models improve with volume.
+- **The pipes.** SKU matching across catalogues — GTINs, variants, title collisions — is the hard engineering problem in syndication. We solve it **inbound**, where we control the destination and failure is cheap. **That is how we earn the right to syndicate outbound in year two.**
+
+**The risk, named:** why would Judge.me or Bazaarvoice feed us? The honest answer is the Google one — **because brands make them.** Google didn't persuade vendors to integrate; merchants demanded it because Google was where the demand was. This is a bet that our demand-side pull is strong enough to compel supply. It may not be, at first.
+
+**And the integrity problem is real** — see Trade-off 3, which is where this bet lives or dies.
 
 ## Trade-offs
 
-### Trade-off 1 — Give widgets away and move monetisation up the stack
+### Trade-off 1 — Give the widgets away and move monetisation up the stack
 
-**Superseded by Bet 3.** The earlier framing — "optimise discoverability first, promise widgets later" — accepted churn risk to Judge.me and Okendo as the price of focus. Making widgets free and updating them removes the risk instead of absorbing it.
+Today we meter inputs and gate display: invitations capped by plan (50/100/300/1,000), TrustBox widgets gated behind Plus and Premium. **That prices what competitors give away and under-prices the only thing we have.** Judge.me ships unlimited reviews and display tooling at $0–15/mo; our widget offering is weaker *and* costs more.
 
-The real trade-off underneath is a **pricing** one:
+**The move: update the widgets, make them free, uncap invitations, and monetise the visibility and insight layer instead.**
 
-| For free widgets + uncapped invitations | Against |
+Blair's own framing supports it — *"Not quite SaaS... it's more about **the data and the infrastructure**."* Infrastructure is priced on value delivered, not metered inputs. And invitation caps actively throttle our single biggest structural advantage.
+
+**This is also the sequencing insight:** free widgets and uncapped invitations are what *produce* the volume Bet 1 needs. **Repackaging comes first, not last.**
+
+| For | Against |
 |---|---|
-| Display is commodity; we were losing on it anyway | Gives up near-term revenue from widget-driven tier upgrades |
-| More widgets live = more of our content visible = more collection | Harder pricing conversation during transition |
-| Stops invitation caps taxing our deliverability advantage | Enterprise may resist repackaging that changes their line items |
-| Moves monetisation to the layer only we can supply | Requires AI-visibility value to be *provable* — which is why measurement matters |
+| Display is commodity; we were losing on it anyway | Gives up near-term revenue from widget-driven upgrades |
+| More widgets live = more content visible = more collection | Harder pricing conversation in transition |
+| Stops invitation caps taxing our deliverability advantage | Enterprise may resist repackaged line items |
+| Moves monetisation to the layer only we can supply | Requires AI-visibility value to be **provable** |
 
-**The bet underneath the bet:** that independent AI visibility is durable enough to carry the price. If that's wrong, we've given away revenue for nothing. It is the single biggest commercial risk in this plan and the deck should say so.
+**The bet underneath the bet:** that independent AI visibility is durable enough to carry the price. If it isn't, we've given away revenue for nothing. Biggest commercial risk in the plan.
+
+---
 
 ### Trade-off 2 — Incentivised reviews: the line we don't cross
 
-Larger brands will ask for incentivised review support (discounts, loyalty points, free product in exchange for a review). It's a real revenue ask and competitors accommodate it.
+Larger brands will ask for incentivised review support. It's real revenue and competitors accommodate it. **We don't, and we accept losing business over it.**
 
-**The call: we don't support it, and we accept losing business over it.**
+1. **It attacks the asset the whole strategy rests on.** Our value to an LLM is that the content is independent. Incentivised reviews are compensated opinion by construction. We already remove 3.9m fakes a half — 10% of submissions, rising — without adding a sanctioned channel for compromised content.
+2. **The downstream surfaces already reject it.** From direct experience at Yotpo: **Walmart, Target and Google all require incentivised reviews to be removed or flagged.** So it isn't only an AI-moat risk — it disqualifies that content from the exact syndication surfaces Bet 3 is built to reach. Revenue today for inventory that can't travel tomorrow.
+3. **A narrative beats a bought review anyway.** An influencer making the case for a product carries far more weight than one incentivised five-star. What the brand actually wants is persuasive advocacy — available elsewhere, and no reason to compromise the one asset nobody can copy to deliver a weaker version of it.
 
-**Why:**
-
-1. **It directly attacks the asset the entire strategy rests on.** Our value to an LLM is that our content is independent and trustworthy. Incentivised reviews are, by construction, compensated opinion. If model providers lose confidence in review platform integrity, the citation rate goes toward zero — and every bet above goes with it. We are already removing 3.9m fake reviews a half, at 10% of submissions and rising. We don't need to add a sanctioned channel for compromised content.
-
-2. **The downstream surfaces already reject it.** From direct experience at Yotpo: **Walmart, Target and Google all require incentivised reviews to be removed or clearly flagged.** So supporting incentivised reviews doesn't just risk the AI moat — it actively disqualifies that content from the retailer syndication surfaces we want to be on. We'd be taking revenue today in exchange for inventory that can't be distributed tomorrow.
-
-3. **The brand gets more from a narrative than from a bought review anyway.** An influencer making the case for your product on social carries far more weight than one incentivised five-star review. The thing a brand actually wants — persuasive advocacy at scale — is better served elsewhere. There is no reason to compromise the one asset we have that nobody can copy in order to deliver a weaker version of something they can get from another channel.
-
-**How we handle the sales conversation:** this becomes a positioning strength, not an apology. "Our reviews get cited by AI *because* we don't allow that" is a better pitch than matching a competitor's permissiveness. The integrity is the product.
+**In the sales conversation this is a strength, not an apology:** *"our reviews get cited by AI because we don't allow that."* The integrity is the product.
 
 ---
 
-### Trade-off 3 — Neutrality vs. building a consumer shopping surface
+### Trade-off 3 — Inbound syndication vs. the integrity moat
 
-**This is the objection the strategy will face from the top, and it comes from the CEO's own definition of the moat:**
+**This is where Bet 3 lives or dies, and it deserves the most honest slide in the deck.**
 
-> *"We're not a marketplace, it's not any kind of retailer. So we have no vested interest in whether a transaction happens."*
+Trustpilot has **already made this call in the opposite direction**. From the Product Review Pages documentation:
 
-Bet 2 builds cross-brand product discovery and comparison, and PRPs already carry "Shop now" buttons. At what point does a comparison surface acquire a vested interest in transactions?
+> *"**Only reviews collected through Trustpilot's invitation methods appear here**, so any third-party imported reviews won't be displayed."*
 
-**The answer is a hard guardrail, stated up front:**
+That is not an oversight — it's the integrity architecture. Ingesting Judge.me, Loox or Okendo content means ingesting reviews collected under someone else's standards, **including incentivised reviews**, which several of them permit. Which runs straight into Trade-off 2.
 
-- **No transaction economics.** Never a cut, never affiliate revenue, never a referral fee.
-- **No purchasable placement.** Ranking is by review evidence only. Placement is never sold — which also rules out funding this with advertising, already rejected as a model.
-- **No commercial ranking signal.** A paying customer's product does not outrank a non-customer's.
+**The solve: don't blend. Tier by provenance.**
 
-Product discovery extends the *same* neutral service — "here is what independent customers actually said" — into product-intent queries. **The moment placement becomes purchasable, the moat is gone and the AI citation position goes with it.**
+| Tier | Treatment |
+|---|---|
+| **Trustpilot-verified** | Collected by us, passed our fraud models. Carries the product score and the TrustScore. |
+| **Syndicated** | Displayed, labelled by source, **excluded from the score**, with provenance metadata attached when exposed to agents. |
 
-Naming this constraint ourselves, before anyone raises it, is worth more than avoiding the subject.
+**The precedent exists inside the product.** MultiSource widgets already combine Trustpilot and third-party imported reviews — and Trustpilot already documents that those scores differ from PRP scores. We're extending an existing trust model, not inventing one.
+
+It also maps to the stated roadmap: *"we're interested in **other trust signals** as well."* A syndicated review is a **weaker trust signal, scored accordingly** — a legitimate signal class, not a contaminated one, **provided it never touches the verified score.**
+
+**The open question to decide, not duck:** do we verify imported content with our own fraud models? Labelled-but-unverified is cheap. Running our models over imported reviews costs real money that scales with volume — and is the thing that would make the corpus genuinely more valuable than anyone else's.
+
+---
+
+### Resolved — neutrality and the consumer surface
+
+Worth noting because it was a live risk and the agent framing closed it.
+
+> *"We're not a marketplace... no vested interest in whether a transaction happens... **we don't monetise at all through engagement metrics.** So we're not an advertising business either."*
+
+Building a consumer product-comparison destination would have run at this — a surface justified on traffic and attention. **Serving agents instead means we never take that risk.** We meet the consumer where they already are, and the product earns its place by making the subscription more valuable, not by capturing attention.
+
+Guardrails stated anyway, because they'll be asked for: no transaction economics, no purchasable placement, no commercial ranking signal.
 
 ## Metrics — how we know it's working
 
-*To develop. Draft structure:*
+**Attribution is the metrics layer, not a fourth bet.** Blair is already on it — *"we are doing more... to help them really quantify the ROI. It isn't as straightforward as simply things like traffic metrics"* — so claiming it as an initiative would look like we hadn't listened. But nobody has closed the loop, and that's where this section earns its place.
 
-**Leading — collection quality**
-- Invitation → review conversion rate (and the gap vs. brand-domain senders — *the number nobody else can produce*)
-- % of reviews carrying structured attributes (today: optional, so near-zero)
-- % carrying media
-- Attribute coverage per SKU
+### Leading — collection quality (Bet 1)
+- **Attribute fill rate per review and per SKU** — *today near zero; benchmark 95%+.* The headline number.
+- Invitation → review conversion rate, **and the gap vs. brand-domain senders** — a number no competitor can produce
+- % of reviews carrying media
+- **Review recency distribution** — median review age per SKU. Recency is one of the CEO's three named factors and is currently unmanaged.
 
-**Middle — AI visibility**
-- Product-level citation rate across ChatGPT, Gemini, AI Overviews, Perplexity
-- Co-mention share in product comparison queries
+### Middle — agent and AI visibility (Bet 2)
+- MCP server calls; unique agents querying
+- **Product-level citation rate** in comparison queries, across ChatGPT, Gemini, AI Overviews, Perplexity
+- **Co-mention share** in "X vs Y" and "best ___ for ___" prompts — where the 9.5x effect actually plays out
 - Time-to-first-citation for a new SKU
-- % of catalogue above the citation threshold
+- Agent surfaces actively opened to, beyond organic crawling *(precedent: Meta Muse)*
 
-**Lagging — commercial**
-- Product Reviews attach rate and ARR
-- Mid-market/ecommerce segment ARR growth
-- Net dollar retention on accounts using Product Reviews
-- Signed retailer syndication conversations (option value on the long game)
+### Coverage (Bet 3)
+- SKUs with queryable attribute data
+- Syndication partners live; share of catalogue covered by syndicated vs. verified reviews
+- SKU match rate — the capability that earns outbound syndication later
 
-**Kill criteria** — *to define.* What result at month 6 tells us the conversational collection bet is wrong?
+### Lagging — commercial
+- Product Reviews attach rate and ARR, **US specifically**
+- **AI-referred traffic and its conversion.** Trustpilot already observes AI-sourced visitors arrive with unusually high intent and doesn't measure it. Closing citation → visit → conversion is the unclaimed position in the category.
+- Net dollar retention on accounts using Product Reviews *(group NDR is 101%, GDR 87%)*
 
----
+### Kill criteria
+- **Bet 1:** if conversational collection doesn't beat the current form on *both* completion rate and attributes-per-review by month 6, the interface isn't the constraint — revert and put the money into timing and channel.
+- **Bet 2:** if at month 9 attribute fill is below 40% and MCP calls aren't growing month over month, distribution isn't the constraint. Stop building the pipe and put everything into Bet 1.
+- **Bet 3:** if no syndication partner is live by month 12, demand-side pull wasn't strong enough to compel supply. Fold the SKU-matching work into outbound planning and stop.
 
 ## Open items
 
-- [ ] Metrics tree — tighten, pick the 3 headline numbers
-- [ ] Define kill criteria for Bet 1
 - [ ] Resourcing: what does Bet 1 cost, and what are we stopping to fund it?
-- [ ] Sequencing across the 12–18 months
-- [ ] The explicit "what we are NOT doing" slide
+- [ ] Decide: do we verify syndicated content with our own fraud models? (Trade-off 3)
+- [ ] Pick the three headline metrics for the one-slide version
+- [ ] Does the US slide lead with **offerings** (financial services — where the CEO's evidence is) or **ecommerce** (where the volume and product-intent demand are)?
+- [ ] Confirm PRP rollout status — the H1 call says all languages from 1 Oct; the help centre still says six English markets
+- [ ] Slide-level build
+
+## Explicitly not doing
+
+- **Not** competing with Judge.me or Okendo on SMB product-review features or price
+- **Not** building a general-purpose AEO measurement suite against Profound
+- **Not** building an outbound retailer syndication network in this window — Bet 3 buys the option, it isn't the option
+- **Not** building a consumer shopping destination
+- **Not** licensing data to model providers — considered and rejected by the CEO on mission grounds
+- **Not** llms.txt as a strategy — 10% adoption via platform defaults, Google doesn't read it, no confirmed ranking effect
