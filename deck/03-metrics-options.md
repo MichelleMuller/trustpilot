@@ -11,11 +11,12 @@ Three layers. Pick one headline from each for the slide; the rest live in an app
 
 | Metric | Why it earns a place | Caveat |
 |---|---|---|
-| **Per-SKU attribute coverage** — % of SKUs with enough attribute-rated reviews to be filterable | **Recommended headline.** Agents filter on attributes *before* they rank, so a missing attribute means unmatched, not down-ranked. This is the number that governs every other one. | Baseline is unmeasured — it's one internal query, and the first thing to go get |
+| **Per-product attribute coverage** — % of *parent products* with enough attribute-rated reviews to be filterable | **Recommended headline.** Agents filter on attributes *before* they rank, so a missing attribute means unmatched, not down-ranked. **Measured per parent product, not per SKU** — the universal product catalogue already rolls variants into a single score and a single page, so the parent is what an agent queries. | Baseline is unmeasured — one internal query, and the first thing to go get |
 | **Per-review attribute fill rate** — % of reviews carrying attributes | The input that drives coverage. Directly measures whether the new flow works. | On its own it flatters: high fill on few SKUs isn't coverage |
 | **Invitation → review conversion rate, vs. brand-domain senders** | **The number no competitor can produce.** Quantifies the trustpilot.com deliverability advantage and turns it from a claim into a slide. | Needs a credible external benchmark |
-| **SKUs with ≥1 review** (raw coverage) | The crudest and most honest coverage measure. If reviews build the candidate set, this is existence. | Doesn't capture depth |
-| **Median review age per SKU** (freshness) | Recency is one of the three factors the CEO names, and it's currently unmanaged. | Easy to game by re-inviting |
+| **Products with ≥1 review** (raw coverage) | The crudest and most honest coverage measure. If reviews build the candidate set, this is existence. | Doesn't capture depth |
+| **Variant attribution rate** — % of reviews that identify which variant was bought | Matters where a catalogue is few-products-many-variants. *"Runs small in XL"* is only usable if the review says XL. | Only meaningful in variant-heavy categories |
+| **Median review age per product** (freshness) | Recency is one of the three factors the CEO names, and it's currently unmanaged. | Easy to game by re-inviting |
 | **Reviews collected by brands running us alongside another platform** | Proves the coexistence motion — the thing that removes the switching barrier | New motion, no baseline |
 | **PRP indexed pages and organic traffic** | Authority comes from pages that exist and rank; 99.5% of citations are organic | Lags collection by months |
 
@@ -30,7 +31,7 @@ Three layers. Pick one headline from each for the slide; the rest live in an app
 | **Co-mention share** — appearing when someone asks about a competitor | The 9.5x effect, at product level. Competitive visibility keeps scaling where direct visibility plateaus. | Harder to attribute |
 | **MCP calls, and unique agents querying** | The cleanest signal that Bet 2 landed. Zero today. | Early absolute numbers will look small |
 | **% of catalogue queryable via MCP** | Couples Bet 1 and Bet 2 in one number | Composite, so slower to move |
-| **Time-to-first-citation for a new SKU** | Measures the product-level presence cliff — *how many reviews does a SKU need before it gets cited?* **Nobody has this number, and it may be the single most useful thing in the deck.** | Requires deliberate measurement design |
+| **Time-to-first-citation for a new product** | Measures the product-level presence cliff — *how many reviews does a product need before it gets cited?* **Nobody has this number, and it may be the single most useful thing in the deck.** | Requires deliberate measurement design |
 | **Agent surfaces opened to** beyond organic crawling | Precedent exists: Meta Muse | Lumpy, deal-driven |
 
 ---
@@ -53,7 +54,7 @@ Three layers. Pick one headline from each for the slide; the rest live in an app
 
 | Layer | Metric | The question it answers |
 |---|---|---|
-| **Leading** | **Per-SKU attribute coverage** | Is the engine producing data agents can use? |
+| **Leading** | **Per-product attribute coverage** | Is the engine producing data agents can use? |
 | **Middle** | **Product-level citation rate in comparison queries** | Is it reaching the decision? |
 | **Lagging** | **Product Reviews ARR, US** | Did it become a business? |
 
@@ -68,12 +69,12 @@ Three layers. Pick one headline from each for the slide; the rest live in an app
 | **Collection flow** | By month 6, conversational collection doesn't beat the current form on *both* completion rate and attributes-per-review. The interface isn't the constraint — revert and spend on timing and channel. |
 | **Consumer page** | By month 9, exiting the beta and fixing discovery hasn't moved PRP organic traffic or product-level citation. The pages aren't the lever. |
 | **Syndication in** | No partner live by month 12. Demand-side pull wasn't strong enough to compel supply — fold the SKU-matching work into outbound planning and stop. |
-| **MCP** | By month 9, per-SKU attribute coverage hasn't moved off baseline *and* MCP calls aren't growing month over month. Distribution isn't the constraint; collection is. |
+| **MCP** | By month 9, per-product attribute coverage hasn't moved off baseline *and* MCP calls aren't growing month over month. Distribution isn't the constraint; collection is. |
 
 ---
 
 ## One number that doesn't exist yet, and should
 
-**Where is the per-SKU presence cliff?** At company level the curve is **1% → 54% at ~13 reviews → 75% at ~81.** The product-level equivalent — *how many reviews does a SKU need before AI starts citing it* — is unmeasured by anyone.
+**Where is the per-product presence cliff?** At company level the curve is **1% → 54% at ~13 reviews → 75% at ~81.** The product-level equivalent — *how many reviews does a SKU need before AI starts citing it* — is unmeasured by anyone.
 
 Finding it would give every initiative here a target instead of a direction, and it would be the most quotable number in the deck.

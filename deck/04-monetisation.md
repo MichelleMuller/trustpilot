@@ -21,9 +21,37 @@ And it gets better, not worse, as Initiative 1 lands: **if the collection flow c
 ### 1. Invitations — metered, and the core
 Verified-purchase review capacity, priced by volume. The existing model, **strengthened** rather than dismantled.
 
-**What changes:** the allowance should scale with **catalogue size**, not just company size. A brand with 10,000 SKUs on a 1,000-invitation plan cannot cover its catalogue — and coverage is the thing the whole strategy turns on. Tier on catalogue; meter on invitations.
+**What changes: nothing, probably — and catalogue size is a red herring.**
+
+An earlier draft proposed tiering the invitation allowance on catalogue size. That doesn't survive contact with how catalogues actually look. **A brand can have two products and fifty variants**, or two thousand products and almost no variants. SKU count, parent-product count and review need don't track each other.
+
+Follow the actual drivers instead:
+
+| | What it scales with |
+|---|---|
+| **Our cost** | Reviews processed — screening, storage, attribute extraction |
+| **Customer's need** | Products they want covered |
+| **Customer's natural supply** | **Order volume** — you can only invite people who bought |
+
+**Order volume is the binding constraint, and it's what plan tiers already proxy.** A brand with two products and 10,000 orders a month needs lots of invitations. A brand with 2,000 products and 500 orders needs fewer — and *cannot* get more, because it has no one else to invite.
+
+Which exposes something more important than a pricing question.
 
 **Why it holds up:** the better the flow gets, the more each invitation returns. Product work becomes pricing power.
+
+### The coverage problem invitations cannot solve
+
+**For a long-tail catalogue, invitation volume is not the answer and never will be.** A brand with 2,000 products and 500 orders a month cannot reach thirteen reviews per product by sending more invitations — the purchasers don't exist.
+
+So coverage has to come from three places, and only one of them is invitations:
+
+| Catalogue shape | What actually solves coverage |
+|---|---|
+| **Few products, many variants** *(a mattress in six sizes, a tee in thirty colourways)* | **Variant-aware collection**, not more invitations. Capture *which variant did you buy* so one product's reviews carry variant-specific attributes. Fifty variants don't need fifty times the reviews — they need the reviews tagged. **This is a collection-flow design problem (Initiative 1), not a pricing one.** |
+| **Many products, thin volume** | **Syndication** (Initiative 3). Bringing in reviews collected elsewhere is how the tail gets covered at all. |
+| **High volume, concentrated** | **Invitations.** The existing model, working as intended. |
+
+**That's a better argument for syndication than the revenue one.** It isn't only a new ARR line — **it's the only mechanism that covers catalogues invitations structurally cannot reach.**
 
 ### 2. Widgets — free
 Display is a commodity. Judge.me ships unlimited reviews and display tooling at $0–15/mo; our widget offering is weaker *and* costs more. Charging for it loses deals on the layer where we have no advantage, and it suppresses the thing we want — our content on more sites, more visible.

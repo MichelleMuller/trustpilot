@@ -279,7 +279,11 @@ Commerce is standardising on it — **Adobe made MCP the default agent protocol 
 
 **Invitations stay metered — and that's deliberate.** An invitation goes to a known purchaser and produces a **verified-purchase review**: the highest-trust, brand-controlled, most citable content on the platform. Organic reviews are free and uncontrolled; invitations are directed supply. **The cap isn't a tax on the product — it is the product.**
 
-And it strengthens as Initiative 1 lands: **a better flow means every invitation returns more.** Product work becomes pricing power, the way seats do in SaaS. *One change: tier the allowance on **catalogue size**, not just company size — a brand with 10,000 SKUs on a 1,000-invitation plan cannot cover its catalogue, and coverage is what the strategy turns on.*
+And it strengthens as Initiative 1 lands: **a better flow means every invitation returns more.** Product work becomes pricing power, the way seats do in SaaS.
+
+**And catalogue size is the wrong tiering dimension** — a brand can have two products and fifty variants, or two thousand products and none. What actually binds is **order volume**: you can only invite people who bought, and that's what plan tiers already proxy.
+
+**Which exposes the real point: for a long-tail catalogue, invitations can never solve coverage.** 2,000 products and 500 orders a month will not reach thirteen reviews per product however many invitations you buy — the purchasers don't exist. Coverage comes from three places and only one is invitations: **variant-aware collection** for few-products-many-variants (capture *which variant did you buy*, so fifty variants need tagged reviews rather than fifty times the volume), **syndication** for the thin tail, and **invitations** for concentrated volume. *That is a better argument for Initiative 3 than the revenue one — it's the only mechanism that reaches catalogues invitations structurally cannot.*
 
 **Syndication becomes a new ARR line.** Brands on Yotpo, Okendo, Judge.me or Loox can choose to **also** syndicate to Trustpilot, for a fee — reviews screened by our fraud models, carried with a trust score, present on PRPs and in the MCP. **Verified presence where AI looks, without changing their collection stack.**
 
@@ -455,7 +459,7 @@ Widgets and dashboards are **what customers ask for in the sales call.** Freezin
 
 | Workstream | What ships |
 |---|---|
-| **Repackage** *(Trade-off 1)* | Widgets updated and made free. Invitation allowances re-tiered on catalogue size. Syndication priced as a new ARR line. |
+| **Repackage** *(Trade-off 1)* | Widgets updated and made free. Syndication priced as a new ARR line. Invitation tiers left broadly as they are. |
 | **Measure** | Baseline **per-SKU attribute coverage** — the number that governs the whole plan and that nobody has looked at |
 | **Identity** | **The entity model** — provider + offering as the key, external identifiers as an optional list, category tree spanning retail and non-retail **from day one**. Prerequisite for canonical URLs, syndication matching and agent lookup, and the thing that keeps offerings cheap later. |
 | **Plumbing** | Exit PRP beta, complete the non-English rollout, add a product sitemap, extend product JSON-LD to attributes, surface provenance fields |
@@ -498,7 +502,7 @@ These are **not** in the window, and saying so is the point — each one is earn
 **Attribution is the metrics layer, not a fourth bet.** Blair is already on it — *"we are doing more... to help them really quantify the ROI. It isn't as straightforward as simply things like traffic metrics"* — so claiming it as an initiative would look like we hadn't listened. But nobody has closed the loop, and that's where this section earns its place.
 
 ### Leading — collection quality (Bet 1)
-- **Per-SKU attribute coverage** — share of products with enough attribute-rated reviews to be filterable. The headline number, and the first one to go measure. *(Per-review fill rate is the input; coverage is what agents consume.)*
+- **Per-product attribute coverage** — share of *parent products* with enough attribute-rated reviews to be filterable. The headline number, and the first one to go measure. *(Per-review fill rate is the input; coverage is what agents consume. Measured on parent products, since the universal catalogue already rolls variants into one score and one page.)*
 - Invitation → review conversion rate, **and the gap vs. brand-domain senders** — a number no competitor can produce
 - % of reviews carrying media
 - **Review recency distribution** — median review age per SKU. Recency is one of the CEO's three named factors and is currently unmanaged.
