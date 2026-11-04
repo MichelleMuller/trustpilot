@@ -165,9 +165,15 @@ Blair's own statement of the mission is three clauses, and they are the three be
 
 ---
 
-### Bet 2 — Agents: be the data they query, not the page they scrape
+### Bet 2 — Build the trust infrastructure agents rely on for information
+
+> **Good for the consumer. Good for the brand.**
 
 *Fully worked out in [`../agentic-discoverability/`](../agentic-discoverability/).*
+
+**This is the slide that answers both halves of the brief at once.** Consumers get a better answer because the agent has better evidence — delivered where they already are, not on a site they'd have to visit. Brands get their product truth present and citable at the moment of decision.
+
+**And the two are the same mechanism, not two benefits.** Optimise for the brand alone and the data becomes marketing, which agents learn to discount. Serve the consumer alone and there's no business to fund the collection or the fraud detection. **Independence isn't a constraint on the model — it is the model.** It's also the answer to *"why not just use the brand's own product feed?"* — because that's the brand talking about itself, and the agent already discounts it.
 
 **"Be open" is not a bet — we're already open and it's already working** (ChatGPT citations +400%, top-10 most-cited domain). The bet is becoming **agent-readable**, which we are not.
 
@@ -182,6 +188,8 @@ Agents filter → rank → format. **We are strong only at format** — the cred
 4. **Open, not gated** — see the competitive note below.
 
 **Why agents and not a consumer shopping surface:** serving agents meets the consumer half of the brief *where consumers actually are*, without colliding with *"we don't monetise at all through engagement metrics."* We don't build a destination that needs traffic to justify itself.
+
+*We are already the evidence an agent **quotes**. We are not yet the infrastructure it **relies on**.*
 
 **Dependency, stated plainly:** an agent surface over a sparse catalogue is worse than none. **Bet 1 gates Bet 2.**
 

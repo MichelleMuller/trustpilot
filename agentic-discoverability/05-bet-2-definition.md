@@ -1,12 +1,35 @@
 # Bet 2, defined
 
-> **Make Trustpilot the product-truth layer agents query — not the web page they scrape.**
+> **Build the trust infrastructure that agents rely on for information.**
+> **Good for the consumer. Good for the brand.**
+
+---
+
+## Why that framing, and not a cleverer one
+
+It uses the company's own language — *"provide the kind of **trust layer or trust infrastructure for AI**"* — so the bet reads as executing stated strategy rather than proposing a detour.
+
+And it names **both halves of the brief in one line**, which no internally-focused framing does:
+
+| The brief asks for | This delivers |
+|---|---|
+| *"help consumers confidently evaluate products when making purchasing decisions"* | The agent gives a better answer because it has better evidence — **delivered where the consumer actually is**, not on a site they'd have to visit |
+| *"help businesses drive visibility of their products in LLMs"* | Their product truth is present, structured and citable **at the moment of decision** |
+
+**The alignment is the whole argument.** These aren't two benefits we happen to deliver — they're the same mechanism seen from two sides, and neither works without the other:
+
+- If we optimised for the **brand alone**, the data would be marketing, and agents would learn to discount it. Brand visibility is only worth anything *because* the content is independent enough for a consumer to rely on.
+- If we served the **consumer alone**, there'd be no business. The subscription is what funds the collection, the fraud detection and the infrastructure.
+
+**Independence isn't a constraint on the business model. It is the business model.** That's also the answer to the obvious challenge — *why would an agent use Trustpilot rather than a brand's own product feed?* Because the brand's feed is the brand talking about itself, and the agent already knows to discount that.
 
 ---
 
 ## The problem, in one line
 
 Trustpilot's product data is **human-readable** and **customer-readable**. It is not **agent-readable**. An agent evaluating a product has no front door — only a page to scrape or a memory to hope for.
+
+> We are already the evidence an agent **quotes**. We are not yet the infrastructure an agent **relies on**.
 
 ## The four things we'd ship
 
@@ -83,4 +106,6 @@ Bazaarvoice's equivalent is enterprise-only. Agents reward **coverage**. An open
 
 ## The line for the deck
 
-> We are already the evidence an agent **quotes**. We are not yet the data an agent **queries**. Bazaarvoice built the queryable layer first and patented it — but they built it gated, over first-party content, and sold it on volume. We build it open, over independent content, and sell it on provenance. That is the version they cannot copy.
+> **Build the trust infrastructure that agents rely on for information — good for the consumer, good for the brand.**
+>
+> We are already the evidence an agent **quotes**. We are not yet the infrastructure it **relies on**. Bazaarvoice built the queryable layer first and patented it — but gated, over first-party content, sold on volume. We build it open, over independent content, and sell it on provenance. That is the version they cannot copy — and the version a consumer has reason to trust.

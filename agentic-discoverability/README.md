@@ -10,9 +10,13 @@
 
 So the question this folder answers is: **what would Trustpilot actually build, that it does not have today, to be the product-truth layer agents reach for?**
 
+## The bet, in one line
+
+> **Build the trust infrastructure that agents rely on for information. Good for the consumer. Good for the brand.**
+
 ## The answer in one paragraph
 
-> Trustpilot's product data today is **human-readable** (Product Review Pages) and **customer-readable** (authenticated business APIs). It is not **agent-readable** — there is no open, discoverable, machine-first surface where an agent can query product truth without being a paying customer or scraping a web page. Bazaarvoice shipped exactly that in April 2026 and patented it. Bet 2 is building Trustpilot's version, and building it on the one thing Bazaarvoice can't match: independence.
+> Trustpilot's product data today is **human-readable** (Product Review Pages) and **customer-readable** (authenticated business APIs). It is not **agent-readable** — there is no open, discoverable, machine-first surface where an agent can query product truth without being a paying customer or scraping a web page. Bazaarvoice shipped exactly that in April 2026 and patented it. Bet 2 is building Trustpilot's version on the one thing Bazaarvoice can't match: **independence** — which is also why it serves both sides at once. The consumer gets a better answer because the evidence is independent; the brand gets visibility *because* the consumer can rely on it.
 
 ## The four things that define the bet
 
