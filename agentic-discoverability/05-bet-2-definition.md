@@ -18,7 +18,7 @@ Tools an agent would call: look up product trust data by GTIN/SKU/name; compare 
 *Most concrete, most shippable, most demonstrable item in the plan.*
 
 ### 2. Attributes exposed as a filterable dimension
-Agents **filter on attributes before they rank**. Trustpilot's attribute data is the native input and today it's near-absent — two generic attributes, both optional at collection, against an industry benchmark of **95%+ fill rate**.
+Agents **filter on attributes before they rank** — a missing attribute means the product is *unmatched*, not down-ranked. Trustpilot's attribute data is the native input, and today the live form offers **two generic attributes, both optional**, which structurally caps per-SKU coverage. *(The 95%+ fill-rate benchmark used in agent-experience work comes from merchant product catalogues, so treat it as an analogy; our real coverage is an internal query, not an external measurement.)*
 
 This is where Bet 1 and Bet 2 meet: **Bet 1 produces attribute values, Bet 2 exposes them as a queryable vector.** Neither works alone.
 
@@ -52,7 +52,8 @@ Bazaarvoice's equivalent is enterprise-only. Agents reward **coverage**. An open
 ## How we'd know it's working
 
 **Leading**
-- Attribute fill rate per review, and per SKU *(today: near zero. Target: 95%+)*
+- **Per-SKU attribute coverage** — share of products filterable by attribute. Measure it first; set the target from the baseline.
+- Per-review attribute fill rate — the input that drives it
 - % of catalogue with queryable attribute data
 - Review recency distribution — median age of reviews per SKU
 
@@ -67,7 +68,7 @@ Bazaarvoice's equivalent is enterprise-only. Agents reward **coverage**. An open
 - AI-referred traffic and its conversion — Trustpilot already observes AI-sourced visitors arrive with unusually high intent, and doesn't yet measure it
 - Net dollar retention on accounts using Product Reviews
 
-**Kill criterion:** if at month 9 attribute fill rate is below 40% and MCP calls aren't growing month over month, the agent surface isn't the constraint — collection is. Stop building distribution and put everything into Bet 1.
+**Kill criterion:** if at month 9 per-SKU attribute coverage hasn't moved materially off its baseline and MCP calls aren't growing month over month, the agent surface isn't the constraint — collection is. Stop building distribution and put everything into Bet 1.
 
 ---
 

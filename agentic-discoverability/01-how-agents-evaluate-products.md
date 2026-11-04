@@ -89,7 +89,28 @@ Bazaarvoice cites research that **AI agents are 20–40% less likely to select a
 
 That is the product-level analogue of the Seer finding that ChatGPT flags the *absence* of a Trustpilot profile in 34.4% of responses. Missing data isn't neutral at either level — it's evidence against.
 
-And the benchmark the agent-experience field has settled on is **95%+ fill rate on core attributes**. Trustpilot's attribute fields are optional at the point of collection, which puts actual fill rate near zero. **That gap — 95% target against a near-zero floor — is the clearest single number for the deck.**
+### Fill rate, and what it actually means here
+
+**Fill rate** = of the records where an attribute *could* have a value, the share that actually do. 1,000 products, `material` populated on 800 → 80% fill.
+
+**Why the bar is so high.** Agents **filter before they rank**. Ask for "waterproof jacket under £200" and a product with no `waterproof` value doesn't rank lower — **it never enters the candidate set.** Missing data is absence, not weak signal. At 80% fill you are invisible for one in five queries that constrain on that attribute. The agent-experience field has converged on **95%+ on core attributes** for exactly that reason.
+
+**The caveat, stated plainly:** that benchmark comes from the **product-catalogue** world — merchant-supplied attributes like size, material, GTIN, battery life. Trustpilot's attributes are a different animal: **review-level ratings supplied by reviewers**. So 95% is an instructive analogy, **not a like-for-like benchmark**, and shouldn't be presented as one.
+
+**The two measures that actually matter for Trustpilot:**
+
+| Measure | Definition | Why it matters |
+|---|---|---|
+| **Per-review fill rate** | Share of reviews carrying attribute ratings | The input. Suppressed directly by the field being optional. |
+| **Per-SKU attribute coverage** | Share of products with *enough* attribute-rated reviews to yield a usable attribute score | **The one that counts.** This is what an agent can filter on. Roughly per-review fill × reviews-per-SKU — so a low fill rate gets compounded by a thin review base. |
+
+**What we don't know, and shouldn't pretend to.** Trustpilot's actual fill rate isn't measurable from outside. The inference that it's low follows from the field being optional in a mobile flow, where optional fields typically see low completion — but it's an inference, not data.
+
+**So the deck framing should be the question, not an asserted figure:**
+
+> Agents filter on attributes before they rank, so a missing attribute means the product is unmatched rather than down-ranked. Our attribute fields are **optional**, which structurally caps how much of our catalogue can be filtered on at all. **What is our per-SKU attribute coverage today? That's one query internally, and it's the first number I'd want on day one.**
+
+In an interview that's a stronger move than quoting a number you can't source — it shows you know which metric governs the strategy and that you know how to go get it.
 
 ## The AX framing
 

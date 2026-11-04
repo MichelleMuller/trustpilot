@@ -155,7 +155,9 @@ Blair's own statement of the mission is three clauses, and they are the three be
 - **Right moment, right channel** — SMS alongside email, triggered on delivery or a usage milestone, not a fixed delay. They've started here with QR-code collection; richness is the untouched half.
 - Compounds with the **trustpilot.com deliverability advantage** — competitors send from the brand's own domain and fight spam filters and consumer scepticism; we send from the brand consumers associate with independent second opinions
 
-**The number:** the agent-experience benchmark is **95%+ attribute fill rate**. Ours is near zero, because attributes are optional. That gap is the clearest single metric in the deck.
+**The metric that governs this bet:** **per-SKU attribute coverage** — the share of products with enough attribute-rated reviews to produce a score an agent can filter on. Agents filter before they rank, so a missing attribute means the product is *unmatched*, not down-ranked. Our attribute fields are **optional**, which structurally caps that coverage.
+
+*(The agent-experience field benchmarks 95%+ fill on core attributes — though that's drawn from merchant product catalogues, so it's an analogy rather than a like-for-like target. Our actual coverage isn't measurable externally. **It's one query internally, and it's the first number I'd want.**)*
 
 **Why it's bet one:** no attribute data, no agent filtering. No coverage, no syndication inventory. Everything downstream is gated here.
 
@@ -310,7 +312,7 @@ Guardrails stated anyway, because they'll be asked for: no transaction economics
 **Attribution is the metrics layer, not a fourth bet.** Blair is already on it — *"we are doing more... to help them really quantify the ROI. It isn't as straightforward as simply things like traffic metrics"* — so claiming it as an initiative would look like we hadn't listened. But nobody has closed the loop, and that's where this section earns its place.
 
 ### Leading — collection quality (Bet 1)
-- **Attribute fill rate per review and per SKU** — *today near zero; benchmark 95%+.* The headline number.
+- **Per-SKU attribute coverage** — share of products with enough attribute-rated reviews to be filterable. The headline number, and the first one to go measure. *(Per-review fill rate is the input; coverage is what agents consume.)*
 - Invitation → review conversion rate, **and the gap vs. brand-domain senders** — a number no competitor can produce
 - % of reviews carrying media
 - **Review recency distribution** — median review age per SKU. Recency is one of the CEO's three named factors and is currently unmanaged.
@@ -336,7 +338,7 @@ Guardrails stated anyway, because they'll be asked for: no transaction economics
 
 ### Kill criteria
 - **Bet 1:** if conversational collection doesn't beat the current form on *both* completion rate and attributes-per-review by month 6, the interface isn't the constraint — revert and put the money into timing and channel.
-- **Bet 2:** if at month 9 attribute fill is below 40% and MCP calls aren't growing month over month, distribution isn't the constraint. Stop building the pipe and put everything into Bet 1.
+- **Bet 2:** if at month 9 per-SKU attribute coverage hasn't moved materially off baseline and MCP calls aren't growing month over month, distribution isn't the constraint. Stop building the pipe and put everything into Bet 1.
 - **Bet 3:** if no syndication partner is live by month 12, demand-side pull wasn't strong enough to compel supply. Fold the SKU-matching work into outbound planning and stop.
 
 ## Open items
