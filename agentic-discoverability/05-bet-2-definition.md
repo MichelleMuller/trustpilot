@@ -99,7 +99,7 @@ Bazaarvoice's equivalent is enterprise-only. Agents reward **coverage**. An open
 
 - **Not a payments or checkout play.** ACP and AP2 are the transaction layer. OpenAI already retired Instant Checkout in March 2026. Not our layer.
 - **Not licensing data to model providers.** Blair considered *"licence it out piecemeal and to the highest bidder"* and rejected it on mission grounds.
-- **Not a consumer shopping destination.** Serving agents is how we serve the consumer half of the brief without colliding with *"we don't monetise at all through engagement metrics."*
+- **Not a replacement for the consumer destination.** The product pages are the human rendering of the same corpus and the substrate that gets crawled and cited. The agent layer is the machine rendering. Both, not either — see Trade-off 4 in the deck spine.
 
 ---
 

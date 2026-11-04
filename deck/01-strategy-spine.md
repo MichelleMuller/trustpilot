@@ -135,7 +135,7 @@ Blair's own statement of the mission is three clauses, and they are the three be
            we learn the pipes --> syndicate OUT (18mo+)
 ```
 
-**One engine, one distribution layer, one accelerator.** Collection produces verified depth. Inbound syndication produces breadth. Agents are how both reach the point of decision.
+**One engine, one distribution layer, one accelerator.** Collection produces verified depth. Inbound syndication produces breadth. Together they fill the product pages — the consumer destination *and* the substrate that gets crawled. Agents are how that same corpus reaches the decision when it happens inside an assistant rather than on a page.
 
 ---
 
@@ -187,7 +187,7 @@ Agents filter → rank → format. **We are strong only at format** — the cred
 3. **Provenance and freshness as the headline product.** `isVerified`, `verificationLevel`, `reviewSource` already exist as fields. Package them as the promise: not *"here's a 4.6"* but *"here's a 4.6, verified this way, this fresh, behind fraud models that removed 3.9m fakes last half."*
 4. **Open, not gated** — see the competitive note below.
 
-**Why agents and not a consumer shopping surface:** serving agents meets the consumer half of the brief *where consumers actually are*, without colliding with *"we don't monetise at all through engagement metrics."* We don't build a destination that needs traffic to justify itself.
+**Agents and the destination are the same corpus, served two ways.** The product pages are the human rendering; the agent layer is the machine rendering. They share one body of verified reviews and attributes — and the pages are also what gets crawled and cited, so they're the substrate of the citation engine, not an alternative to it. See Trade-off 4.
 
 *We are already the evidence an agent **quotes**. We are not yet the infrastructure it **relies on**.*
 
@@ -305,15 +305,45 @@ Verified-but-syndicated is a **legitimate weaker signal class**, not contaminate
 
 **And the models may be weaker on imported content at first.** They're trained on Trustpilot's own collection patterns — our invitation flows, our timing distributions, our text characteristics. Partner content is out-of-distribution, so expect lower precision early, and expect false positives on legitimate partner reviews to create friction. **Plan for a calibration period per partner**, and make the first integration a pilot, not a launch.
 
-### Resolved — neutrality and the consumer surface
+### Trade-off 4 — The consumer destination and the neutrality rule
 
-Worth noting because it was a live risk and the agent framing closed it.
+**We are building a consumer destination.** Product Review Pages, populated by verified first-party reviews (Bet 1) and verified syndicated reviews (Bet 3), with attribute breakdowns — a place a consumer can find a product and evaluate it on independent evidence.
 
-> *"We're not a marketplace... no vested interest in whether a transaction happens... **we don't monetise at all through engagement metrics.** So we're not an advertising business either."*
+That has to be said plainly, because it runs at the CEO's sharpest constraint:
 
-Building a consumer product-comparison destination would have run at this — a surface justified on traffic and attention. **Serving agents instead means we never take that risk.** We meet the consumer where they already are, and the product earns its place by making the subscription more valuable, not by capturing attention.
+> *"We're not a marketplace... **no vested interest in whether a transaction happens**... **we don't monetise at all through engagement metrics.** So we're not an advertising business either."*
 
-Guardrails stated anyway, because they'll be asked for: no transaction economics, no purchasable placement, no commercial ranking signal.
+#### Why the destination isn't optional
+
+Two reasons it has to exist, not just one:
+
+**1. It's the substrate of the citation engine.** 99.5% of Trustpilot's citations are organic — won by pages that exist, rank and get crawled. The company-level dominance didn't come from an API; it came from a consumer destination that models found useful. **Remove the pages and you remove the thing being cited.** The agent layer (Bet 2) and the consumer pages are the same corpus served two ways — human-readable and machine-readable — and the human rendering is what earned the authority in the first place.
+
+**2. It's half the brief.** *"Help consumers confidently evaluate products when making purchasing decisions."* Agents serve consumers who ask an agent. The destination serves everyone else, and it's where the consumer relationship that generates reviews actually lives.
+
+#### How it stays inside the neutrality rule
+
+**The precedent is the existing business.** Trustpilot already runs a consumer destination at scale — ~64m monthly readers, company profiles, no ads, no transaction cut, no engagement monetisation. **Product pages are that same model extended to SKU level, not a new one.** The rule was never "don't have a destination"; it was "don't monetise it on attention."
+
+Guardrails, stated explicitly because they will be tested:
+
+- **No transaction economics.** No cut, no affiliate revenue, no referral fee — whether or not a purchase happens.
+- **No purchasable placement.** Ranking and presentation by review evidence only. Placement is never sold, which also rules out funding this with advertising.
+- **No commercial ranking signal.** A paying customer's product does not outrank a non-customer's.
+- **It earns its place via the subscription**, not via traffic. More coverage → more citation → more collection → more reason to subscribe. Engagement is an output we measure, never a thing we sell.
+
+#### The genuine edge case, and an open decision
+
+There's a real distinction inside "destination" that the deck should not blur:
+
+| | Neutrality risk | Status |
+|---|---|---|
+| **Per-product pages** — look up a product, see independent evidence. The per-SKU analogue of company profiles. | **Low.** Direct extension of what already exists. | **In scope** |
+| **Cross-brand discovery** — category browse, "best X for Y", side-by-side comparison across sellers | **Higher.** We'd be ranking competing products against each other, which is closer to marketplace behaviour. | **Open — to decide** |
+
+The second is where *"no vested interest in which provider a transaction happens with"* bites hardest. It's defensible — ranking strictly on review evidence is exactly what a neutral party should be able to do — but it is a genuinely new behaviour for Trustpilot and deserves a deliberate yes or no rather than drifting into it.
+
+**Decision needed:** do we build cross-brand product comparison, or stop at per-product pages in this window?
 
 ## Metrics — how we know it's working
 
@@ -364,5 +394,4 @@ Guardrails stated anyway, because they'll be asked for: no transaction economics
 - **Not** competing with Judge.me or Okendo on SMB product-review features or price
 - **Not** building a general-purpose AEO measurement suite against Profound
 - **Not** building an outbound retailer syndication network in this window — Bet 3 buys the option, it isn't the option
-- **Not** building a consumer shopping destination
 - **Not** licensing data to model providers — considered and rejected by the CEO on mission grounds
