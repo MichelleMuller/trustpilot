@@ -139,10 +139,18 @@ Conversational elicitation instead of a static form. Attributes drawn out, not o
 The conversational interface, side by side with the current form.
 *Live demo hook: QR code to try it.*
 
-### 19. Initiative 2 — Double down on the consumer product page
-Already in flight — the job is to make it work. **PRPs need real traffic**, because traffic is what makes the pages authoritative, and authority is what gets them cited. 99.5% of our citations are organic: **won by pages that exist and rank.**
+### 19. Initiative 2 — Build the consumer destination for product truth
+Already in flight — the job is to make it work, and then make it bigger.
 
-Today: restricted beta, selected categories, **no product search on trustpilot.com**, no product sitemap, discovery only through a 12-item carousel on the brand profile. Exit the beta, finish the rollout, make products findable.
+**First, make the pages work.** PRPs need real traffic, because traffic makes pages authoritative and authority is what gets them cited. **99.5% of our citations are organic — won by pages that exist and rank.** Today: restricted beta, selected categories, **no product search on trustpilot.com**, no product sitemap, discovery only through a 12-item carousel on the brand profile. Exit the beta, finish the rollout, make products findable.
+
+**Then build cross-brand discovery — the Which? of crowdsourced product truth.**
+
+Which? is the proof the model works: independent, subscription-funded, takes nothing from manufacturers, and makes recommendations **across brands** that consumers trust. We'd do it on a different evidence base — **crowdsourced experience at scale rather than lab testing** — which is a complement, not a copy, and it scales where testing can't.
+
+**And it's the direct answer to slide 5.** *"Best running shoes for flat feet"* is a query we barely compete for. A Trustpilot page built from real review data across brands **is** the answer to it — and it will rank, and it will get cited.
+
+*Sequenced after coverage builds: comparison over a thin catalogue is worse than none. Same neutrality guardrails throughout — ranked on review evidence only, placement never sold.*
 
 ### 20. Initiative 3 — Pilot syndication *to* Trustpilot **← the controversial one**
 Flag it as controversial, then make the case.
@@ -204,9 +212,9 @@ Offerings runs as a parallel low-cost track from month one.
 
 **Syndicate *out*.** Once we've learned the matching, screening and provenance pipes from incoming syndication, we can run them in reverse — to retailer PDPs and other channels. **We earn the right to walk into a Walmart with inventory and a proven capability, not a pitch.** That's a year-two conversation, and it only exists because of Initiative 3.
 
-**Review collection flows, expanded.** The umbrella: **better widgets**, **SMS provider partnerships**, and **review collection via WhatsApp.** Collection is the engine — these are the next channels into it, and they matter most in markets where WhatsApp *is* the messaging layer.
+**Review collection flows, expanded.** New channels into the engine: **SMS provider partnerships** and **review collection via WhatsApp** — which matters most in markets where WhatsApp *is* the messaging layer.
 
-**Cross-brand product discovery.** Category browse and comparison across sellers. Needs the coverage from the window first — comparison over a thin catalogue is worse than none — and it's a neutrality decision the business shouldn't be asked to take alongside four delivery initiatives.
+**Better widgets.** A separate category — display, not collection. Free from day one (slide 22), but a proper rebuild comes once the data layer is done.
 
 ### 27. How we'll know it's working
 **The impact, stated first:**

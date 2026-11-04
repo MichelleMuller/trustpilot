@@ -234,11 +234,19 @@ Conversational elicitation instead of a static form. Attributes drawn out, not o
 
 **Governing metric:** per-SKU attribute coverage.
 
-#### Initiative 2 — Double down on the consumer product page
+#### Initiative 2 — Build the consumer destination for product truth
 
-Already in flight; the job is to make it work. **PRPs need real traffic**, because traffic makes pages authoritative and authority is what gets them cited. **99.5% of our citations are organic — won by pages that exist and rank.**
+Already in flight; the job is to make it work, and then make it bigger.
 
-Today: restricted beta, selected categories, **no product search on trustpilot.com**, no product sitemap, discovery only via a 12-item carousel on the brand profile. Exit the beta, finish the rollout, make products findable.
+**Make the pages work.** PRPs need real traffic, because traffic makes pages authoritative and authority is what gets them cited. **99.5% of our citations are organic — won by pages that exist and rank.** Today: restricted beta, selected categories, **no product search on trustpilot.com**, no product sitemap, discovery only via a 12-item carousel on the brand profile. Exit the beta, finish the rollout, make products findable.
+
+**Then cross-brand discovery — the Which? of crowdsourced product truth.**
+
+Which? proves the model: independent, subscription-funded, accepts nothing from manufacturers, and makes recommendations **across brands** that consumers trust. Different evidence base — **crowdsourced experience at scale rather than lab testing** — which complements rather than copies, and scales where testing can't.
+
+**It is also the direct answer to the query-divergence gap.** *"Best running shoes for flat feet"* is a query we barely compete for; a page built from real cross-brand review data **is** the answer to it, and it will rank and get cited.
+
+*Sequenced after coverage builds — comparison over a thin catalogue is worse than none. Guardrails unchanged: ranked on review evidence only, placement never sold, no transaction economics.*
 
 #### Initiative 3 — Pilot syndication *to* Trustpilot *(the controversial one)*
 
@@ -406,11 +414,13 @@ There's a real distinction inside "destination" that the deck should not blur:
 | | Neutrality risk | Status |
 |---|---|---|
 | **Per-product pages** — look up a product, see independent evidence. The per-SKU analogue of company profiles. | **Low.** Direct extension of what already exists. | **In scope** |
-| **Cross-brand discovery** — category browse, "best X for Y", side-by-side comparison across sellers | **Higher.** We'd be ranking competing products against each other, which is closer to marketplace behaviour. | **Open — to decide** |
+| **Cross-brand discovery** — category browse, "best X for Y", side-by-side comparison across sellers | **Manageable.** We rank competing products against each other — but on review evidence only, never on commercial relationship. The Which? model. | **In scope, sequenced after coverage** |
 
 The second is where *"no vested interest in which provider a transaction happens with"* bites hardest. It's defensible — ranking strictly on review evidence is exactly what a neutral party should be able to do — but it is genuinely new behaviour for Trustpilot.
 
-**Decision: per-product pages in this window; cross-brand comparison is a next step beyond it.** It needs the coverage from Bets 1 and 3 before it would work anyway — comparison across a thin catalogue is worse than none — and deferring it means we don't ask the business to take a neutrality decision at the same time as three delivery bets. See the roadmap.
+**Decision: both are in scope, sequenced.** Per-product pages first; **cross-brand discovery once coverage supports it** — comparison over a thin catalogue is worse than none.
+
+**The precedent that settles the neutrality question is Which?** — independent, subscription-funded, accepts nothing from manufacturers, and has made cross-brand recommendations consumers trust for decades. An independent body **can** rank products across brands, provided it never sells placement. That's the same line we already hold, and the guardrails above are exactly how Which? holds it too.
 
 ## Resourcing — what we stop doing to fund this
 
@@ -495,8 +505,8 @@ These are **not** in the window, and saying so is the point — each one is earn
 |---|---|
 | **More trust signals** | Return rates, repeat purchase, resolution behaviour — signal at scale without anyone writing anything. The CEO's stated expansion, and **the only real answer for catalogues too thin to review** (see `../research/12-coverage-limits.md`). |
 | **Syndicate *out*** | Earned by running the matching, screening and provenance pipes **inbound** first, where we control the destination and failure is cheap. This is how we eventually walk into a Walmart with inventory and a proven capability rather than a pitch. |
-| **Review collection flows, expanded** | **Better widgets, SMS provider partnerships, review collection via WhatsApp.** Collection is the engine; these are the next channels into it — and WhatsApp matters most in markets where it *is* the messaging layer. |
-| **Cross-brand product discovery** | Needs the coverage from the window first — comparison over a thin catalogue is worse than none — and it's a neutrality decision the business shouldn't be asked to take alongside four delivery initiatives. |
+| **Review collection flows, expanded** | **SMS provider partnerships and review collection via WhatsApp** — new channels into the engine, and WhatsApp matters most in markets where it *is* the messaging layer. |
+| **Better widgets** | A separate category — **display, not collection**. Free from day one, but a proper rebuild comes once the data layer is done. |
 
 ## Metrics — how we know it's working
 
