@@ -228,7 +228,7 @@ And if reviews now **build the candidate set** rather than validate it, no revie
 
 Conversational elicitation instead of a static form. Attributes drawn out, not offered as a skippable row. **Progressive** — frictionless rating at the floor, depth at the ceiling. Right moment, right channel: SMS alongside email, triggered on delivery.
 
-**The unlock: let brands run us *alongside* what they already have.** A brand on Yotpo or Judge.me shouldn't have to rip and replace to collect through Trustpilot — they add us. **That removes the switching barrier entirely**, and it's how coverage scales. It also makes free widgets and uncapped invitations coherent rather than merely generous: **if we're not monetising collection, we don't care who else is collecting too.**
+**The unlock: let brands run us *alongside* what they already have.** A brand on Yotpo or Judge.me shouldn't have to rip and replace to collect through Trustpilot — they add us. **That removes the switching barrier entirely**, and it's how coverage scales. And it pairs with the syndication fee: a brand that won't switch collection platforms can still bring its reviews to us, screened and scored, for a price.
 
 **The brand's advantage:** reviews requested through trustpilot.com convert better than reviews requested from a brand's own domain — better deliverability, and an ask that reads as *"tell the world"* rather than *"help our marketing."*
 
@@ -269,26 +269,35 @@ Commerce is standardising on it — **Adobe made MCP the default agent protocol 
 
 ## Trade-offs
 
-### Trade-off 1 — Give the widgets away and move monetisation up the stack
+### Trade-off 1 — Free the display layer, charge for verified supply
 
-Today we meter inputs and gate display: invitations capped by plan (50/100/300/1,000), TrustBox widgets gated behind Plus and Premium. **That prices what competitors give away and under-prices the only thing we have.** Judge.me ships unlimited reviews and display tooling at $0–15/mo; our widget offering is weaker *and* costs more.
+*Full model in [`04-monetisation.md`](04-monetisation.md).*
 
-**The move: update the widgets, make them free, uncap invitations, and monetise the visibility and insight layer instead.**
+> **We charge for verified supply. We give away display and demand.**
 
-Blair's own framing supports it — *"Not quite SaaS... it's more about **the data and the infrastructure**."* Infrastructure is priced on value delivered, not metered inputs. And invitation caps actively throttle our single biggest structural advantage.
+**Widgets go free.** Display is a commodity — Judge.me ships unlimited reviews and display tooling at $0–15/mo, and ours is weaker *and* costs more. Charging for it loses deals on the one layer where we have no advantage, and suppresses what we actually want: our content on more sites.
 
-**This is also the sequencing insight:** free widgets and uncapped invitations are what *produce* the volume Bet 1 needs. **Repackaging comes first, not last.**
+**Invitations stay metered — and that's deliberate.** An invitation goes to a known purchaser and produces a **verified-purchase review**: the highest-trust, brand-controlled, most citable content on the platform. Organic reviews are free and uncontrolled; invitations are directed supply. **The cap isn't a tax on the product — it is the product.**
 
-| For | Against |
+And it strengthens as Initiative 1 lands: **a better flow means every invitation returns more.** Product work becomes pricing power, the way seats do in SaaS. *One change: tier the allowance on **catalogue size**, not just company size — a brand with 10,000 SKUs on a 1,000-invitation plan cannot cover its catalogue, and coverage is what the strategy turns on.*
+
+**Syndication becomes a new ARR line.** Brands on Yotpo, Okendo, Judge.me or Loox can choose to **also** syndicate to Trustpilot, for a fee — reviews screened by our fraud models, carried with a trust score, present on PRPs and in the MCP. **Verified presence where AI looks, without changing their collection stack.**
+
+That one move does four things: it reaches brands we currently cannot sell to at all; it **dissolves the "why would a competitor feed us" risk**, because it isn't the competitor's decision — the brand owns its reviews and can bring them; it makes Initiative 3 **revenue-positive**, with the fee funding the screening cost; and it monetises **coverage** directly.
+
+**The agent layer stays open and free.** Agents reward coverage, so gating it caps the thing that makes it valuable. *Consumers read free. Agents read free. Brands pay to be found well* — the company's existing architecture, with agents as the new consumers.
+
+**The line that constrains all of it:** *you can pay to have your data complete and verified; you cannot pay to rank higher.* Paying improves data **quality**, never **position** — exactly as today, where you pay to collect reviews but never buy the score.
+
+| Line | Direction |
 |---|---|
-| Display is commodity; we were losing on it anyway | Gives up near-term revenue from widget-driven upgrades |
-| More widgets live = more content visible = more collection | Harder pricing conversation in transition |
-| Stops invitation caps taxing our deliverability advantage | Enterprise may resist repackaged line items |
-| Moves monetisation to the layer only we can supply | Requires AI-visibility value to be **provable** |
+| Widgets | **Given away** |
+| Invitations | **Core, strengthened** — tiered on catalogue |
+| Syndication | **New ARR line** |
+| Intelligence | Grown |
+| Agent access | Deliberately unmonetised |
 
-**The bet underneath the bet:** that independent AI visibility is durable enough to carry the price. If it isn't, we've given away revenue for nothing. Biggest commercial risk in the plan.
-
----
+**One line given away, one created, two strengthened.**
 
 ### Trade-off 2 — Incentivised reviews: the line we don't cross
 
@@ -446,7 +455,7 @@ Widgets and dashboards are **what customers ask for in the sales call.** Freezin
 
 | Workstream | What ships |
 |---|---|
-| **Repackage** *(Trade-off 1)* | Widgets updated and made free. Invitation caps removed. Monetisation moved to the visibility and insight layer. **First, because it's what produces the volume everything else needs.** |
+| **Repackage** *(Trade-off 1)* | Widgets updated and made free. Invitation allowances re-tiered on catalogue size. Syndication priced as a new ARR line. |
 | **Measure** | Baseline **per-SKU attribute coverage** — the number that governs the whole plan and that nobody has looked at |
 | **Identity** | **The entity model** — provider + offering as the key, external identifiers as an optional list, category tree spanning retail and non-retail **from day one**. Prerequisite for canonical URLs, syndication matching and agent lookup, and the thing that keeps offerings cheap later. |
 | **Plumbing** | Exit PRP beta, complete the non-English rollout, add a product sitemap, extend product JSON-LD to attributes, surface provenance fields |
