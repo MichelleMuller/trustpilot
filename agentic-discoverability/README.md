@@ -32,5 +32,6 @@ So the question this folder answers is: **what would Trustpilot actually build, 
 | [`03-what-trustpilot-exposes-today.md`](03-what-trustpilot-exposes-today.md) | Current API and structured-data surface, and precisely where it falls short |
 | [`04-competitive-benchmark.md`](04-competitive-benchmark.md) | Bazaarvoice's Authentic Discovery API — the thing to beat |
 | [`05-bet-2-definition.md`](05-bet-2-definition.md) | What we'd ship, in what order, and how we'd know it worked |
+| [`06-why-company-reviews-get-cited.md`](06-why-company-reviews-get-cited.md) | **The blueprint** — the eleven mechanics behind Trustpilot's company-level citation dominance, and which transfer to products |
 
 *Last updated: 4 November 2026*

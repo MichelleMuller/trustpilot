@@ -18,7 +18,13 @@
 - [ ] **Summarisation behaviour and bias** — do models over-index on negative reviews, extremes, or recency when synthesising?
 - [ ] Look for academic / industry work on review summarisation and opinion extraction, not just vendor blogs
 
-**Output:** a new file in `agentic-discoverability/` — `06-how-models-parse-reviews.md` — and any consequent revisions to Bet 1's collection design.
+**Output:** a new file in `agentic-discoverability/` — `07-how-models-parse-reviews.md` — and any consequent revisions to Bet 1's collection design.
+
+*(See [`agentic-discoverability/06-why-company-reviews-get-cited.md`](agentic-discoverability/06-why-company-reviews-get-cited.md) for the companion analysis of why company-level citation already works — that one is done.)*
+
+**Two questions that surfaced from the 06 analysis and belong in this research:**
+- [ ] **Where is the per-SKU presence cliff?** The company-level curve is 1% → 54% at ~13 reviews → 75% at ~81. The product-level equivalent is unmeasured and would be the single most useful number in the deck.
+- [ ] **Product identity.** The domain was a free primary key at company level; products have no equivalent in use. How do models and agents resolve product identity — GTIN, title matching, something else?
 
 ---
 
@@ -69,7 +75,7 @@ Strong move for three reasons: it demonstrates the product rather than describin
 | Item | State |
 |---|---|
 | Research base (10 notes + reference material) | ✅ Done |
-| Agentic discoverability definition | ✅ Done — one research gap open (item 1) |
+| Agentic discoverability definition | ✅ Done — incl. the company-level blueprint. One research gap open (item 1) |
 | Strategy spine, three bets, trade-offs, metrics | 🟡 Drafted — 6 open decisions |
 | Deck build | ⬜ Not started |
 | Collection prototype | ⬜ Not started |
