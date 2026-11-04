@@ -75,6 +75,14 @@ Attribute
 
 **Same structure, different vocabulary.** The MCP server returns `attributes[]` either way and the agent filters identically — which is the whole point, because agents filter on attributes before they rank.
 
+### Where the vocabularies come from
+
+**Generated, not configured.** An LLM reads the product or offering and proposes the attributes worth asking about — the collection flow then asks them (see Initiative 1). This is what makes the model viable across both motions: nobody hand-builds an attribute taxonomy for financial services, and no brand configures one for a 2,000-product catalogue.
+
+**Generated at category level, not per product.** This is the constraint that makes the data filterable: *arch support* must mean the same thing on every running shoe, or an agent cannot compare across them. Per-product free-form attributes produce one-offs — rich to read, useless to filter.
+
+So the vocabulary is a **category-scoped, model-generated, human-reviewable set**, with per-product phrasing variation on top. That gives coverage without configuration and comparability without a hand-built taxonomy.
+
 ### Provenance travels with everything
 
 Every review and every derived attribute carries the tier from Trade-off 3 — `verified_first_party`, `verified_syndicated`, with verification method and recency. **Identical for both motions**, because it's a property of how the review was obtained, not what it describes.

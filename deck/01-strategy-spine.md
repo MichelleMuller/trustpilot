@@ -226,7 +226,19 @@ And if reviews now **build the candidate set** rather than validate it, no revie
 
 #### Initiative 1 — Enhance the collection flow for attribute coverage
 
-Conversational elicitation instead of a static form. Attributes drawn out, not offered as a skippable row. **Progressive** — frictionless rating at the floor, depth at the ceiling. Right moment, right channel: SMS alongside email, triggered on delivery.
+**Don't infer attributes — ask for them, and let the model decide what to ask.**
+
+An LLM can read a product and generate the questions worth asking: a running shoe → fit, arch support, durability, breathability; a mattress → firmness, motion transfer, temperature; a savings account → rate, fees, app quality, service.
+
+**A form structurally cannot do this.** Fixed fields mean everyone gets the same two generic questions. A conversation asks *this product's* questions — which is the actual case for conversational collection, not that forms are dull.
+
+**And it inverts the volume problem.** Company-level attributes are *derived* from hundreds of reviews — AI already extracts five themes from Trustpilot text (service 63%, shipping 34%, quality 33%, legitimacy 30%, refunds 21%). That works because a company has thousands of reviews. Most products have a handful, so derivation has nothing to work from. **Asking produces a structured value from a single review.**
+
+**It's also the adoption unlock.** Okendo makes brands configure attribute prompts — setup burden is why most catalogues never get covered. Generated attributes mean **coverage from day one with zero configuration**, and the same mechanism serves offerings as well as physical goods.
+
+*Two design constraints: generate at **category** level so "arch support" means the same thing across every running shoe — per-product free-form attributes are one-offs and nothing is comparable. And questions must be neutral: "did you love the comfort?" biases the answer and corrupts the data.*
+
+**Progressive** — frictionless rating at the floor, depth at the ceiling. Right moment, right channel: SMS alongside email, triggered on delivery.
 
 **The unlock: let brands run us *alongside* what they already have.** A brand on Yotpo or Judge.me shouldn't have to rip and replace to collect through Trustpilot — they add us. **That removes the switching barrier entirely**, and it's how coverage scales. And it pairs with the syndication fee: a brand that won't switch collection platforms can still bring its reviews to us, screened and scored, for a price.
 

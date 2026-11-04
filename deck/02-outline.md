@@ -97,8 +97,19 @@ At company level we won by **covering the entity space**. Absence became a signa
 And if reviews build the candidate set, no review data means **not in the set.** Coverage becomes existence.
 
 ### 13. Initiative 1 — Enhance the collection flow
-Conversational elicitation instead of a static form. Attributes drawn out, not offered as a skippable row. Progressive: frictionless rating at the floor, depth at the ceiling. Right moment, right channel — SMS alongside email, triggered on delivery. **Variant capture** — *which one did you buy* — so fifty variants need reviews tagged, not fifty times the volume.
-**And brands run us alongside what they already have.** No rip-and-replace. That removes the switching barrier entirely.
+**Don't infer attributes. Ask for them — and let the model decide what to ask.**
+
+An LLM can look at a product and generate the right questions: a running shoe → fit, arch support, durability, breathability. A mattress → firmness, motion transfer, temperature. A savings account → rate, fees, app, service.
+
+**That's what a form structurally cannot do.** A form has fixed fields, so it asks everyone the same two generic questions. A conversation asks *this product's* questions.
+
+And it inverts the volume problem from slide 8: **instead of inferring attributes from hundreds of reviews, you ask once and get a structured value from one.** No volume requirement, no drift, no per-brand configuration.
+
+**Which is the adoption unlock.** Okendo makes brands configure attribute prompts; that's setup burden, and setup burden is why most catalogues never get covered. **Generated attributes mean a brand gets coverage on day one with zero configuration** — and the same mechanism works for bank accounts and holiday packages, not just physical goods.
+
+*Design constraint: generate at **category** level so "arch support" means the same thing across every running shoe — otherwise attributes are one-offs and nothing is comparable. And questions must be neutral; "did you love the comfort?" biases the answer.*
+
+Plus: progressive depth, right moment and channel (SMS alongside email, triggered on delivery), **variant capture** — *which one did you buy* — and **brands run us alongside what they already have.** No rip-and-replace.
 
 ### 14. Today's collection flow **[ASSET — screenshots in repo]**
 The teardown. Two generic attributes, **both optional**. Media: three empty boxes, no prompt. No verified-purchase signal. No variant capture. Manual date entry inherited from company reviews.
