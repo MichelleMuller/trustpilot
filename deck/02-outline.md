@@ -62,7 +62,7 @@ Seer funnel: **2% awareness → 16% evaluation → 24% intent.** That shape desc
 
 **And one the study didn't test, which the agent era adds: verified purchase.** Trustpilot already holds it — `isVerified`, `verificationLevel`, `reviewSource` — and shows a badge to humans. It isn't exposed as a signal a machine can read, and schema.org has no slot for it. **In an internet filling with synthetic review text, that's the most defensible thing we could hand an agent.**
 
-> **Seer told us what AI reaches for. We supply it strongly at company level and at lower volume per product — and the queries are moving to products.**
+> **Seer told us what AI reaches for. We supply it strongly at company level, and at lower volume per product — which is the half of the market we've chosen to go after.**
 
 # ACT 2 — The thesis
 

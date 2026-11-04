@@ -26,7 +26,7 @@ Company-intent and product-intent queries are different queries, on both ChatGPT
 | "is this site a scam" | "does this jacket run small" |
 | "what's their return policy" | "X vs Y — which actually lasts" |
 
-The right-hand column is **larger in volume and it's where comparison happens** — and the 9.5x co-mention effect only plays out there.
+The right-hand column is **where comparison happens** — and the 9.5x co-mention effect only plays out there. We have no measure of its size relative to the left, and we don't need one: it's a distinct, substantial category sitting closest to the purchase, and we barely serve it.
 
 **And the funnel has collapsed.** Seer measured review citation at 2% Awareness → 16% Evaluation → **24% Intent** — the shape of the *old* journey, where consumers discovered products themselves and used reviews to validate a choice already narrowed. In agentic discovery, one query does all three: the model uses review data to **build the candidate set**. Mechanically, agents **filter → rank → format**, and attributes and sentiment are consumed at **filter**.
 
@@ -62,7 +62,7 @@ The Seer study tells us precisely what AI uses when it cites a review source. **
 
 **Note what the two cleanly-converting signals have in common:** both are **counts and scores**. They convert because there's nothing to interpret. Everything below them needs either more volume per product, or a mechanism we haven't built.
 
-> **Seer told us what AI reaches for. We supply it strongly at company level and at lower volume per product — and the queries are moving to products.**
+> **Seer told us what AI reaches for. We supply it strongly at company level, and at lower volume per product — which is the half of the market we've chosen to go after.**
 
 ### 5. Why it isn't won yet — the collection layer is thin
 Our live product review form (teardown: `research/07-practitioner-view.md`):

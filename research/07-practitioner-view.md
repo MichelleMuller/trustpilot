@@ -33,7 +33,7 @@ Trustpilot's company-level asset answers the **left column** — and answers it 
 
 It has almost nothing to say about the **right column**. And the right column is:
 
-- **Far larger in volume.** Most shopping research is about products, not about whether a merchant is a fraud.
+- **A substantial category in its own right.** *(We have no data on its size relative to company-intent queries — the argument doesn't need one, and claiming it would be an unforced error in front of people who may have the numbers.)*
 - **Closer to the purchase.** This maps directly onto the Seer funnel data: review citations run 2% at Awareness, 16% at Evaluation, **24% at Intent**. Product-intent queries cluster at the bottom of that funnel, where review data is most heavily used and where commercial value concentrates.
 - **Where the comparison happens.** "X vs Y" and "best ___ for ___" are the queries that decide purchases, and they're product-shaped. This is also where the Seer **co-mention effect** (9.5x) actually plays out — competitive visibility is won in product comparison queries, not company legitimacy ones.
 - **Structurally unanswerable with company data.** No amount of company-level review volume helps an AI answer "does this jacket run small."
