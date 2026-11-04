@@ -165,7 +165,7 @@ Agents filter → rank → format. **We are strong only at format** — the cred
 
 ---
 
-### Bet 3 — Syndicate *in*: become the place product reviews come to
+### Bet 3 — Syndicate *in*: become the verification layer for the category
 
 **The inversion.** We cannot build Bazaarvoice's 1,750-retailer outbound network in 18 months. We don't have to — we can become the place everyone syndicates **to**.
 
@@ -176,12 +176,12 @@ Agents filter → rank → format. **We are strong only at format** — the cred
 **What it buys:**
 - **Coverage, fast.** Discovery and citation both need catalogue breadth. Organic collection builds it slowly; inbound syndication builds it now.
 - **A commercial surface we don't have.** We can serve brands who will never switch collection vendors — which only makes sense once we've stopped monetising collection (see Trade-off 1).
-- **More data to learn on** — attribute extraction and category sentiment models improve with volume.
+- **A stronger moat, not a weaker one.** Everything inbound passes our fraud models, so syndication pushes more volume and more adversarial variety through the detection that is already the company's deepest asset. Attribute extraction and category sentiment models improve too.
 - **The pipes.** SKU matching across catalogues — GTINs, variants, title collisions — is the hard engineering problem in syndication. We solve it **inbound**, where we control the destination and failure is cheap. **That is how we earn the right to syndicate outbound in year two.**
 
 **The risk, named:** why would Judge.me or Bazaarvoice feed us? The honest answer is the Google one — **because brands make them.** Google didn't persuade vendors to integrate; merchants demanded it because Google was where the demand was. This is a bet that our demand-side pull is strong enough to compel supply. It may not be, at first.
 
-**And the integrity problem is real** — see Trade-off 3, which is where this bet lives or dies.
+**The integrity problem is real — and we've answered it.** Nothing is ingested without passing Trustpilot's own fraud models. We don't host other platforms' reviews, **we verify them** — which lets us strip incentivised content at the door rather than refusing syndication to avoid it. See Trade-off 3.
 
 ## Trade-offs
 
@@ -218,30 +218,62 @@ Larger brands will ask for incentivised review support. It's real revenue and co
 
 ---
 
-### Trade-off 3 — Inbound syndication vs. the integrity moat
+### Trade-off 3 — Inbound syndication vs. the integrity moat: *verified at the door*
 
-**This is where Bet 3 lives or dies, and it deserves the most honest slide in the deck.**
+**This is where Bet 3 lives or dies, and the decision we've taken turns it from a risk into the product.**
 
 Trustpilot has **already made this call in the opposite direction**. From the Product Review Pages documentation:
 
 > *"**Only reviews collected through Trustpilot's invitation methods appear here**, so any third-party imported reviews won't be displayed."*
 
-That is not an oversight — it's the integrity architecture. Ingesting Judge.me, Loox or Okendo content means ingesting reviews collected under someone else's standards, **including incentivised reviews**, which several of them permit. Which runs straight into Trade-off 2.
+That is the integrity architecture, not an oversight. Ingesting Judge.me, Loox or Okendo content means ingesting reviews collected under someone else's standards — **including incentivised reviews**, which several permit. Which runs straight into Trade-off 2.
 
-**The solve: don't blend. Tier by provenance.**
+#### The decision: we run our own fraud models over everything that comes in
 
-| Tier | Treatment |
+Syndicated content doesn't get hosted. **It gets screened.** Nothing enters without passing the same detection that removed 3.9m fakes last half.
+
+That single choice changes what Bet 3 *is*:
+
+| Without verification | With verification |
 |---|---|
-| **Trustpilot-verified** | Collected by us, passed our fraud models. Carries the product score and the TrustScore. |
-| **Syndicated** | Displayed, labelled by source, **excluded from the score**, with provenance metadata attached when exposed to agents. |
+| We host other platforms' content | **We verify other platforms' content** |
+| Integrity is diluted | **Integrity is extended** |
+| Coverage bought at the cost of the moat | **Coverage *and* a bigger moat** |
+| A liability to be labelled around | **A product nobody else can offer** |
 
-**The precedent exists inside the product.** MultiSource widgets already combine Trustpilot and third-party imported reviews — and Trustpilot already documents that those scores differ from PRP scores. We're extending an existing trust model, not inventing one.
+#### Four consequences
 
-It also maps to the stated roadmap: *"we're interested in **other trust signals** as well."* A syndicated review is a **weaker trust signal, scored accordingly** — a legitimate signal class, not a contaminated one, **provided it never touches the verified score.**
+**1. It resolves the tension with Trade-off 2 instead of living with it.**
+Incentivised reviews are a *detectable pattern* — clustered timing, correlated with promo mechanics, characteristic language. If we screen inbound content, we can **strip incentivised reviews at ingestion** rather than refusing syndication to avoid them.
 
-**The open question to decide, not duck:** do we verify imported content with our own fraud models? Labelled-but-unverified is cheap. Running our models over imported reviews costs real money that scales with volume — and is the thing that would make the corpus genuinely more valuable than anyone else's.
+That is precisely what Walmart, Target and Google already require of review content — and Trustpilot becomes the thing that does for AI answers what those retailers do for their own product pages. **We don't have to choose between coverage and the line we won't cross.**
 
----
+**2. It feeds the moat the CEO already names.**
+The data moat is 400m+ reviews and 200,000+ daily submissions training probabilistic detection *"more like spam detection in email or fraud detection with credit card companies."* Screening inbound content means **more volume through the models, and adversarial variety the models have never seen.** The detection gets better because of syndication, not despite it.
+
+**3. It becomes something we can charge for.**
+We're giving widgets away and uncapping invitations (Trade-off 1), so we need the scarce layer to be genuinely scarce. **Independent verification of someone else's review corpus is exactly that** — costly, hard, and uniquely ours. Bazaarvoice can syndicate volume; it cannot offer independent verification of a competitor's content.
+
+This is "provenance beats volume" made concrete and billable.
+
+**4. It gives agents something no one else can give them.**
+Not *"here's a 4.6"*, and not even *"here's a 4.6 we collected."* It's: **"here's a 4.6, from this source, screened by the models behind 400m reviews, incentivised content removed, this fresh."** In an internet filling with synthetic review text, that is the scarce good.
+
+#### The provenance tiers
+
+| Tier | Collected by | Screened by us | Carries the score |
+|---|---|---|---|
+| **Verified — first party** | Trustpilot | ✓ | ✓ |
+| **Verified — syndicated** | Partner platform | ✓ | ✗ — displayed and exposed to agents, labelled by source, outside the product score |
+| **Rejected** | Partner platform | ✗ failed screening | Never ingested |
+
+Verified-but-syndicated is a **legitimate weaker signal class**, not contaminated content — which is exactly the *"other trust signals"* expansion already on the roadmap. The in-product precedent exists: MultiSource widgets already combine sources, and Trustpilot already documents that those scores differ from PRP scores. **We're extending a trust model, not inventing one.**
+
+#### The two honest costs
+
+**It's the largest operating cost in the plan, and it scales with volume.** Fraud detection at 200k submissions a day is already a cost centre; inbound syndication multiplies throughput. This has to be funded deliberately and priced into the partner or brand relationship — it cannot be a free service.
+
+**And the models may be weaker on imported content at first.** They're trained on Trustpilot's own collection patterns — our invitation flows, our timing distributions, our text characteristics. Partner content is out-of-distribution, so expect lower precision early, and expect false positives on legitimate partner reviews to create friction. **Plan for a calibration period per partner**, and make the first integration a pilot, not a launch.
 
 ### Resolved — neutrality and the consumer surface
 
@@ -274,6 +306,8 @@ Guardrails stated anyway, because they'll be asked for: no transaction economics
 - SKUs with queryable attribute data
 - Syndication partners live; share of catalogue covered by syndicated vs. verified reviews
 - SKU match rate — the capability that earns outbound syndication later
+- **Screening throughput and rejection rate on inbound content** — and the incentivised-review strip rate, which is the proof point for the whole tier model
+- Model precision on partner content vs. first-party, per partner, through calibration
 
 ### Lagging — commercial
 - Product Reviews attach rate and ARR, **US specifically**
@@ -288,7 +322,8 @@ Guardrails stated anyway, because they'll be asked for: no transaction economics
 ## Open items
 
 - [ ] Resourcing: what does Bet 1 cost, and what are we stopping to fund it?
-- [ ] Decide: do we verify syndicated content with our own fraud models? (Trade-off 3)
+- [x] ~~Decide: do we verify syndicated content with our own fraud models?~~ **Yes — everything inbound is screened. See Trade-off 3.**
+- [ ] Size the verification cost, and decide who pays: syndication partner, or the brand
 - [ ] Pick the three headline metrics for the one-slide version
 - [ ] Does the US slide lead with **offerings** (financial services — where the CEO's evidence is) or **ecommerce** (where the volume and product-intent demand are)?
 - [ ] Confirm PRP rollout status — the H1 call says all languages from 1 Oct; the help centre still says six English markets

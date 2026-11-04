@@ -27,7 +27,9 @@ Also means extending product JSON-LD beyond the headline score into filterable a
 ### 3. Provenance and freshness as the headline product
 `isVerified`, `verificationLevel` and `reviewSource` already exist. Package them as the promise: not *"here's a 4.6"* but *"here's a 4.6, verified this way, this fresh, backed by fraud models that removed 3.9m fakes last half."*
 
-In an internet filling with synthetic review text, **verifiable provenance is the scarce good.** It's also what makes inbound syndication safe — tiering by provenance is already modelled in the data.
+In an internet filling with synthetic review text, **verifiable provenance is the scarce good.**
+
+And it gets stronger with Bet 3: because **everything syndicated in is screened by Trustpilot's own fraud models**, the promise to an agent isn't just *"we collected this"* — it's *"this passed the detection behind 400m reviews, whoever collected it, with incentivised content removed."* That is a claim no other review source can make, and it's the thing worth exposing as a first-class field.
 
 ### 4. Open, not gated
 Bazaarvoice's equivalent is enterprise-only. Agents reward **coverage**. An open surface across the whole catalogue is both strategically consistent with the open-platform thesis and commercially differentiating — and it pairs with the repackaging: stop monetising access, monetise visibility and insight.
