@@ -48,19 +48,21 @@ Seer funnel: **2% awareness → 16% evaluation → 24% intent.** That shape desc
 > **The goal is that the best product for the query gets discovered and converted on.**
 
 ### 8. What AI reaches for — and where we supply it
-**The Seer study told us exactly what AI uses when it cites a review source. We need all of it, at both levels — and at product level we have almost none of it.**
+**The Seer study told us exactly what AI uses when it cites a review source. We need all of it, at both levels — and at product level we have far less of it.**
 
 | What AI uses | What the study found | Where we stand |
 |---|---|---|
-| **A score** | **59%** of Trustpilot-citing answers quote the TrustScore or star rating | Strong at company. **Most products have none.** |
-| **A count** | **16.6%** quote review volume; ~3 in 5 surface a numeric signal of some kind | Strong at company. Thin at product. |
-| **Thematic detail** | Five themes dominate: service **63%**, shipping **34%**, quality **33%**, legitimacy **30%**, refunds **21%** | **Derived** from text at company level. At product level there isn't enough text to derive from — it has to be **collected**. |
-| **Recency** | One of three named factors. Stale reviews are far less likely to be cited | **Free at company** — 200k reviews a day means a page is never stale. **Not free at product.** |
-| **Volume past a threshold** | **1% → 54%** at ~13 reviews **→ 75%** at ~81 | Proven at company. **The product threshold is unmeasured by anyone.** |
+| **A score** | **59%** of Trustpilot-citing answers quote the TrustScore or star rating | Strong at company. **Lower volume at product level.** |
+| **A count** | **16.6%** quote review volume; ~3 in 5 surface a numeric signal of some kind | Strong at company. Lower at product level. |
+| **Thematic detail** | Five themes dominate: service **63%**, shipping **34%**, quality **33%**, legitimacy **30%**, refunds **21%** | **Derived** from text at company level. Deriving themes needs a lot of reviews about one thing — so at lower per-product volume it has to be **collected** instead. |
+| **Recency** | One of three named factors. Stale reviews are far less likely to be cited | **Free at company** — 200k reviews a day means a page is never stale. **Not automatic at product level.** |
+| **Volume past a threshold** | **1% → 54%** at ~13 reviews **→ 75%** at ~81 | Proven at company. **No published figure for the product-level threshold.** |
+
+**Why per-product volume is structurally lower.** A company page aggregates *every* customer. A product page gets only the buyers of that product. So the count per product is necessarily a fraction of the count per company — arithmetic, not an assumption. **Mechanisms that work at company scale — deriving themes from text, freshness arriving for free — can't be assumed to work per product.**
 
 **And one the study didn't test, which the agent era adds: verified purchase.** Trustpilot already holds it — `isVerified`, `verificationLevel`, `reviewSource` — and shows a badge to humans. It isn't exposed as a signal a machine can read, and schema.org has no slot for it. **In an internet filling with synthetic review text, that's the most defensible thing we could hand an agent.**
 
-> **Seer told us what AI reaches for. We supply it at company level and barely at product level — and the queries are moving to products.**
+> **Seer told us what AI reaches for. We supply it strongly at company level and at lower volume per product — and the queries are moving to products.**
 
 # ACT 2 — The thesis
 
