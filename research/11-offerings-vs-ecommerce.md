@@ -89,6 +89,18 @@ They aren't competing framings. They do different work, and the strategy needs b
 | **Entry** | The Shopify Key Product Partner rail — ~14% of US ecommerce, already built, underused | The vertical enterprise motion already winning: financial services, insurance, banking, credit unions, education, hospitality |
 | **Competitive position** | **Contested.** Bazaarvoice's network, Judge.me's price | **Uncontested.** No review platform can follow, and the comparison incumbents are affiliate-paid |
 
+## The sequencing — and why it can't be serial
+
+**We want both.** The question is order, and there's a tension in it.
+
+**Ecommerce has to lead** on operational grounds: the Shopify rail exists, it produces the corpus everything else needs, it proves the attribute system on easy categories, and it has no regulatory gate.
+
+**But the offerings window is closing faster.** Brand-homepage citations in insurance rose 1.4% → 12.8% in four months; Healthcare.gov went 19.2% → 40.4%; MoneySuperMarket is already inside ChatGPT. **AI is actively filling the vacuum with brand-owned and government content, and citation defaults entrench.** Waiting 12 months to start means arriving after the models have habituated.
+
+So: **parallel, with asymmetric investment.** Ecommerce gets the engineering. Offerings gets a cheap de-risking track from month one — one vertical pilot, attribute taxonomy design, legal review — so that when the engine is ready, the two blockers are already cleared.
+
+**And the pilot already exists.** Blair names TUI using product reviews for holiday offerings, and banks using them for account types. The job isn't to invent the use case; it's to turn an existing customer workaround into a product.
+
 ### The line for the deck
 
 > **Ecommerce is how we get the volume. Offerings is where we keep the margin — because it's the one part of this market no competitor can follow us into.** Bazaarvoice's 1,750-retailer network is worth nothing to a bank. And in a category where AI is already citing brands' own homepages 12.8% of the time and the only comparison layer is paid on conversion, *independent* is not a feature. It's the entire product.

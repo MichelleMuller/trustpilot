@@ -127,7 +127,33 @@ The CEO has already named the destination. Our job is to say *how Product Review
 
 **The incumbents there are paid on conversion.** MoneySuperMarket, NerdWallet and Bankrate are affiliate-monetised — and MoneySuperMarket already has a ChatGPT app covering insurance, credit cards and loans. So the comparison layer forming in AI has a commercial interest in the answer. In apparel, neutrality is a nice-to-have. **In financial services, where the only alternative is paid on conversion, neutrality is the entire product** — and it's exactly what *"no vested interest in whether a transaction happens at all, let alone which provider"* buys us.
 
-*Honest counterweights: attributes need category-specific definition per vertical (what are the attributes of a savings account?), regulated-product reviews need legal input, and offerings won't generate the corpus — that's what ecommerce is for. Which is why ecommerce leads.*
+### The opportunity: we want both — and the sequencing is the hard part
+
+**This is not a choice between two markets. The prize is both, and the order matters.**
+
+**Why ecommerce leads:**
+- **The rail already exists.** Shopify Key Product Partner, built, underused. We can start without building distribution.
+- **It produces the corpus.** The attribute system, the extraction models and the fraud models all need volume, and offerings won't supply it — a bank has eight account types, a Shopify store has five hundred SKUs.
+- **It proves the attribute system on easy categories first.** Sizing accuracy and durability before we attempt "what are the attributes of a savings account."
+- **No regulatory gate.** Ships immediately.
+
+**But the offerings window may be closing faster than the ecommerce one.** This is the tension, and it's the reason sequencing can't mean *serial*:
+
+- Brand-homepage citations in insurance went **1.4% → 12.8% in four months**. AI is actively filling the vacuum with brand-owned content, and defaults entrench.
+- **MoneySuperMarket is already inside ChatGPT** with insurance, credit cards and loans.
+- Every month the gap stays open, the models get more habituated to citing government sites and brand pages for exactly the queries we should own.
+
+So the answer is **parallel, with asymmetric investment** — ecommerce gets the engineering, offerings gets a cheap track that de-risks the later scale-up.
+
+| | **Ecommerce** | **Offerings** |
+|---|---|---|
+| **0–6 mo** | The build. Shopify rail, conversational collection, identity, plumbing. | **One vertical pilot with an existing enterprise customer**, plus attribute-taxonomy design and legal review on regulated products. Cheap, and it removes the two things that would otherwise block scale later. |
+| **6–12 mo** | Scale collection, MCP v1 | Pilot proves out; second vertical; taxonomy extends |
+| **12–18 mo** | Coverage, syndication, agent layer | **Offerings scales** on a proven attribute system through the enterprise motion that's already winning |
+
+**The pilot isn't hypothetical — it already exists.** Blair names it: *"a bank with different accounts, or **TUI, who are using product reviews for specific holiday offerings**."* The proof is inside the business already. The job is to turn one customer's workaround into a product.
+
+*Honest counterweights, which is why ecommerce still leads: attributes need category-specific definition per vertical, regulated-product reviews need legal input before anything ships, and offerings won't generate the corpus.*
 
 ---
 
@@ -421,6 +447,7 @@ Widgets and dashboards are **what customers ask for in the sales call.** Freezin
 | **Plumbing** | Exit PRP beta, complete the non-English rollout, add a product sitemap, extend product JSON-LD to attributes, surface provenance fields |
 | **Collection** | Conversational collection: research and experimentation, first A/B against the current form |
 | **Syndication** | Partner conversations; design the screening pipeline |
+| **Offerings** *(parallel, low-cost)* | One vertical pilot with an existing enterprise customer — TUI already does this informally. Attribute taxonomy design. Legal review on regulated-product reviews. |
 
 ### Months 6–12 — collection at scale, agent layer v1
 
@@ -430,6 +457,7 @@ Widgets and dashboards are **what customers ask for in the sales call.** Freezin
 | **Agents** | **MCP server v1** — product lookup and comparison tools |
 | **Syndication** | First partner **pilot**, not launch — with a per-partner model calibration period |
 | **Trust** | Provenance tiering live: verified first-party, verified syndicated, rejected |
+| **Offerings** | Pilot proves out; second vertical; taxonomy extends |
 
 ### Months 12–18 — coverage and the queryable layer
 
@@ -439,6 +467,7 @@ Widgets and dashboards are **what customers ask for in the sales call.** Freezin
 | **Agents** | Open agent endpoint. Provenance and freshness as a documented, named promise. |
 | **Agents** | Active surface partnerships, on the Meta Muse precedent |
 | **Measurement** | The attribution loop: citation → AI-referred visit → conversion. The unclaimed position in the category. |
+| **Offerings** | **Scales** on the proven attribute system, through the enterprise motion already winning |
 
 ### Beyond 18 months — the next steps this buys
 
