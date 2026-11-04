@@ -32,10 +32,10 @@
 
 The spine exists in [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md). What's still genuinely open:
 
-- [ ] **Resourcing.** What does Bet 1 cost, and what gets stopped to fund it? The trade-offs section is strong on product trade-offs and silent on cost — and the brief explicitly asks how trade-offs get handled.
+- [x] ~~Resourcing~~ **Done — principle is "stop funding the display and workflow layer, fund the data layer". Clearest cut: freeze widget development after one free release.**
 - [ ] **Who pays for verification** of syndicated content — the partner platform, or the brand?
 - [x] ~~Cross-brand comparison in this window?~~ **No — next step beyond 18 months. In the roadmap.**
-- [ ] **US framing:** does the US slide lead with **offerings** (financial services, where the CEO's evidence is) or **ecommerce** (where volume and product-intent demand are)? Pick one.
+- [x] ~~US framing~~ **Done — ecommerce via Shopify is the entry and the volume engine; offerings is the margin engine and the uncontested one. Two motions, two jobs.**
 - [ ] **Three headline metrics.** The metric tree is complete; it needs a top three that fit on one slide.
 - [x] ~~Sequencing across 12–18 months~~ **Done — roadmap section in the deck spine, with a "beyond 18 months" next-steps block.**
 - [ ] Confirm PRP rollout status — H1 call says all languages from 1 Oct, help centre still says six English markets
@@ -77,6 +77,6 @@ Strong move for three reasons: it demonstrates the product rather than describin
 |---|---|
 | Research base (10 notes + reference material) | ✅ Done |
 | Agentic discoverability definition | ✅ Done — incl. the company-level blueprint. One research gap open (item 1) |
-| Strategy spine, three bets, trade-offs, metrics | 🟡 Drafted — 6 open decisions |
+| Strategy spine, three bets, trade-offs, roadmap, resourcing, metrics | 🟡 Drafted — 2 open decisions |
 | Deck build | ⬜ Not started |
 | Collection prototype | ⬜ Not started |

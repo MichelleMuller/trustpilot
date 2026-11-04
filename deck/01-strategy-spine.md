@@ -106,6 +106,29 @@ The CEO has already named the destination. Our job is to say *how Product Review
 
 > **The US thesis:** our largest audience sits in our smallest business, the reviews are already arriving faster than we monetise them, and the distribution rail into US ecommerce is built. Product Reviews is the product that turns that audience and that rail into revenue — because product-level reviews are what US ecommerce needs and what AI cites in the comparison queries that decide purchases.
 
+### Two motions, two jobs
+
+*Full analysis: [`../research/11-offerings-vs-ecommerce.md`](../research/11-offerings-vs-ecommerce.md)*
+
+**Ecommerce via Shopify is how we get in. Offerings is where we stay.**
+
+| | **Ecommerce via Shopify** | **Offerings** — accounts, policies, packages, courses |
+|---|---|---|
+| **Job** | The **volume engine** | The **margin engine — and the defensible one** |
+| **Why** | Builds the corpus, trains the models, proves the attribute system, feeds the agent layer | High-ACV expansion inside accounts we already have |
+| **Entry** | Shopify Key Product Partner rail — ~14% of US ecommerce, built and underused | The vertical enterprise motion already winning: financial services, insurance, banking, credit unions, education, hospitality |
+| **Competition** | **Contested** — Bazaarvoice's network, Judge.me's price | **Uncontested** |
+
+**Why offerings is uncontested, and it's structural.** Every competitor is built on a GTIN, a catalogue feed, variants and a retailer PDP. **A bank account has none of those.** Bazaarvoice's deepest moat — 1,750+ retailer syndication — is worth precisely nothing to a credit union. As the competitive research puts it: *"a Bazaarvoice contract without a retail footprint is money spent on a network you'll never use."*
+
+**And there's a visible evidence vacuum.** In US insurance queries, ChatGPT citations to **brand homepages rose from 1.4% in March 2026 to 12.8% by July**, with Healthcare.gov climbing from 19.2% to 40.4%. **Models are citing government sites and brands' own words about themselves** — because independent product-level evidence barely exists. That is Trustpilot's founding problem, measured:
+
+> *"Every business on the planet will tell you they're good. The problem is knowing who you can believe."*
+
+**The incumbents there are paid on conversion.** MoneySuperMarket, NerdWallet and Bankrate are affiliate-monetised — and MoneySuperMarket already has a ChatGPT app covering insurance, credit cards and loans. So the comparison layer forming in AI has a commercial interest in the answer. In apparel, neutrality is a nice-to-have. **In financial services, where the only alternative is paid on conversion, neutrality is the entire product** — and it's exactly what *"no vested interest in whether a transaction happens at all, let alone which provider"* buys us.
+
+*Honest counterweights: attributes need category-specific definition per vertical (what are the attributes of a savings account?), regulated-product reviews need legal input, and offerings won't generate the corpus — that's what ecommerce is for. Which is why ecommerce leads.*
+
 ---
 
 ## The bets
@@ -345,6 +368,45 @@ The second is where *"no vested interest in which provider a transaction happens
 
 **Decision: per-product pages in this window; cross-brand comparison is a next step beyond it.** It needs the coverage from Bets 1 and 3 before it would work anyway — comparison across a thin catalogue is worse than none — and deferring it means we don't ask the business to take a neutrality decision at the same time as three delivery bets. See the roadmap.
 
+## Resourcing — what we stop doing to fund this
+
+The brief asks how trade-offs get handled. This is the one with a cost attached.
+
+**The principle, in the CEO's own framing:**
+
+> *"Not quite SaaS in the sense that it's not like the workflows inside companies — **it's more about the data and the infrastructure**."*
+
+**So: we stop investing in the display and workflow layer, and move that investment to the data layer.** Everything below follows from that one rule rather than being a list of arbitrary cuts.
+
+### The clearest cut: review widgets
+
+Ship the free, updated widget set once — then **freeze further investment.** No ongoing roadmap, no feature parity chase with Okendo or Judge.me.
+
+The logic is the same one that makes them free (Trade-off 1): **display is a commodity we were losing on anyway.** Spending engineering to compete on widget polish is spending it on the layer where we have no advantage, against competitors who do it for $15 a month. One good free release buys the sales conversation; a roadmap buys nothing.
+
+### What that funds
+
+| From | To |
+|---|---|
+| Widget feature development | **Conversational collection** — research, experimentation, build |
+| Display-layer polish | **Product identity resolution** (GTIN-first) — the prerequisite nobody owns |
+| | **MCP server and the agent-readable layer** |
+| | **Screening pipeline** for syndicated content — the largest new operating cost |
+
+### Candidates for the same treatment
+
+Same test applied: *is this the display and workflow layer, or the data layer?*
+
+- **Workflow tooling for business users** — response management, dashboards, in-app analytics. Maintain, don't extend.
+- **Feature depth on the mature company-reviews product.** It works; it's cited; it funds the business. Protect it, don't grow it.
+- **Anything competing on AEO measurement** against Profound, who has $334m and an enterprise sales motion built for it.
+
+### The honest cost
+
+Widgets and dashboards are **what customers ask for in the sales call.** Freezing them means short-term friction with AEs and some renewal risk with customers who bought on display tooling. That's the trade — and it's only the right one if the thesis holds that independent AI visibility is the durable asset.
+
+**This is the same bet as Trade-off 1, stated on the cost side rather than the revenue side.**
+
 ## The roadmap
 
 **Sequencing logic:** repackaging unlocks collection, collection fills the pages, the pages and the agent layer are the same corpus rendered twice, and syndication accelerates coverage once screening is in place. **Nothing downstream ships before the data is worth consuming.**
@@ -428,7 +490,6 @@ These are **not** in the window, and saying so is the point — each one is earn
 - [x] ~~Decide: do we verify syndicated content with our own fraud models?~~ **Yes — everything inbound is screened. See Trade-off 3.**
 - [ ] Size the verification cost, and decide who pays: syndication partner, or the brand
 - [ ] Pick the three headline metrics for the one-slide version
-- [ ] Does the US slide lead with **offerings** (financial services — where the CEO's evidence is) or **ecommerce** (where the volume and product-intent demand are)?
 - [ ] Confirm PRP rollout status — the H1 call says all languages from 1 Oct; the help centre still says six English markets
 - [ ] Slide-level build
 
