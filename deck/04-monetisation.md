@@ -87,6 +87,8 @@ This is the single best idea in the monetisation model, for four reasons:
 
 **What the brand gets:** their reviews screened by our fraud models, carried with a trust score, present on Product Review Pages, and exposed through the MCP. **Verified presence where AI looks, without changing their collection stack.**
 
+**Priced on order volume**, the same dimension that governs invitations. A bigger business brings more reviews, consumes more screening, and gets more value from the coverage — so it pays more. It's a consistent story across both lines rather than two different pricing logics, and it's a number the brand already knows about itself.
+
 ### 4. Intelligence — paid tiers
 AEO measurement, competitive citation tracking, and **attribute insight as product intelligence** — *"customers consistently say your sizing runs small"* is merchandising feedback, not marketing. A different buyer and a different budget.
 
@@ -113,7 +115,7 @@ Paying improves your data **quality**, never your **position**. Exactly as today
 |---|---|---|---|
 | **Invitations** | Metered by plan | Metered, **tiered on catalogue size** | Core, strengthened |
 | **Widgets** | Gated on Plus/Premium | **Free** | Given away |
-| **Syndication** | — | **New ARR line, per brand** | **New** |
+| **Syndication** | — | **New ARR line, priced on order volume** | **New** |
 | **Intelligence** | AI Search Analytics / Market Insights | Extended to product + attribute intelligence | Grown |
 | **Agent access** | — | **Open, free** | Deliberately unmonetised |
 
@@ -123,6 +125,6 @@ Paying improves your data **quality**, never your **position**. Exactly as today
 
 ## Open
 
-- **Syndication pricing shape** — flat fee, per-SKU, per-review-ingested, or a percentage of the equivalent collection tier? Per-SKU aligns with coverage and with our screening cost.
+- **Syndication pricing** — settled on **order volume**, matching the invitations dimension. Still to model: where the tier boundaries sit, and whether volume ingested needs a cap above the top tier.
 - **Does a brand syndicating in also get a TrustScore contribution?** No — syndicated reviews sit outside the score (Trade-off 3). Worth being explicit in the sell, because it's the first question a brand will ask.
 - **Catalogue-tiered invitations** needs modelling against the existing tiers before it goes on a slide as a number.

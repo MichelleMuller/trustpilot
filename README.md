@@ -26,6 +26,7 @@ Evaluated on three things:
 | [`research/07-practitioner-view.md`](research/07-practitioner-view.md) | **Primary source & positioning** — Michelle's Yotpo experience, the strategic frame, and a teardown of the live product review flow |
 | [`research/08-prp-live-investigation.md`](research/08-prp-live-investigation.md) | **Live browser investigation** — robots.txt, sitemaps, and whether PRPs are reachable at all |
 | [`research/09-ceo-strategic-direction.md`](research/09-ceo-strategic-direction.md) | **Adrian Blair's stated strategy** — verbatim from the full transcript; where ours aligns and where to be careful |
+| [`research/12-coverage-limits.md`](research/12-coverage-limits.md) | **The ceiling** — what coverage can't reach, why that's correct, and the one number that changes its size |
 | [`research/11-offerings-vs-ecommerce.md`](research/11-offerings-vs-ecommerce.md) | **Two motions, two jobs** — why offerings is the one uncontested part of this market |
 | [`research/10-us-market.md`](research/10-us-market.md) | **The US thesis** — biggest audience, smallest business, and the Shopify rail. Built on the verified H1 call transcript |
 | [`agentic-discoverability/`](agentic-discoverability/) | **Defines Bet 2** — how agents evaluate products, the protocol landscape, what Trustpilot exposes today, and what we'd ship |

@@ -283,21 +283,7 @@ And it strengthens as Initiative 1 lands: **a better flow means every invitation
 
 **And catalogue size is the wrong tiering dimension** — a brand can have two products and fifty variants, or two thousand products and none. What actually binds is **order volume**: you can only invite people who bought, and that's what plan tiers already proxy.
 
-**Which exposes the real point: for a long-tail catalogue, invitations can never solve coverage** — 2,000 products and 500 orders a month will not reach thirteen reviews per product however many invitations you buy, because the purchasers don't exist.
-
-**And syndication doesn't rescue it.** Bringing reviews across from Yotpo or Okendo moves the same thin pile; a brand with few orders has few reviews anywhere. Syndication adds volume only where a brand has *more* reviews elsewhere — which for most product brands means **Amazon, Walmart and Target** — and those retailer-shopper reviews belong to the retailer, not the brand. A brand can bring what **it** collected; it cannot bring what a Walmart shopper wrote on Walmart.
-
-So the honest answer is that coverage has a floor:
-
-| Catalogue shape | What solves it |
-|---|---|
-| Few products, many variants | **Variant-aware collection** — tag the variant, don't multiply the volume |
-| Many products, high order volume | **Invitations**, as today |
-| Committed to another platform | **Syndication** — reaches brands we otherwise can't sell to |
-| Thin volume, sells through retail | Partly unreachable — their equity sits on retailer PDPs |
-| **Genuinely low sales** | **Not solvable, and shouldn't be.** A business with few customers should have a thin trust signal. |
-
-**Naming that floor is worth more than claiming to clear it.** And where volume can't grow, the lever is signal per review — finding the **per-product presence cliff** (if it's three rather than thirteen, far more of the tail is reachable than we assume), attribute inheritance from parent and category, and **trust signals that aren't reviews** — return rates, repeat purchase, resolution behaviour. The CEO's own *"other trust signals"* expansion, and for thin catalogues probably the only answer.
+**And coverage has a ceiling.** Invitation volume is bounded by order volume, syndication only helps where a brand has reviews elsewhere, and a business with genuinely few customers should have a thin trust signal — that's the system working, not a gap. *Worked through in [`../research/12-coverage-limits.md`](../research/12-coverage-limits.md); not a slide.* The practical consequence: **measure the per-product presence cliff before setting coverage targets.** If a product needs ~3 reviews to get cited rather than ~13, most of the long tail is reachable and the ceiling barely matters.
 
 **Syndication becomes a new ARR line.** Brands on Yotpo, Okendo, Judge.me or Loox can choose to **also** syndicate to Trustpilot, for a fee — reviews screened by our fraud models, carried with a trust score, present on PRPs and in the MCP. **Verified presence where AI looks, without changing their collection stack.**
 
@@ -507,9 +493,10 @@ These are **not** in the window, and saying so is the point — each one is earn
 
 | Next step | What earns it |
 |---|---|
-| **Cross-brand product discovery and comparison** | Needs the catalogue coverage from Bets 1 and 3. Comparison over a thin catalogue is worse than none. Also a deliberate neutrality decision the business shouldn't be asked to take alongside three delivery bets. |
-| **Outbound syndication to retailer PDPs** | Earned by solving SKU matching *inbound*, where we control the destination and failure is cheap. This is how we eventually approach a Walmart or a Target — with inventory and a proven matching capability, not a pitch. |
-| **Trust signals beyond reviews** | The CEO's own stated expansion — *"we're interested in other trust signals as well."* Attributes are the first one; this is where the next ones go. |
+| **More trust signals** | Return rates, repeat purchase, resolution behaviour — signal at scale without anyone writing anything. The CEO's stated expansion, and **the only real answer for catalogues too thin to review** (see `../research/12-coverage-limits.md`). |
+| **Syndicate *out*** | Earned by running the matching, screening and provenance pipes **inbound** first, where we control the destination and failure is cheap. This is how we eventually walk into a Walmart with inventory and a proven capability rather than a pitch. |
+| **Review collection flows, expanded** | **Better widgets, SMS provider partnerships, review collection via WhatsApp.** Collection is the engine; these are the next channels into it — and WhatsApp matters most in markets where it *is* the messaging layer. |
+| **Cross-brand product discovery** | Needs the coverage from the window first — comparison over a thin catalogue is worse than none — and it's a neutrality decision the business shouldn't be asked to take alongside four delivery initiatives. |
 
 ## Metrics — how we know it's working
 

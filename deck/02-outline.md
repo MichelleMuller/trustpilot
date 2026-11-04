@@ -1,6 +1,6 @@
 # Deck outline — slide by slide
 
-**27 slides, five acts.** The deck turns on one hinge, slide 9 — everything before it earns the thesis, everything after it executes it.
+**28 slides, five acts.** The deck turns on one hinge, slide 9 — everything before it earns the thesis, everything after it executes it.
 
 > **Trustpilot has won the destination. The next 12–18 months is about being wherever the consumer makes the buying decision — and the engine that gets us there is product reviews.**
 
@@ -78,7 +78,7 @@ A quality claim, not a visibility claim — and only an independent source can m
 > **The engine that gets us there is product reviews.**
 
 Full-bleed statement slide, accent background. The only slide with no supporting content.
-*Callback at slide 27.*
+*Callback at slide 28.*
 
 ### 10. Two assets no competitor has
 **The pairing** — Bazaarvoice, Yotpo, Okendo and PowerReviews have product reviews and no independent company-level trust layer. We have both. *"Is this seller legitimate"* and *"is this product any good"* from one independent source.
@@ -194,10 +194,21 @@ Screening lets us **strip incentivised content at ingestion** rather than refusi
 *The plan, the measures, and what would make us stop.*
 
 ### 25. The 12–18 month roadmap
-Four columns: **0–6** unlock and fix what's cheap · **6–12** collection at scale, MCP v1 · **12–18** coverage and the queryable layer · **beyond** cross-brand comparison, outbound syndication, trust signals beyond reviews.
+Four columns: **0–6** unlock and fix what's cheap · **6–12** collection at scale, MCP v1 · **12–18** coverage and the queryable layer · **beyond** — see next slide.
 Offerings runs as a parallel low-cost track from month one.
 
-### 26. How we'll know it's working
+### 26. What this buys us next
+**The "later" slide.** Everything here is **earned by the work in the window**, not promised alongside it — which is what makes the roadmap credible rather than a wish list.
+
+**More trust signals.** Return rates, repeat purchase, resolution behaviour — signal available at scale without anyone writing anything. The CEO's own stated expansion: *"we're interested in other trust signals as well."* It's also the only real answer for catalogues too thin to review.
+
+**Syndicate *out*.** Once we've learned the matching, screening and provenance pipes from incoming syndication, we can run them in reverse — to retailer PDPs and other channels. **We earn the right to walk into a Walmart with inventory and a proven capability, not a pitch.** That's a year-two conversation, and it only exists because of Initiative 3.
+
+**Review collection flows, expanded.** The umbrella: **better widgets**, **SMS provider partnerships**, and **review collection via WhatsApp.** Collection is the engine — these are the next channels into it, and they matter most in markets where WhatsApp *is* the messaging layer.
+
+**Cross-brand product discovery.** Category browse and comparison across sellers. Needs the coverage from the window first — comparison over a thin catalogue is worse than none — and it's a neutrality decision the business shouldn't be asked to take alongside four delivery initiatives.
+
+### 27. How we'll know it's working
 **The impact, stated first:**
 > **Product Reviews makes Trustpilot a must-have for visibility — for your brand *and* your products — in the age of AI.**
 
@@ -205,7 +216,7 @@ Then the measures. *(Full menu in [`03-metrics-options.md`](03-metrics-options.m
 **Kill criteria per initiative** — the slide that shows this is a plan, not a pitch.
 **The unclaimed position:** nobody has closed citation → AI-referred visit → conversion. Trustpilot already observes AI-sourced visitors arrive with unusually high intent and doesn't measure it.
 
-### 27. Callback
+### 28. Callback
 > **Trustpilot has won the destination. The next 12–18 months is about being wherever the consumer makes the buying decision — and the engine that gets us there is product reviews.**
 
 Dark slide. Same words as slide 9, now earned.
@@ -222,5 +233,5 @@ Dark slide. Same words as slide 9, now earned.
 
 ## Open before build
 
-- Three headline metrics for slide 26 — see [`03-metrics-options.md`](03-metrics-options.md)
+- Three headline metrics for slide 27 — see [`03-metrics-options.md`](03-metrics-options.md)
 - Speaker notes as a full script? *(Recommended — keeps the slides visual)*
