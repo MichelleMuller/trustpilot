@@ -187,108 +187,85 @@ The design rule: **ecommerce drives the requirements, but must not define the sc
 
 ## The bets
 
-Blair's own statement of the mission is three clauses, and they are the three bets:
+**Two bets.** Blair's own statement of the mission contains both:
 
 > *"Get trust signals like reviews **in very large quantity**, make them **as trusted as possible**, and **get them into as many places as possible**."*
 
+| | **Bet 1 — Product review collection** | **Bet 2 — MCP** |
+|---|---|---|
+| **What it buys** | **Coverage and authority** | **Human equity → machine equity** |
+| **Initiatives** | Collection flow · Consumer page · Syndication in | Build the MCP |
+
 ```
-  BET 3 — SYNDICATE IN              BET 1 — COLLECTION
-  other platforms' product          richness + ratings coverage,
-  reviews flow into Trustpilot      right moment, right channel
-            |                                   |
-            v                                   v
-      CATALOGUE COVERAGE  <---------->  VERIFIED DEPTH
-      (broad, labelled)                 (deep, provenance-backed)
-                         \          /
-                          v        v
-                     BET 2 — AGENTS
-            queryable product truth: attributes,
-               provenance, freshness, at scale
-                            |
-                            v
-                  cited, compared, chosen
-                            |
-                            v
-           we learn the pipes --> syndicate OUT (18mo+)
+        BET 1 — COVERAGE AND AUTHORITY
+   +--------------+--------------+--------------+
+   | 1. Collect   | 2. Surface   | 3. Let others|
+   |    better    |    it better |    bring      |
+   |              |              |    theirs     |
+   | collection   | consumer     | syndication   |
+   | flow         | product page | in, verified  |
+   +--------------+--------------+--------------+
+                        |
+                        v
+            BET 2 — MACHINE EQUITY
+                  build the MCP
+                        |
+                        v
+          discovered, compared, chosen
 ```
 
-**One engine, one distribution layer, one accelerator.** Collection produces verified depth. Inbound syndication produces breadth. Together they fill the product pages — the consumer destination *and* the substrate that gets crawled. Agents are how that same corpus reaches the decision when it happens inside an assistant rather than on a page.
+**Neither works alone.** Coverage a machine can't read is invisible. A machine-readable layer over a thin catalogue has nothing worth reading. **Both, or neither.**
 
 ---
 
-### Bet 1 — Collection: richness *and* ratings
+### Bet 1 — Coverage and authority
 
-**Both, deliberately.** They serve different jobs:
+**Why coverage is the whole game.** At company level we won by **covering the entity space** and addressing it with a key the world already uses. Absence became a signal *because* presence was the norm — ChatGPT flags a missing profile **34.4%** of the time. At product level we have **neither coverage nor identity**.
 
-- **Richness** — attributes, sentiment, media. Agents **filter on attributes before they rank**, and represent products as attribute vectors. External evidence is unambiguous: detailed reviews outperform brief ones, and reviews mentioning specific attributes carry more weight.
-- **Ratings coverage** — breadth of rated SKUs. **59% of AI answers citing Trustpilot quote the TrustScore or star rating**; 16.6% quote review counts. The numeric signal is the most-reproduced thing we produce.
+And if reviews now **build the candidate set** rather than validate it, no review data means **not in the set at all**. Coverage stops being an optimisation and becomes existence.
 
-**And sentiment beats raw volume.** *"100 reviews averaging 4.6 stars outperforms 1,000 reviews averaging 4.1 stars in most agent algorithms."* A strategy that optimised only for review count would be optimising the wrong variable.
+#### Initiative 1 — Enhance the collection flow for attribute coverage
 
-**The design tension, resolved rather than dodged:** rich collection takes longer per review and yields fewer; simple ratings yield coverage. The form becomes **progressive** — a near-frictionless rating first, conversational depth for those who continue. Floor optimised for coverage, ceiling for richness.
+Conversational elicitation instead of a static form. Attributes drawn out, not offered as a skippable row. **Progressive** — frictionless rating at the floor, depth at the ceiling. Right moment, right channel: SMS alongside email, triggered on delivery.
 
-**How:**
-- A **conversational interface** replacing the static form — asks follow-ups, gets to *why*, produces structured attributes as a by-product rather than as an optional star row users skip
-- **Right moment, right channel** — SMS alongside email, triggered on delivery or a usage milestone, not a fixed delay. They've started here with QR-code collection; richness is the untouched half.
-- Compounds with the **trustpilot.com deliverability advantage** — competitors send from the brand's own domain and fight spam filters and consumer scepticism; we send from the brand consumers associate with independent second opinions
+**The unlock: let brands run us *alongside* what they already have.** A brand on Yotpo or Judge.me shouldn't have to rip and replace to collect through Trustpilot — they add us. **That removes the switching barrier entirely**, and it's how coverage scales. It also makes free widgets and uncapped invitations coherent rather than merely generous: **if we're not monetising collection, we don't care who else is collecting too.**
 
-**The metric that governs this bet:** **per-SKU attribute coverage** — the share of products with enough attribute-rated reviews to produce a score an agent can filter on. Agents filter before they rank, so a missing attribute means the product is *unmatched*, not down-ranked. Our attribute fields are **optional**, which structurally caps that coverage.
+**The brand's advantage:** reviews requested through trustpilot.com convert better than reviews requested from a brand's own domain — better deliverability, and an ask that reads as *"tell the world"* rather than *"help our marketing."*
 
-*(The agent-experience field benchmarks 95%+ fill on core attributes — though that's drawn from merchant product catalogues, so it's an analogy rather than a like-for-like target. Our actual coverage isn't measurable externally. **It's one query internally, and it's the first number I'd want.**)*
+**Governing metric:** per-SKU attribute coverage.
 
-**Why it's bet one:** no attribute data, no agent filtering. No coverage, no syndication inventory. Everything downstream is gated here.
+#### Initiative 2 — Double down on the consumer product page
 
-*CEO's own words: "relevance, recency, ranking... if your reviews are stale and many months old, then it's much less likely to get cited."* All three are collection problems.
+Already in flight; the job is to make it work. **PRPs need real traffic**, because traffic makes pages authoritative and authority is what gets them cited. **99.5% of our citations are organic — won by pages that exist and rank.**
 
----
+Today: restricted beta, selected categories, **no product search on trustpilot.com**, no product sitemap, discovery only via a 12-item carousel on the brand profile. Exit the beta, finish the rollout, make products findable.
 
-### Bet 2 — Build the trust infrastructure agents rely on for information
+#### Initiative 3 — Pilot syndication *to* Trustpilot *(the controversial one)*
 
-> **Good for the consumer. Good for the brand.**
+We can't build Bazaarvoice's 1,750-retailer outbound network. **We become the place everyone syndicates *to*** — the Google Seller Ratings model, where Google collects nothing and became the destination.
 
-*Fully worked out in [`../agentic-discoverability/`](../agentic-discoverability/).*
+**Pilot with a handful of partners who are also competitors.** What it buys:
+- **Coverage, fast** — the binding constraint on everything
+- **It cements us as the third-party destination** in the brand's mind — the neutral place their reviews go, whoever collected them
+- **More data to train on** — attribute extraction, category sentiment, and the fraud models that are already the company's deepest moat
 
-**This is the slide that answers both halves of the brief at once.** Consumers get a better answer because the agent has better evidence — delivered where they already are, not on a site they'd have to visit. Brands get their product truth present and citable at the moment of decision.
+**Everything inbound carries a trust score and passes our fraud models.** We don't host other platforms' reviews — **we verify them.** Tiers in Trade-off 3.
 
-**And the two are the same mechanism, not two benefits.** Optimise for the brand alone and the data becomes marketing, which agents learn to discount. Serve the consumer alone and there's no business to fund the collection or the fraud detection. **Independence isn't a constraint on the model — it is the model.** It's also the answer to *"why not just use the brand's own product feed?"* — because that's the brand talking about itself, and the agent already discounts it.
-
-**"Be open" is not a bet — we're already open and it's already working** (ChatGPT citations +400%, top-10 most-cited domain). The bet is becoming **agent-readable**, which we are not.
-
-Our machine surface today is built for the wrong consumer. The APIs answer *"let me pull my own review data"* — asked by a paying customer, OAuth-authenticated, about a business they own. An agent asks *"which of these twelve should I recommend, and what's the independent evidence?"* — unauthenticated, across brands, at runtime. **There is no front door.**
-
-Agents filter → rank → format. **We are strong only at format** — the credible thing quoted *after* the decision. We're absent from the two steps that actually decide it.
-
-**What we ship:**
-1. **A Trustpilot MCP server.** Commerce is standardising on MCP — Adobe made it the default for Commerce, Microsoft shipped one for Dynamics 365 at NRF 2026, an IETF draft is formalising discovery. The most-cited review source on the internet is absent. Most concrete, most demonstrable item in the plan.
-2. **Attributes as a filterable dimension**, in the API and extended into product JSON-LD beyond the headline score.
-3. **Provenance and freshness as the headline product.** `isVerified`, `verificationLevel`, `reviewSource` already exist as fields. Package them as the promise: not *"here's a 4.6"* but *"here's a 4.6, verified this way, this fresh, behind fraud models that removed 3.9m fakes last half."*
-4. **Open, not gated** — see the competitive note below.
-
-**Agents and the destination are the same corpus, served two ways.** The product pages are the human rendering; the agent layer is the machine rendering. They share one body of verified reviews and attributes — and the pages are also what gets crawled and cited, so they're the substrate of the citation engine, not an alternative to it. See Trade-off 4.
-
-*We are already the evidence an agent **quotes**. We are not yet the infrastructure it **relies on**.*
-
-**Dependency, stated plainly:** an agent surface over a sparse catalogue is worse than none. **Bet 1 gates Bet 2.**
+**The risk, named:** competitors only feed us if brands make them. That's the Google precedent — merchants demanded integration because Google was where the demand was — but it's a bet on demand-side pull.
 
 ---
 
-### Bet 3 — Syndicate *in*: become the verification layer for the category
+### Bet 2 — Build the MCP: convert human equity into machine equity
 
-**The inversion.** We cannot build Bazaarvoice's 1,750-retailer outbound network in 18 months. We don't have to — we can become the place everyone syndicates **to**.
+Two decades of trust equity sits in a form machines read lossily or not at all. **The MCP is the conversion layer.**
 
-**The precedent is Google Seller Ratings.** Google collects no reviews. It aggregates from approved partners — Trustpilot, Yotpo, Bazaarvoice, Loox, Junip — and became the destination without ever doing collection. Trustpilot is entitled to the same move for AI visibility: top-10 most-cited domain, domain authority 100.
+Commerce is standardising on it — **Adobe made MCP the default agent protocol for Commerce; Microsoft shipped one for Dynamics 365 at NRF 2026**, and an IETF draft is formalising discovery. **The most-cited review source on the internet has no presence on it.** An agent wired into Adobe or Dynamics can query catalogue, price and inventory through a standard interface, then has nowhere standard to go for trust data.
 
-**It is the open-platform thesis, inverted.** Blair's line is *"get them into as many places as possible."* This is *get everything into the place AI already looks.*
+**Ships:** product lookup and comparison tools; **attributes as a filterable dimension**; provenance and freshness as first-class fields; **open, not gated** — where Bazaarvoice's equivalent is enterprise-only, and agents reward coverage.
 
-**What it buys:**
-- **Coverage, fast.** Discovery and citation both need catalogue breadth. Organic collection builds it slowly; inbound syndication builds it now.
-- **A commercial surface we don't have.** We can serve brands who will never switch collection vendors — which only makes sense once we've stopped monetising collection (see Trade-off 1).
-- **A stronger moat, not a weaker one.** Everything inbound passes our fraud models, so syndication pushes more volume and more adversarial variety through the detection that is already the company's deepest asset. Attribute extraction and category sentiment models improve too.
-- **The pipes.** SKU matching across catalogues — GTINs, variants, title collisions — is the hard engineering problem in syndication. We solve it **inbound**, where we control the destination and failure is cheap. **That is how we earn the right to syndicate outbound in year two.**
+*Good for the consumer. Good for the brand.* The agent gives a better answer because the evidence is independent; the brand is present at the moment of decision **because** the consumer can rely on it.
 
-**The risk, named:** why would Judge.me or Bazaarvoice feed us? The honest answer is the Google one — **because brands make them.** Google didn't persuade vendors to integrate; merchants demanded it because Google was where the demand was. This is a bet that our demand-side pull is strong enough to compel supply. It may not be, at first.
-
-**The integrity problem is real — and we've answered it.** Nothing is ingested without passing Trustpilot's own fraud models. We don't host other platforms' reviews, **we verify them** — which lets us strip incentivised content at the door rather than refusing syndication to avoid it. See Trade-off 3.
+**Dependency:** an agent surface over a sparse catalogue is worse than none. **Bet 1 gates Bet 2.**
 
 ## Trade-offs
 
