@@ -153,6 +153,28 @@ So the answer is **parallel, with asymmetric investment** — ecommerce gets the
 
 **The pilot isn't hypothetical — it already exists.** Blair names it: *"a bank with different accounts, or **TUI, who are using product reviews for specific holiday offerings**."* The proof is inside the business already. The job is to turn one customer's workaround into a product.
 
+### Two motions, two cost shapes — and one data model underneath
+
+**Offerings is a sales-push motion. Ecommerce is where the engineering goes.**
+
+| | **Ecommerce** | **Offerings** |
+|---|---|---|
+| **Motion** | Engineering and architecture | **Sales-push** |
+| **Why** | GTINs, catalogue feeds, variant rollup, SKU matching for syndication — the hard technical problems all live here | Existing accounts, existing verticals, existing sales team. The work is taxonomy, enablement and legal. |
+| **Cost shape** | High build, low per-customer | Low build, high per-customer touch |
+
+**That asymmetry is what makes "both" affordable.** Offerings moves on a sales timeline without competing for engineering.
+
+**But it only works if the data model carries both from day one** — otherwise agents see two different interfaces and offerings becomes an expensive retrofit. *(Architecture worked through in [`../agentic-discoverability/07-entity-model-for-agents.md`](../agentic-discoverability/07-entity-model-for-agents.md).)*
+
+The design rule: **ecommerce drives the requirements, but must not define the schema.**
+
+- **Don't make GTIN the primary key.** External identifiers are an optional *list* — ecommerce populates GTIN for syndication matching; offerings populate nothing.
+- **Fall back to the identity that already works:** `provider + offering name`. The company domain was a free primary key at company level; this is its product-level equivalent, and it works with or without a GTIN.
+- **One attribute structure, category-scoped vocabularies.** *Sizing accuracy* and *claims handling* are the same shape to an agent.
+
+**The payoff:** one MCP tool set, and launching a new offerings vertical becomes a taxonomy exercise rather than an engineering project — which is exactly what a sales-led motion needs.
+
 *Honest counterweights, which is why ecommerce still leads: attributes need category-specific definition per vertical, regulated-product reviews need legal input before anything ships, and offerings won't generate the corpus.*
 
 ---
@@ -443,7 +465,7 @@ Widgets and dashboards are **what customers ask for in the sales call.** Freezin
 |---|---|
 | **Repackage** *(Trade-off 1)* | Widgets updated and made free. Invitation caps removed. Monetisation moved to the visibility and insight layer. **First, because it's what produces the volume everything else needs.** |
 | **Measure** | Baseline **per-SKU attribute coverage** — the number that governs the whole plan and that nobody has looked at |
-| **Identity** | Product identity resolution: GTIN-first with a deterministic fallback. Prerequisite for canonical URLs, syndication matching and agent lookup. |
+| **Identity** | **The entity model** — provider + offering as the key, external identifiers as an optional list, category tree spanning retail and non-retail **from day one**. Prerequisite for canonical URLs, syndication matching and agent lookup, and the thing that keeps offerings cheap later. |
 | **Plumbing** | Exit PRP beta, complete the non-English rollout, add a product sitemap, extend product JSON-LD to attributes, surface provenance fields |
 | **Collection** | Conversational collection: research and experimentation, first A/B against the current form |
 | **Syndication** | Partner conversations; design the screening pipeline |

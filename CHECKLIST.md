@@ -18,7 +18,7 @@
 - [ ] **Summarisation behaviour and bias** — do models over-index on negative reviews, extremes, or recency when synthesising?
 - [ ] Look for academic / industry work on review summarisation and opinion extraction, not just vendor blogs
 
-**Output:** a new file in `agentic-discoverability/` — `07-how-models-parse-reviews.md` — and any consequent revisions to Bet 1's collection design.
+**Output:** a new file in `agentic-discoverability/` — `08-how-models-parse-reviews.md` — and any consequent revisions to Bet 1's collection design.
 
 *(See [`agentic-discoverability/06-why-company-reviews-get-cited.md`](agentic-discoverability/06-why-company-reviews-get-cited.md) for the companion analysis of why company-level citation already works — that one is done.)*
 
