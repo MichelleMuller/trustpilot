@@ -46,9 +46,20 @@ Screenshots of *"best sneakers for walking in London"* across engines. Placehold
 **Caption line underneath** pulling out what to notice — who gets cited, what evidence the model reaches for, whether product-level review data appears at all.
 *(Tell me what the screenshots show and I'll write the callouts.)*
 
-### 7. Reviews matter most at the moment of purchase
-Seer funnel, as a three-step bar: **Awareness 2% → Evaluation 16% → Intent 24%.**
-Nearly 1 in 4 sources cited at the point of purchase is an independent review site. **Review data is a bottom-funnel asset** — which is where budget concentrates.
+### 7. Reviews used to validate the decision. Now they make it.
+**The reframe, and it inverts which number matters.**
+
+Seer funnel as a three-step bar: **Awareness 2% → Evaluation 16% → Intent 24%.** The obvious read is *"reviews are a bottom-funnel asset, and we're well positioned."* That read describes the **old** funnel — where the consumer discovered products themselves, narrowed a shortlist, then used reviews to validate a choice they'd already made.
+
+**Agentic discovery collapses that.** Ask *"best sneakers for walking in London"* and the model uses review data to **build the candidate set itself**. Reviews stop validating a shortlist and start constructing one. Our own agent research says the same thing mechanically: agents **filter → rank → format**, and attributes and sentiment are consumed at **filter** — the discovery step, not the validation step.
+
+**So the 2% is the opportunity, not the 24%.** Reviews are cited 2% of the time at discovery, and discovery is now where the decision gets made.
+
+**And it changes the goal.** Not *"help brands get visible"* — that's what an AEO vendor sells, and a model will eventually learn to discount a source that promotes rather than informs.
+
+> **The goal is that the best product for the query gets discovered and converted on.**
+
+That's a quality claim, not a visibility claim — and it's one only an independent source can credibly make. It's also why coverage stops being an optimisation and becomes **existence**: no review data means not in the candidate set at all.
 
 ### 8. What converts to machine equity, and what doesn't
 The conversion table. Explains *why* the TrustScore is quoted 59% of the time — it's the most machine-readable thing we produce, not the most meaningful.

@@ -34,7 +34,13 @@ The benchmarking is the methodologically serious part — it's what separates "b
 | Evaluation | 16% |
 | Intent (point of purchase) | **24%** |
 
-**A 16x increase from awareness to decision.** Nearly 1 in 4 sources cited at the point of purchase is an independent review site. This is the single most commercially important chart in the document: it says review data is a *bottom-funnel* asset, which is where budget concentrates.
+**A 16x increase from awareness to decision.** Nearly 1 in 4 sources cited at the point of purchase is an independent review site.
+
+**But read this chart carefully — it describes the funnel that is disappearing.** The obvious conclusion is "review data is a bottom-funnel asset." That holds for a journey where the consumer discovers products themselves, narrows a shortlist, and uses reviews to validate a choice already made.
+
+**Agentic discovery collapses the three stages into one query.** Asked for "the best X for Y", a model uses review data to *construct the candidate set*, not to confirm it. The agent research in `../agentic-discoverability/01` says the same thing mechanically: agents **filter → rank → format**, and attributes and sentiment are consumed at the **filter** step.
+
+**So the strategically interesting number is the 2%, not the 24%** — review citation at discovery, which is where the decision increasingly gets made. The 24% is evidence that models *will* lean on review data heavily when it's useful to them; the 2% is the room left to grow.
 
 ### 3. Trustpilot is the most-cited review platform on every engine tested
 

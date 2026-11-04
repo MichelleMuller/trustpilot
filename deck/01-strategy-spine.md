@@ -26,7 +26,13 @@ Company-intent and product-intent queries are different queries, on both ChatGPT
 | "is this site a scam" | "does this jacket run small" |
 | "what's their return policy" | "X vs Y — which actually lasts" |
 
-The right-hand column is **larger in volume, closer to purchase, and where comparison happens**. Seer: review citations run 2% at Awareness → 16% at Evaluation → **24% at Intent**. The 9.5x co-mention effect only plays out in product comparison queries.
+The right-hand column is **larger in volume and it's where comparison happens** — and the 9.5x co-mention effect only plays out there.
+
+**And the funnel has collapsed.** Seer measured review citation at 2% Awareness → 16% Evaluation → **24% Intent** — the shape of the *old* journey, where consumers discovered products themselves and used reviews to validate a choice already narrowed. In agentic discovery, one query does all three: the model uses review data to **build the candidate set**. Mechanically, agents **filter → rank → format**, and attributes and sentiment are consumed at **filter**.
+
+**So the 2% is the opportunity, not the 24%.** Reviews are cited 2% of the time at discovery, and discovery is now where the decision is made.
+
+**Which changes the goal.** Not *"help brands get visible"* — that is what an AEO vendor sells, and a model will learn to discount a source that promotes rather than informs. **The goal is that the best product for the query gets discovered and converted on.** A quality claim, not a visibility claim — and only an independent source can credibly make it. It is also why coverage stops being an optimisation and becomes existence: no review data, no place in the candidate set.
 
 **We currently compete for a minority of shopping queries, and the majority are product-shaped and closest to the money.**
 
