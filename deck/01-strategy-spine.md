@@ -53,6 +53,41 @@ Richer collection for AI is not a novel idea — **it is a year-old competitive 
 
 ---
 
+## Strategic direction — this executes the stated strategy, it doesn't replace it
+
+The CEO has already named the destination. Our job is to say *how Product Reviews gets there*, not to propose a different direction.
+
+| Company's stated direction | What Product Reviews contributes |
+|---|---|
+| **"Trust infrastructure for the age of AI"** — expanding *trust signals* and *trust impact* to consumers, businesses **and AI agents** | Product attributes and sentiment **are** trust signals. This is that expansion, at SKU level. |
+| **Open platform** — *"make the data as useful as possible to as many people as possible."* ChatGPT citations **+400% YoY**; **75x** citation visibility for active profiles | Free widgets and uncapped invitations are the open-platform principle applied to packaging (Bet 3) |
+| **"Relevance, recency, ranking"** is how citation is won — *"if your reviews are stale and many months old, then it's much less likely to get cited"* | Volume, freshness and relevance are all **collection** problems. Bet 1 is the CEO's own mechanism, operationalised. |
+| **"Product reviews are not just for retail"** — a bank's accounts, TUI's holiday offerings | One product, two motions: ecommerce for collection volume, *offerings* for the enterprise verticals already winning |
+| **Neutrality as the moat** — *"no vested interest in whether a transaction happens"* | Hard guardrail on Bet 2 — see Trade-off 3 |
+| **B2B subscription, advertising explicitly rejected**, 83% gross margin | Constrains Bet 3: repackaging must move value *within* subscription, never to ads |
+
+**The one place we're pointing out a gap, constructively:** the open-platform strategy isn't implemented on the flagship AI-discovery product. `robots.txt` disallows `/product-reviews/` to Googlebot, OAI-SearchBot, GPTBot, PerplexityBot and ClaudeBot; there is no product sitemap; consumer product search returns companies only. Cheapest fix in the plan, fully aligned with what the company already says it wants. *(Needs one confirmation — see `../research/08-prp-live-investigation.md`.)*
+
+---
+
+## Where we point it: the US
+
+**Biggest audience, smallest business.**
+
+- The **US is ~28–30% of trustpilot.com traffic** — the largest market. The **UK** — the mature home market — is at *"around 5%"* penetration. The US is far below that.
+- At UK penetration, the US alone is a **billion-dollar-plus ARR business**
+- North America H1'26: bookings **+27%**, new business **+76% YoY**, **organic reviews +50% YoY** against paying customers **+11%**
+
+**Supply is growing four times faster than monetised demand.** US review inventory is already arriving unmonetised.
+
+**The rail is built and underused.** Trustpilot became a **Shopify Key Product Partner** in June 2026 with an upgraded 2.0 app. Shopify is **~2.86m live storefronts and >14% of US ecommerce** ($216bn GMV in H1'26, +33%). US ecommerce overall: **~$1.3–1.6tn across 2.7–3.5m active stores.**
+
+**And the demand signal is there:** 95% of consumers use reviews when shopping; a product with five reviews converts at ~**270%** the rate of one with none; **71%** of US consumers say a good Trustpilot score makes them more likely to buy.
+
+> **The US thesis:** our largest audience sits in our smallest business, the reviews are already arriving faster than we monetise them, and the distribution rail into US ecommerce is built. Product Reviews is the product that turns that audience and that rail into revenue — because product-level reviews are what US ecommerce needs and what AI cites in the comparison queries that decide purchases.
+
+---
+
 ## The bets
 
 **One engine, three payoffs.** Collection is the bet. AI visibility, the consumer product surface and eventual retailer syndication are all downstream of the same inventory.
@@ -164,6 +199,24 @@ Larger brands will ask for incentivised review support (discounts, loyalty point
 **How we handle the sales conversation:** this becomes a positioning strength, not an apology. "Our reviews get cited by AI *because* we don't allow that" is a better pitch than matching a competitor's permissiveness. The integrity is the product.
 
 ---
+
+### Trade-off 3 — Neutrality vs. building a consumer shopping surface
+
+**This is the objection the strategy will face from the top, and it comes from the CEO's own definition of the moat:**
+
+> *"We're not a marketplace, it's not any kind of retailer. So we have no vested interest in whether a transaction happens."*
+
+Bet 2 builds cross-brand product discovery and comparison, and PRPs already carry "Shop now" buttons. At what point does a comparison surface acquire a vested interest in transactions?
+
+**The answer is a hard guardrail, stated up front:**
+
+- **No transaction economics.** Never a cut, never affiliate revenue, never a referral fee.
+- **No purchasable placement.** Ranking is by review evidence only. Placement is never sold — which also rules out funding this with advertising, already rejected as a model.
+- **No commercial ranking signal.** A paying customer's product does not outrank a non-customer's.
+
+Product discovery extends the *same* neutral service — "here is what independent customers actually said" — into product-intent queries. **The moment placement becomes purchasable, the moat is gone and the AI citation position goes with it.**
+
+Naming this constraint ourselves, before anyone raises it, is worth more than avoiding the subject.
 
 ## Metrics — how we know it's working
 
