@@ -57,7 +57,17 @@ Probing the route from the browser:
 
 ---
 
-## If it holds, this is the sharpest slide in the deck
+## ⚠️ Decision: not using this. Probably deliberate.
+
+**Michelle's call (4 Nov 2026): the robots.txt finding is most likely intentional, and we're not building a slide on it.**
+
+Reasonable readings of why it would be deliberate: product data is already reachable via the crawlable company profile (`/review/`), so blocking the standalone path costs little; and gating a beta path until it stabilises is ordinary practice, not an oversight.
+
+The two findings that **do** survive and still matter are **Finding 1 (no consumer product search)** and **Finding 2 (no product sitemap)** — both evidence for Bet 2's discovery gap, neither requiring any claim about intent.
+
+The analysis below is kept for completeness only.
+
+## [Not used] If it held, it would have been a slide
 
 Trustpilot launched Product Review Pages on 24 September 2026, explicitly positioned so products "surface in AI comparison queries," and reported a **1,548% first-week citation lift** from the beta.
 

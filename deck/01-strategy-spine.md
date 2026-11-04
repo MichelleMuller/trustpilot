@@ -66,7 +66,7 @@ The CEO has already named the destination. Our job is to say *how Product Review
 | **Neutrality as the moat** — *"no vested interest in whether a transaction happens"* | Hard guardrail on Bet 2 — see Trade-off 3 |
 | **B2B subscription, advertising explicitly rejected**, 83% gross margin | Constrains Bet 3: repackaging must move value *within* subscription, never to ads |
 
-**The one place we're pointing out a gap, constructively:** the open-platform strategy isn't implemented on the flagship AI-discovery product. `robots.txt` disallows `/product-reviews/` to Googlebot, OAI-SearchBot, GPTBot, PerplexityBot and ClaudeBot; there is no product sitemap; consumer product search returns companies only. Cheapest fix in the plan, fully aligned with what the company already says it wants. *(Needs one confirmation — see `../research/08-prp-live-investigation.md`.)*
+**What we are *not* doing:** we're not building a slide on the `robots.txt` disallow of `/product-reviews/`. It's most likely deliberate — product data is reachable via the crawlable company profile, and gating a beta path is ordinary practice. The discovery gaps that **do** matter for Bet 2 are simpler and need no claim about intent: **Trustpilot's consumer search returns companies only, and there is no product sitemap.**
 
 ---
 
@@ -136,11 +136,11 @@ The CEO has already named the destination. Our job is to say *how Product Review
 
 - **Site search returns companies only** — no product search, no product tab, no cross-brand results
 - **No product sitemap exists**
-- **robots.txt disallows `/product-reviews/` to every crawler**, Googlebot and OAI-SearchBot included *(needs one confirmation)*
+- Discovery runs *through the company*: a 12-item "Popular products" carousel on the brand profile
 
 So the bet isn't "launch product pages." It's three things:
 
-1. **Fix the plumbing.** Unblock crawling, add a product sitemap, exit the restricted beta (six English markets, selected categories, subscription-gated). Cheapest, fastest, highest-leverage work in the plan.
+1. **Fix the plumbing.** Add a product sitemap, exit the restricted beta, complete the non-English rollout. Cheapest, fastest work in the plan.
 2. **Build product-first discovery.** Cross-brand category browse, attribute filtering off Bet 1's data, product comparison. Today a shopper reaches a product only *through* the company that sells it — a 12-item carousel on the brand profile. That cannot serve *"best running shoes for flat feet."*
 3. **Resolve the TrustScore question.** Product reviews sit outside the TrustScore entirely, while the TrustScore is what AI quotes most. Needs a deliberate position, not an inherited default.
 
