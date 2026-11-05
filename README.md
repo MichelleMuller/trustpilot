@@ -34,6 +34,7 @@ Evaluated on three things:
 | [`deck/02-outline.md`](deck/02-outline.md) | **The deck outline** — 27 slides, five acts |
 | [`deck/03-metrics-options.md`](deck/03-metrics-options.md) | **Metrics menu** — leading, middle, lagging, with a recommended three |
 | [`deck/04-monetisation.md`](deck/04-monetisation.md) | **How this monetises** — charge for verified supply, give away display and demand |
+| [`prototype/`](prototype/) | **The conversational collector** — one-file prototype behind slide 16 and the QR demo |
 | [`sources.md`](sources.md) | Every source used |
 | [`reference/`](reference/) | Seer white paper, **Scaling Up CEO transcript**, **H1 2026 results call transcript**, product flow screenshots |
 

@@ -59,13 +59,15 @@ The spine exists in [`deck/01-strategy-spine.md`](deck/01-strategy-spine.md). Wh
 
 Strong move for three reasons: it demonstrates the product rather than describing it; it proves the conversational-vs-form thesis with real completion data; and it mirrors the QR-code collection Trustpilot already ships, extended with the richness half they haven't built.
 
-- [ ] **Scope the flow** — what it asks, how many turns, where it stops
-- [ ] **Define the attributes** it captures about the deck (e.g. clarity, strategic depth, evidence quality, actionability) — mirroring how product attributes would work
-- [ ] **Build it** — mobile-first web page, conversational rather than a form, progressive: quick rating first, depth for those who continue
-- [ ] **Generate the QR code** linking to it
-- [ ] **Capture and store responses** so results can be read back
-- [ ] **Instrument it** — completion rate, attributes captured per response, time to complete. This is the evidence for the Bet 1 thesis.
-- [ ] Optional: show the captured structured output live as the closing slide — "this is what an agent would consume"
+- [x] ~~Scope the flow~~ **Done** — variant → rating → offer depth → 4 attributes → open text → payload
+- [x] ~~Define the attributes~~ **Done** — two subjects, deliberately different question sets
+- [x] ~~Build it~~ **[`prototype/review-collector.html`](prototype/review-collector.html)** — one file, no backend
+- [x] ~~Instrument it~~ **Done** — time, attributes captured, variant tagged, shown on the payload screen
+- [x] ~~Show the structured output~~ **Done** — it's the closing screen
+- [ ] **Paste a form endpoint** into `FORM_ENDPOINT` so responses come back to you
+- [ ] **Host it** somewhere with a short URL
+- [ ] **Generate the QR code** pointing at it
+- [ ] Try it on a few people before the panel — completion rate is the evidence
 
 **Design constraint:** it has to embody the principles from Bet 1, or it undercuts the argument. Attributes elicited conversationally rather than offered as a skippable star row. Progressive depth. Near-frictionless floor.
 
@@ -80,4 +82,4 @@ Strong move for three reasons: it demonstrates the product rather than describin
 | Strategy spine — two bets, four initiatives, trade-offs, roadmap, resourcing, monetisation, metrics | ✅ Settled |
 | Deck outline — 28 slides, five acts | ✅ Drafted |
 | Deck build | 🟡 Outline done, slides not built |
-| Collection prototype | ⬜ Not started |
+| Collection prototype | 🟡 Built — needs a form endpoint, hosting and a QR code |
