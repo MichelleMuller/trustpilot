@@ -34,7 +34,7 @@ Nothing a form could do. Switching between them in front of someone demonstrates
 - **Type** — the composer stays live during chip questions, so anyone can answer in their own words instead
 - **Speak** — mic button, Web Speech API, live interim transcription
 
-Which input modes were used is recorded in the payload's provenance.
+Which input modes were used is recorded in the payload's provenance, as is how the variant was established — `order_confirmed`, `reviewer_corrected` or `reviewer_selected`. A variant the buyer confirmed against their own order is better evidence than one they picked from a menu, and an agent can see the difference.
 
 > A freeform answer to a scale question is stored with `value: null` and flagged `unmapped — a model would score this in production`. Honest about what's mocked.
 
@@ -44,7 +44,7 @@ Every principle from the strategy — if the prototype broke them it would argue
 
 - **Progressive** — one tap finishes. Depth is offered, never required.
 - **Attributes elicited**, never a skippable star row
-- **Variant captured** — "runs small" is useless unless you know which size
+- **Variant confirmed, not asked** — an invitation-linked review already knows the order, so the flow says *"your order says UK 6 · Slate — is that right?"* rather than making someone pick from a list. One tap, and it shows the system using what it already has. If there's no order to draw on (the presentation subject), it asks normally.
 - **Neutral phrasing** — *"how did the sizing compare to what you expected?"*, never *"did you love the fit?"*
 - **Verified purchase** as a field, not just a badge
 - **Ends on the payload** — structured output with provenance, that an agent would consume

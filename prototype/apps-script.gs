@@ -23,7 +23,7 @@ function doPost(e) {
 
     if (sheet.getLastRow() === 0) {
       sheet.appendRow([
-        'Received', 'Subject', 'Variant', 'Rating',
+        'Received', 'Subject', 'Variant', 'Variant source', 'Rating',
         'Attributes', 'Comment', 'Verified', 'Input modes'
       ]);
     }
@@ -42,7 +42,8 @@ function doPost(e) {
     sheet.appendRow([
       new Date(),
       d.subject ? d.subject.name : '',
-      d.variant || '',
+      d.variant ? (d.variant.value || '') : '',
+      d.variant ? (d.variant.source || '') : '',
       d.rating ? d.rating.value : '',
       attrs.join('\n'),
       d.comment || '',

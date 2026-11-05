@@ -203,7 +203,10 @@ const SUBJECTS = {
     name:"Trailwind GT-3 — Women's Walking Shoe",
     seller:"Sold by Northfield Running", verified:true, category:"footwear / walking",
     hello:"Hi — thanks for buying the Trailwind GT-3. Mind if I ask a few quick things? It takes under a minute.",
-    variantAsk:"First — which one did you get?",
+    knownVariant:"UK 6 · Slate",
+    variantConfirm:"Your order says <b>UK 6 · Slate</b> — is that the pair you're reviewing?",
+    variantConfirmWhy:"We already know this from the order, so it's one tap rather than a question.",
+    variantAsk:"No problem — which pair is it?",
     variantWhy:"Tagging the variant is what makes “runs small” useful to anyone else.",
     variants:["UK 5 · Slate","UK 6 · Slate","UK 6 · Sand","UK 7 · Sand","UK 8 · Slate"],
     overall:"How were they overall?",
@@ -230,6 +233,7 @@ const SUBJECTS = {
     name:"Expanding the trust layer to product reviews",
     seller:"A 12–18 month strategy · Michelle Muller", verified:false, category:"strategy / presentation",
     hello:"Thanks for going through the deck. A few quick questions — under a minute, and please be blunt.",
+    knownVariant:null,
     variantAsk:"How did you see it?",
     variantWhy:"Reading it and being walked through it are different experiences.",
     variants:["Presented live","Read it myself","A bit of both"],
@@ -261,7 +265,7 @@ const $thread=document.getElementById("thread"), $main=document.getElementById("
 
 let mode="sneaker", S, t0=Date.now(), onText=null, A;
 
-const reset = () => { A={variant:null,overall:null,answers:{},freeform:{}}; };
+const reset = () => { A={variant:null,variantSource:null,overall:null,answers:{},freeform:{}}; };
 const scroll = () => requestAnimationFrame(()=> $main.scrollTo({top:$main.scrollHeight,behavior:"smooth"}));
 const wait = ms => new Promise(r=>setTimeout(r,ms));
 
@@ -379,18 +383,38 @@ async function run(){
   composer(false, "Tap an option above…");
 
   await bot(S.hello);
+  if(S.knownVariant) await confirmVariant(); else await pickVariant();
+}
+
+async function confirmVariant(){
+  await bot(S.variantConfirm, S.variantConfirmWhy);
+  replies(["Yes, that's right","No, a different pair"], async i=>{
+    if(i===1){ me("No, a different pair"); return pickVariant(); }
+    A.variant = S.knownVariant; A.variantSource = "order_confirmed";
+    me("Yes, that's right");
+    afterVariant();
+  });
+}
+
+async function pickVariant(){
   await bot(S.variantAsk, S.variantWhy);
   replies(S.variants, async i=>{
-    A.variant = S.variants[i]; me(A.variant);
-    await bot(S.overall, S.overallWhy);
-    stars(async n=>{
-      A.overall=n; me("★".repeat(n) + `  ${n}/5`);
-      await bot("Thanks — that's logged.",
-        `Add a little detail and it becomes something an AI can actually use. About thirty seconds.`);
-      replies(["Add detail","I'm done"], async j=>{
-        if(j===1){ me("I'm done"); return finish(true); }
-        me("Add detail"); step(0);
-      });
+    A.variant = S.variants[i];
+    A.variantSource = S.knownVariant ? "reviewer_corrected" : "reviewer_selected";
+    me(A.variant);
+    afterVariant();
+  });
+}
+
+async function afterVariant(){
+  await bot(S.overall, S.overallWhy);
+  stars(async n=>{
+    A.overall = n; me("★".repeat(n) + `  ${n}/5`);
+    await bot("Thanks — that's logged.",
+      `Add a little detail and it becomes something an AI can actually use. About thirty seconds.`);
+    replies(["Add detail","I'm done"], async j=>{
+      if(j===1){ me("I'm done"); return finish(true); }
+      me("Add detail"); step(0);
     });
   });
 }
@@ -429,7 +453,7 @@ function payload(){
   for(const [k,v] of Object.entries(A.freeform)) attributes.push({key:k, type:"freeform", label:v, value:null});
   return {
     subject:{ id:S.id, name:S.name, category:S.category },
-    variant:A.variant,
+    variant:{ value:A.variant, source:A.variantSource },
     rating:{ value:A.overall, scale:5 },
     attributes,
     comment: comments.comment || null,
@@ -468,7 +492,7 @@ async function finish(early){
     <div class="stats">
       <div class="stat"><b>${secs}s</b><span>to complete</span></div>
       <div class="stat"><b>${n}</b><span>structured attribute${n===1?"":"s"}</span></div>
-      <div class="stat"><b>${A.variant?"Yes":"No"}</b><span>variant tagged</span></div>
+      <div class="stat"><b>${A.variantSource==="order_confirmed"?"From order":A.variant?"Yes":"No"}</b><span>variant tagged</span></div>
     </div>
     <div class="note"><b>Today's form would have captured:</b> a star rating and two optional
       generic attributes most people skip. No variant. No verified-purchase field.
