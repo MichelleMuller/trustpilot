@@ -38,18 +38,10 @@ Evaluated on three things:
 | [`sources.md`](sources.md) | Every source used |
 | [`reference/`](reference/) | Seer white paper, **Scaling Up CEO transcript**, **H1 2026 results call transcript**, product flow screenshots |
 
-## What's next
-
-**[`CHECKLIST.md`](CHECKLIST.md)** — the four things left to complete the deck.
-
 ## Status
 
-- [x] Research base
-- [x] Practitioner input
-- [x] Point of view / strategic bets
-- [x] Deck spine — *6 open decisions, see CHECKLIST*
-- [ ] Deeper research: how models parse reviews
-- [ ] Deck build
-- [ ] Conversational collection prototype (QR)
+**Deck delivered — 29 slides.** Research, strategy, prototype and QR codes all complete.
 
-*Last updated: 3 November 2026*
+Remaining pre-presentation fixes are in **[`CHECKLIST.md`](CHECKLIST.md)**.
+
+

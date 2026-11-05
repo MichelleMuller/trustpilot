@@ -558,12 +558,12 @@ These are **not** in the window, and saying so is the point — each one is earn
 
 ## Open items
 
-- [ ] Resourcing: what does Bet 1 cost, and what are we stopping to fund it?
-- [x] ~~Decide: do we verify syndicated content with our own fraud models?~~ **Yes — everything inbound is screened. See Trade-off 3.**
-- [ ] Size the verification cost, and decide who pays: syndication partner, or the brand
-- [ ] Pick the three headline metrics for the one-slide version
+- [x] ~~Resourcing~~ — stop funding the display and workflow layer; fund the data layer. Clearest cut: widgets.
+- [x] ~~Verify syndicated content with our own fraud models?~~ **Yes — everything inbound is screened. Trade-off 3.**
+- [x] ~~Who pays for verification~~ — the brand, bundled into the syndication fee.
+- [x] ~~Headline metrics~~ — one number per initiative, so a break in the chain names the initiative.
+- [x] ~~Slide-level build~~ — **delivered, 29 slides.**
 - [ ] Confirm PRP rollout status — the H1 call says all languages from 1 Oct; the help centre still says six English markets
-- [ ] Slide-level build
 
 ## Explicitly not doing
 
