@@ -211,6 +211,8 @@ const SUBJECTS = {
     variants:["UK 5 · Slate","UK 6 · Slate","UK 6 · Sand","UK 7 · Sand","UK 8 · Slate"],
     overall:"How were they overall?",
     overallWhy:"One tap. You can stop right there if you want.",
+    depthAsk:"Tell me more so I can help the brand know if the purchase was good, and also share helpful details to people like you!",
+    depthWhy:"Your rating is already saved — this takes about thirty seconds.",
     qs:[
       {key:"use_case", type:"multi", ask:"What have you mainly used them for?",
        why:"Pick as many as apply.",
@@ -239,6 +241,8 @@ const SUBJECTS = {
     variants:["Presented live","Read it myself","A bit of both"],
     overall:"Overall, how did it land?",
     overallWhy:"One tap. You can stop right there if you want.",
+    depthAsk:"Tell me more so Michelle knows what actually landed — and what didn't.",
+    depthWhy:"Your rating is already saved — this takes about thirty seconds.",
     qs:[
       {key:"strongest_parts", type:"multi", ask:"Which parts landed best?",
        why:"Pick as many as apply.",
@@ -410,8 +414,7 @@ async function afterVariant(){
   await bot(S.overall, S.overallWhy);
   stars(async n=>{
     A.overall = n; me("★".repeat(n) + `  ${n}/5`);
-    await bot("Thanks — that's logged.",
-      `Add a little detail and it becomes something an AI can actually use. About thirty seconds.`);
+    await bot(S.depthAsk, S.depthWhy);
     replies(["Add detail","I'm done"], async j=>{
       if(j===1){ me("I'm done"); return finish(true); }
       me("Add detail"); step(0);
