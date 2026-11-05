@@ -243,3 +243,55 @@ Dark slide.
 | **6** | *"Best sneakers for walking in London"* across engines |
 | **14** | Product-review form screenshots — in `reference/screenshots/` |
 | **16** | Conversational collection interface — the prototype |
+
+---
+
+# APPENDIX
+
+### A1. Four things I didn't expect to find
+
+> ⚠️ **Check the dates on item 1 before presenting.** The Seer study ran **March 2026**; the Bazaarvoice–Google deal was announced **7 May 2026** — *after* the measurement. So the deal cannot explain the March Gemini gap, and claiming it does is a date-check away from unravelling. The copy below is written as forward-looking risk instead, which is both defensible and more interesting.
+
+---
+
+**1 · Gemini is the soft spot — and a competitor just moved into it**
+
+Trustpilot is cited by **58%** of ChatGPT answers, **52%** of Perplexity, **49%** of Google AI Mode — but only **21%** of Gemini. Measured March 2026.
+
+In **May 2026**, Bazaarvoice signed a deal piping verified reviews and customer photos directly into **Google's Shopping Graph** — which feeds Gemini and AI Overviews — refreshed every 24 hours.
+
+*The deal didn't cause the gap. But it lands precisely where we're weakest, and contracted supply beats organic crawling.*
+
+---
+
+**2 · Absence is a signal — and only because presence is the norm**
+
+When ChatGPT searched Trustpilot and found **no** profile, it still mentioned Trustpilot **34.4%** of the time — to flag the missing evidence.
+
+*We earned the right to have our silence mean something by covering nearly everything first. At product level we haven't earned that yet.*
+
+---
+
+**3 · Our robots.txt already draws the right line**
+
+Retrieval crawlers are allowed — OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended. Training-only crawlers are blocked outright: `anthropic-ai`, `CCBot`, `Applebot-Extended`, `Bytespider`, `cohere-ai`.
+
+***Be cited, don't be absorbed.*** *Exactly right for a business whose asset is being the cited source — and worth saying out loud, because it's a deliberate position that looks like a config file.*
+
+---
+
+**4 · The competitive set structurally can't follow us into "offerings"**
+
+Every competitor is built on GTINs, catalogue feeds, variants and retailer PDPs. **A bank account has none of those.** Bazaarvoice's 1,750-retailer network — their deepest moat — is worth nothing to a credit union.
+
+*As the category's own comparison writing puts it: "a Bazaarvoice contract without a retail footprint is money spent on a network you'll never use."*
+
+---
+
+### Spares, if you'd rather swap one out
+
+**The vacuum, measured** — in US insurance queries, ChatGPT citations to **brand homepages rose from 1.4% to 12.8% in four months**. Models are quoting brands' own words about themselves because independent evidence barely exists.
+
+**The collection race started a year ago** — Bazaarvoice shipped Talk-to-Text and a Visual Content Coach in **November 2025**, explicitly for AI discoverability.
+
+**Keep #3 whatever you cut.** It's the only one that's complimentary rather than a gap, it shows you read the infrastructure rather than the marketing, and it raises the licensing question without you having to.
