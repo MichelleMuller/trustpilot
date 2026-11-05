@@ -214,20 +214,17 @@ const SUBJECTS = {
     depthAsk:"Tell me more so I can help the brand know if the purchase was good, and also share helpful details to people like you!",
     depthWhy:"Your rating is already saved — this takes about thirty seconds.",
     qs:[
-      {key:"use_case", type:"multi", ask:"What have you mainly used them for?",
-       why:"Pick as many as apply.",
-       opts:["City walking","Commuting","Travel","Light trails","Standing all day","The gym"]},
-      {key:"sizing_accuracy", type:"scale", ask:"How did the sizing compare to what you expected?",
+      {key:"sizing_accuracy", type:"scale", ask:"How did the size come up?",
        why:"Fit is the most common reason walking shoes get sent back.",
        opts:["Runs small","Slightly small","True to size","Slightly large","Runs large"]},
-      {key:"wet_grip", type:"scale", ask:"And the grip on wet pavement?",
-       why:"You bought these for London, so this one matters.",
-       opts:["Slipped","A bit uncertain","Fine","Confident","Excellent"]},
-      {key:"comfort_over_distance", type:"scale", ask:"After a few hours of walking, how did your feet feel?",
-       why:"Comfort at hour three tells you more than comfort on the first wear.",
-       opts:["Painful","Sore","Okay","Good","No issues at all"]},
-      {key:"comment", type:"open", ask:"Last one — what would you tell someone considering these?",
-       why:"A sentence is plenty. Speak it if that's easier."}
+      {key:"cushioning", type:"scale", ask:"And the cushioning?",
+       why:"Underfoot feel is the thing photos can never show you.",
+       opts:["Too firm","A bit firm","Just right","A bit soft","Too soft"]},
+      {key:"use_case", type:"multi", ask:"What have you mainly used them for?",
+       why:"Pick as many as apply — it helps match them to people like you.",
+       opts:["City walking","Commuting","Travel","Light trails","Standing all day","The gym"]},
+      {key:"comment", type:"open", ask:"Anything else you'd add to help other shoppers?",
+       why:"Totally optional — a sentence is plenty. Speak it if that's easier."}
     ]
   },
   deck:{
