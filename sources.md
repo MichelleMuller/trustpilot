@@ -110,3 +110,21 @@ Several SEO/comparison sites (wiserreview, wisernotify, costbench, stormy, zigpo
 - [Machine-Readable Product Data: The New Retail SEO for AI Shopping Agents](https://www.bspk.com/post/machine-readable-product-data-the-new-retail-seo-for-ai-shopping-agents)
 - [Trustpilot Product Reviews API — developer docs](https://developers.trustpilot.com/product-reviews-api/)
 - [Trustpilot Private Products API — developer docs](https://developers.trustpilot.com/private-products-api/)
+
+## AI assistant adoption — US and UK (traced to primary sources, Nov 2026)
+
+Both figures below were traced back to their originating studies. **Use these two; treat the wider spread of "AI shopping adoption" numbers (30%, 38%, 48%, 55%, 58%, 77%) as unusable** — they vary by how the question was asked, not by what's happening in the market, and most circulate via SEO aggregator articles with no stated methodology.
+
+**UK — AI assistant use in shopping doubled from 12% to 28% in a year**
+- [Adyen Retail Report 2026 — UK AI findings](https://www.adyen.com/en_GB/press-and-media/adyen-retail-report-2026-uk-ai) · published 9 Jan 2026
+- Fieldwork: **Censuswide**, n = **2,000** nationally representative UK consumers, 16+
+- Same report: **44%** of UK shoppers open to AI handling the entire purchase once criteria are set
+- *Adyen is a payments vendor, but Censuswide is independent and the base is solid. The sturdier of the two figures.*
+
+**US — 43% of online shoppers used an AI assistant for product research in the past 90 days**
+- [Product.ai, *Trust in AI Commerce Report*](https://product.ai/research/trust-in-ai-commerce-report/) · fieldwork April 2026
+- n = **1,463** US online shoppers via the Cint general-population panel
+- Question wording: *used an AI assistant — ChatGPT, Gemini, Claude, Perplexity or comparable — for product research in the past 90 days*
+- ⚠️ **Product.ai is a vendor in AI commerce.** Same commissioned-research caveat as the Seer study: persuasive, not neutral.
+
+**Untraced — do not use:** "66% of US and UK consumers have tried or would try shopping with an AI assistant." Widely repeated, no original located.
