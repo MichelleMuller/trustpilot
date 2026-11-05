@@ -603,7 +603,19 @@ function start(m){
   run();
 }
 document.querySelectorAll(".modebar button").forEach(b=> b.onclick = ()=> start(b.dataset.mode));
-start("sneaker");
+
+/* Deep links:
+     ?mode=deck            land on presentation feedback
+     ?mode=deck&only=1     …and hide the toggle, so a panel just gives feedback
+     ?mode=product         land on the product demo (the default anyway)      */
+const params = new URLSearchParams(location.search);
+const wanted = (params.get("mode") || "").toLowerCase();
+const startMode = (wanted === "deck" || wanted === "presentation") ? "deck" : "sneaker";
+if(params.get("only") === "1"){
+  const bar = document.querySelector(".modebar");
+  if(bar) bar.hidden = true;
+}
+start(startMode);
 </script>
 </body>
 </html>

@@ -10,6 +10,16 @@ Slide 16 of the deck — *"what better collection looks like"* — and the live 
 
 It exists to prove one claim from Initiative 1: **a model reads the subject and generates the right questions to ask.** A static form has fixed fields, so it asks everyone the same two generic questions. That isn't a styling problem, it's a structural one.
 
+## Deep links
+
+| Link | Lands on |
+|---|---|
+| `/` | The product demo |
+| `/?mode=deck` | **Presentation feedback** — what the closing-slide QR points at |
+| `/?mode=deck&only=1` | Presentation feedback with the toggle hidden |
+
+QR codes for both are in [`qr/`](qr/).
+
 ## The demo move
 
 Use the toggle at the top. The **same engine** runs both:
