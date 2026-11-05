@@ -210,7 +210,7 @@ const SUBJECTS = {
     variantWhy:"Tagging the variant is what makes “runs small” useful to anyone else.",
     variants:["UK 5 · Slate","UK 6 · Slate","UK 6 · Sand","UK 7 · Sand","UK 8 · Slate"],
     overall:"How were they overall?",
-    overallWhy:"One tap. You can stop right there if you want.",
+    overallWhy:"One tap.",
     depthAsk:"Tell me more so I can help the brand know if the purchase was good, and also share helpful details to people like you!",
     depthWhy:"Your rating is already saved — this takes about thirty seconds.",
     qs:[
@@ -237,7 +237,7 @@ const SUBJECTS = {
     variantWhy:"Reading it and being walked through it are different experiences.",
     variants:["Presented live","Read it myself","A bit of both"],
     overall:"Overall, how did it land?",
-    overallWhy:"One tap. You can stop right there if you want.",
+    overallWhy:"One tap.",
     depthAsk:"Tell me more so Michelle knows what actually landed — and what didn't.",
     depthWhy:"Your rating is already saved — this takes about thirty seconds.",
     qs:[
@@ -412,9 +412,9 @@ async function afterVariant(){
   stars(async n=>{
     A.overall = n; me("★".repeat(n) + `  ${n}/5`);
     await bot(S.depthAsk, S.depthWhy);
-    replies(["Add detail","I'm done"], async j=>{
-      if(j===1){ me("I'm done"); return finish(true); }
-      me("Add detail"); step(0);
+    replies(["Sure, go on","Not right now"], async j=>{
+      if(j===1){ me("Not right now"); return finish(true); }
+      me("Sure, go on"); step(0);
     });
   });
 }
