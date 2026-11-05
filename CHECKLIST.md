@@ -64,7 +64,7 @@ Strong move for three reasons: it demonstrates the product rather than describin
 - [x] ~~Build it~~ **[`prototype/review-collector.html`](prototype/review-collector.html)** — one file, no backend
 - [x] ~~Instrument it~~ **Done** — time, attributes captured, variant tagged, shown on the payload screen
 - [x] ~~Show the structured output~~ **Done** — it's the closing screen
-- [ ] **Paste a form endpoint** into `FORM_ENDPOINT` so responses come back to you
+- [ ] **Deploy the Apps Script** on the responses sheet and paste its `/exec` URL into `FORM_ENDPOINT` — steps in [`prototype/README.md`](prototype/README.md)
 - [ ] **Host it** somewhere with a short URL
 - [ ] **Generate the QR code** pointing at it
 - [ ] Try it on a few people before the panel — completion rate is the evidence

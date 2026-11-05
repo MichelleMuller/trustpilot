@@ -11,155 +11,148 @@
     --muted:#646362; --muted-2:#898987;
     --green:#00b579; --green-deep:#00754e; --green-wash:#eaf7f1;
     --card:#ffffff; --dark:#181818;
-    --r:14px; --r-lg:20px;
-    --fs-1:30px; --fs-2:21px; --fs-3:17px; --fs-4:15px; --fs-5:13px;
-    --maxw:560px;
+    --fs-1:27px; --fs-2:17px; --fs-3:15.5px; --fs-4:13px;
+    --maxw:620px;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0}
+  html,body{height:100%;margin:0;padding:0;overscroll-behavior-y:none}
   body{
     background:var(--bg); color:var(--ink);
     font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size:var(--fs-4); line-height:1.5;
-    -webkit-font-smoothing:antialiased;
-    padding:0 16px env(safe-area-inset-bottom);
+    font-size:var(--fs-3); line-height:1.5; -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column;
   }
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:22px 0 40px}
 
-  /* ---------- chrome ---------- */
-  .top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
-  .brand{display:flex;align-items:center;gap:8px;font-size:var(--fs-5);letter-spacing:.09em;text-transform:uppercase;color:var(--green-deep);font-weight:650}
-  .star{width:13px;height:13px;flex:none}
-  .modebar{display:flex;gap:4px;background:var(--rule);padding:3px;border-radius:999px}
+  /* ── header ───────────────────────────────────────────── */
+  header{
+    flex:none; border-bottom:1px solid var(--rule); background:rgba(250,249,245,.93);
+    backdrop-filter:saturate(1.6) blur(10px); position:sticky; top:0; z-index:5;
+  }
+  .hd{max-width:var(--maxw);margin:0 auto;padding:11px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;align-items:center;gap:7px;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-deep);font-weight:700}
+  .brand svg{width:12px;height:12px;flex:none}
+  .modebar{display:flex;gap:3px;background:var(--rule);padding:3px;border-radius:999px}
   .modebar button{
-    appearance:none;border:0;background:transparent;cursor:pointer;
-    font:inherit;font-size:12px;font-weight:600;color:var(--muted);
-    padding:5px 11px;border-radius:999px;white-space:nowrap;
+    appearance:none;border:0;background:transparent;cursor:pointer;font:inherit;
+    font-size:11.5px;font-weight:600;color:var(--muted);padding:5px 10px;border-radius:999px;white-space:nowrap;
   }
   .modebar button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
   .modebar button:focus-visible{outline:2px solid var(--green-deep);outline-offset:2px}
 
-  /* ---------- progress ---------- */
-  .prog{height:3px;background:var(--rule);border-radius:999px;overflow:hidden;margin-bottom:20px}
-  .prog i{display:block;height:100%;background:var(--green);width:0;transition:width .35s cubic-bezier(.4,0,.2,1)}
+  /* ── thread ───────────────────────────────────────────── */
+  main{flex:1 1 auto;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .thread{max-width:var(--maxw);margin:0 auto;padding:20px 16px 8px;display:flex;flex-direction:column;gap:14px}
 
-  /* ---------- subject ---------- */
   .subject{
-    display:flex;gap:14px;align-items:center;
-    background:var(--card);border:1px solid var(--rule);border-radius:var(--r);
-    padding:13px 15px;margin-bottom:22px;
+    display:flex;gap:12px;align-items:center;background:var(--card);
+    border:1px solid var(--rule);border-radius:14px;padding:12px 14px;
   }
-  .thumb{
-    width:46px;height:46px;flex:none;border-radius:10px;
-    background:var(--green-wash);display:grid;place-items:center;
-    font-size:21px;line-height:1;
-  }
-  .subject h1{font-size:var(--fs-3);margin:0 0 2px;font-weight:650;letter-spacing:-.01em}
-  .subject p{margin:0;font-size:var(--fs-5);color:var(--muted)}
-  .vbadge{
-    display:inline-flex;align-items:center;gap:4px;margin-top:5px;
-    font-size:11px;font-weight:650;color:var(--green-deep);
-    background:var(--green-wash);padding:2px 7px;border-radius:999px;letter-spacing:.02em;
-  }
+  .thumb{width:42px;height:42px;flex:none;border-radius:9px;background:var(--green-wash);display:grid;place-items:center;font-size:20px}
+  .subject h1{font-size:var(--fs-3);margin:0 0 1px;font-weight:650;letter-spacing:-.01em}
+  .subject p{margin:0;font-size:var(--fs-4);color:var(--muted)}
+  .vbadge{display:inline-flex;align-items:center;gap:4px;margin-top:4px;font-size:10.5px;font-weight:700;
+    color:var(--green-deep);background:var(--green-wash);padding:2px 7px;border-radius:999px}
 
-  /* ---------- conversation ---------- */
-  .turn{margin-bottom:26px;animation:rise .4s cubic-bezier(.2,.7,.3,1) both}
-  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-  @media (prefers-reduced-motion:reduce){
-    .turn{animation:none} .prog i{transition:none} *{scroll-behavior:auto!important}
+  .msg{display:flex;gap:9px;align-items:flex-end;animation:rise .32s cubic-bezier(.2,.7,.3,1) both}
+  .msg .av{
+    width:25px;height:25px;flex:none;border-radius:50%;background:var(--dark);
+    display:grid;place-items:center;margin-bottom:1px;
   }
-  .ask{font-size:var(--fs-2);line-height:1.3;font-weight:650;letter-spacing:-.015em;margin:0 0 4px}
-  .why{font-size:var(--fs-5);color:var(--muted);margin:0 0 14px}
-  .answered{
-    font-size:var(--fs-5);color:var(--green-deep);font-weight:600;
-    display:flex;align-items:center;gap:6px;margin-top:10px;
+  .msg .av svg{width:12px;height:12px;color:var(--green)}
+  .bub{
+    max-width:min(82%,460px);padding:11px 15px;border-radius:17px;
+    background:var(--card);border:1px solid var(--rule);border-bottom-left-radius:5px;
   }
+  .bub p{margin:0}
+  .bub p + p{margin-top:7px;font-size:var(--fs-4);color:var(--muted);line-height:1.5}
+  .msg.me{justify-content:flex-end}
+  .msg.me .bub{
+    background:var(--dark);color:#fff;border-color:var(--dark);
+    border-bottom-left-radius:17px;border-bottom-right-radius:5px;font-weight:500;
+  }
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
-  /* ---------- controls ---------- */
-  .stars{display:flex;gap:7px}
-  .stars button{
-    appearance:none;border:0;background:transparent;padding:0;cursor:pointer;
-    width:46px;height:46px;border-radius:9px;transition:transform .12s;
-  }
-  .stars button:hover{transform:scale(1.07)}
-  .stars button:focus-visible{outline:2px solid var(--green-deep);outline-offset:2px}
-  .stars svg{width:100%;height:100%;display:block}
+  .typing{display:flex;gap:4px;padding:3px 2px}
+  .typing i{width:6px;height:6px;border-radius:50%;background:var(--muted-2);animation:blip 1.3s infinite}
+  .typing i:nth-child(2){animation-delay:.18s} .typing i:nth-child(3){animation-delay:.36s}
+  @keyframes blip{0%,60%,100%{opacity:.25;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
 
-  .scale{display:flex;gap:7px;flex-wrap:wrap}
+  /* ── quick replies ────────────────────────────────────── */
+  .replies{display:flex;flex-wrap:wrap;gap:7px;padding-left:34px;animation:rise .32s cubic-bezier(.2,.7,.3,1) both}
   .chip{
-    appearance:none;font:inherit;font-size:var(--fs-4);cursor:pointer;
-    background:var(--card);border:1px solid var(--rule-2);color:var(--ink);
-    padding:10px 15px;border-radius:999px;transition:all .14s;
+    appearance:none;font:inherit;font-size:var(--fs-3);cursor:pointer;background:var(--card);
+    border:1px solid var(--rule-2);color:var(--ink);padding:9px 14px;border-radius:999px;transition:all .13s;
   }
   .chip:hover{border-color:var(--muted-2)}
   .chip:focus-visible{outline:2px solid var(--green-deep);outline-offset:2px}
-  .chip[aria-pressed="true"]{background:var(--dark);border-color:var(--dark);color:#fff;font-weight:600}
+  .chip[aria-pressed="true"]{background:var(--green-wash);border-color:var(--green);color:var(--green-deep);font-weight:650}
+  .chip.go{background:var(--dark);border-color:var(--dark);color:#fff;font-weight:650}
+  .chip.go[disabled]{opacity:.4;cursor:not-allowed}
+  .stars{display:flex;gap:6px;padding-left:34px;animation:rise .32s cubic-bezier(.2,.7,.3,1) both}
+  .stars button{appearance:none;border:0;background:transparent;padding:0;cursor:pointer;width:42px;height:42px;border-radius:8px;transition:transform .12s}
+  .stars button:hover{transform:scale(1.08)}
+  .stars button:focus-visible{outline:2px solid var(--green-deep);outline-offset:2px}
+  .stars svg{width:100%;height:100%;display:block}
 
-  textarea{
-    width:100%;font:inherit;font-size:var(--fs-4);color:var(--ink);
-    background:var(--card);border:1px solid var(--rule-2);border-radius:var(--r);
-    padding:13px 14px;resize:vertical;min-height:94px;
+  /* ── composer ─────────────────────────────────────────── */
+  footer{flex:none;border-top:1px solid var(--rule);background:var(--bg);position:sticky;bottom:0}
+  .cp{max-width:var(--maxw);margin:0 auto;padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+  .box{display:flex;align-items:flex-end;gap:7px;background:var(--card);border:1px solid var(--rule-2);border-radius:22px;padding:5px 5px 5px 15px}
+  .box:focus-within{border-color:var(--muted-2);box-shadow:0 0 0 3px rgba(0,181,121,.1)}
+  .box textarea{
+    flex:1;border:0;outline:0;resize:none;background:transparent;font:inherit;font-size:var(--fs-3);
+    color:var(--ink);padding:8px 0;max-height:120px;line-height:1.45;
   }
-  textarea:focus{outline:2px solid var(--green-deep);outline-offset:1px;border-color:transparent}
-  textarea::placeholder{color:var(--muted-2)}
+  .box textarea::placeholder{color:var(--muted-2)}
+  .ico{
+    appearance:none;border:0;cursor:pointer;width:34px;height:34px;flex:none;border-radius:50%;
+    display:grid;place-items:center;transition:all .13s;background:transparent;color:var(--muted);
+  }
+  .ico:hover{background:var(--rule)}
+  .ico:focus-visible{outline:2px solid var(--green-deep);outline-offset:1px}
+  .ico svg{width:17px;height:17px}
+  .ico.send{background:var(--dark);color:#fff}
+  .ico.send:hover{background:#000}
+  .ico.send[disabled]{opacity:.3;cursor:not-allowed;background:var(--rule-2);color:var(--muted)}
+  .ico.mic.live{background:var(--green);color:#fff;animation:pulse 1.4s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,181,121,.5)}70%{box-shadow:0 0 0 9px rgba(0,181,121,0)}}
+  .hint{font-size:10.5px;color:var(--muted-2);text-align:center;margin:7px 0 0;line-height:1.45}
 
-  .row{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
-  .btn{
-    appearance:none;font:inherit;font-size:var(--fs-4);font-weight:600;cursor:pointer;
-    padding:12px 20px;border-radius:999px;border:1px solid transparent;transition:all .14s;
-  }
-  .btn-pri{background:var(--dark);color:#fff}
-  .btn-pri:hover{background:#000}
-  .btn-sec{background:transparent;color:var(--ink);border-color:var(--rule-2)}
-  .btn-sec:hover{border-color:var(--muted-2)}
-  .btn:focus-visible{outline:2px solid var(--green-deep);outline-offset:2px}
-  .btn[disabled]{opacity:.45;cursor:not-allowed}
-
-  /* ---------- payload ---------- */
-  .done h2{font-size:var(--fs-1);line-height:1.15;letter-spacing:-.025em;margin:0 0 8px;font-weight:700}
-  .done .lede{color:var(--muted);margin:0 0 22px;font-size:var(--fs-3)}
-  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:22px}
-  .stat{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:13px}
-  .stat b{display:block;font-size:25px;line-height:1.1;letter-spacing:-.02em;font-weight:700}
-  .stat span{display:block;font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.35}
-
-  .payhead{
-    display:flex;align-items:baseline;justify-content:space-between;gap:10px;
-    margin-bottom:9px;
-  }
-  .payhead h3{font-size:var(--fs-4);margin:0;font-weight:650}
-  .payhead span{font-size:var(--fs-5);color:var(--muted)}
-  pre{
-    margin:0 0 18px;background:var(--dark);color:#e8e7e3;
-    border-radius:var(--r);padding:16px;overflow-x:auto;
-    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-    font-size:12px;line-height:1.65;-webkit-overflow-scrolling:touch;
-  }
+  /* ── payload ──────────────────────────────────────────── */
+  .done{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:19px;margin-left:34px}
+  .done h2{font-size:var(--fs-1);line-height:1.15;letter-spacing:-.025em;margin:0 0 6px;font-weight:700}
+  .done .lede{color:var(--muted);margin:0 0 18px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:18px}
+  .stat{background:var(--bg);border-radius:11px;padding:12px}
+  .stat b{display:block;font-size:23px;line-height:1.1;letter-spacing:-.02em;font-weight:700}
+  .stat span{display:block;font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.35}
+  .note{background:var(--green-wash);border-radius:11px;padding:13px 15px;font-size:var(--fs-4);color:var(--green-deep);line-height:1.55;margin-bottom:16px}
+  .payhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:8px}
+  .payhead h3{font-size:var(--fs-4);margin:0;font-weight:700}
+  .payhead span{font-size:10.5px;color:var(--muted)}
+  pre{margin:0 0 16px;background:var(--dark);color:#e8e7e3;border-radius:11px;padding:15px;overflow-x:auto;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;line-height:1.65}
   pre .k{color:#7fd4ad} pre .s{color:#f2d5a0} pre .n{color:#a8c7fa}
+  .row{display:flex;gap:8px;flex-wrap:wrap}
+  .btn{appearance:none;font:inherit;font-size:var(--fs-3);font-weight:650;cursor:pointer;padding:11px 18px;border-radius:999px;border:1px solid transparent;transition:all .13s}
+  .btn-pri{background:var(--dark);color:#fff} .btn-pri:hover{background:#000}
+  .btn-sec{background:transparent;color:var(--ink);border-color:var(--rule-2)} .btn-sec:hover{border-color:var(--muted-2)}
+  .btn:focus-visible{outline:2px solid var(--green-deep);outline-offset:2px}
+  .status{font-size:var(--fs-4);margin:9px 0 0;min-height:18px}
+  .status.ok{color:var(--green-deep);font-weight:650}
+  .status.err{color:#9a3412;font-weight:650}
 
-  .note{
-    background:var(--green-wash);border-radius:var(--r);padding:14px 16px;
-    font-size:var(--fs-5);color:var(--green-deep);line-height:1.55;margin-bottom:18px;
+  @media (prefers-reduced-motion:reduce){
+    .msg,.replies,.stars{animation:none} .typing i{animation:none;opacity:.6} .ico.mic.live{animation:none}
   }
-  .note b{font-weight:700}
-
-  .foot{
-    border-top:1px solid var(--rule);margin-top:30px;padding-top:14px;
-    font-size:11.5px;color:var(--muted-2);line-height:1.6;
-  }
-  .foot a{color:var(--muted);text-underline-offset:2px}
-  .status{font-size:var(--fs-5);margin-top:10px;min-height:19px}
-  .status.ok{color:var(--green-deep);font-weight:600}
-  .status.err{color:#9a3412;font-weight:600}
-  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <div class="top">
+<header>
+  <div class="hd">
     <div class="brand">
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1.6l3.1 7.3 7.9.6-6 5.2 1.8 7.7L12 18.3l-6.8 4.1 1.8-7.7-6-5.2 7.9-.6z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1.6l3.1 7.3 7.9.6-6 5.2 1.8 7.7L12 18.3l-6.8 4.1 1.8-7.7-6-5.2 7.9-.6z"/></svg>
       Prototype
     </div>
     <div class="modebar" role="group" aria-label="What are you reviewing?">
@@ -167,355 +160,368 @@
       <button type="button" data-mode="deck" aria-pressed="false">This presentation</button>
     </div>
   </div>
+</header>
 
-  <div class="prog" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+<main id="main">
+  <div class="thread" id="thread" aria-live="polite" aria-label="Review conversation"></div>
+</main>
 
-  <div id="subject"></div>
-  <main id="flow" aria-live="polite"></main>
-
-  <p class="foot">
-    Prototype demonstrating conversational review collection. Attribute questions are
-    <b>generated per subject</b> — in production by a model reading the product; here they are
-    pre-computed so this runs as a single file with no backend.
-    <span id="sink"></span>
-  </p>
-</div>
+<footer>
+  <div class="cp">
+    <div class="box">
+      <textarea id="input" rows="1" placeholder="Type a reply…" aria-label="Your reply"></textarea>
+      <button type="button" class="ico mic" id="mic" title="Answer by voice" aria-label="Answer by voice">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/>
+        </svg>
+      </button>
+      <button type="button" class="ico send" id="send" disabled title="Send" aria-label="Send">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M13 6l6 6-6 6"/>
+        </svg>
+      </button>
+    </div>
+    <p class="hint" id="hint">Tap an option, or type — you can speak your answer too.</p>
+  </div>
+</footer>
 
 <script>
-/* ════════════════════════════════════════════════════════════════════
-   CONFIG — paste your form endpoint here (Formspree, Google Forms, etc.)
-   Leave as "" and the prototype falls back to copy / download instead.
-   ════════════════════════════════════════════════════════════════════ */
+/* ════════════════════════════════════════════════════════════════════════
+   CONFIG — paste your Apps Script Web App URL here (see prototype/README).
+   Leave "" and the prototype falls back to copy / download.
+   ════════════════════════════════════════════════════════════════════════ */
 const FORM_ENDPOINT = "";
 
-/* ── Subjects ─────────────────────────────────────────────────────────
-   The point of the demo: the SAME engine, with questions generated for
-   whatever is being reviewed. Compare the two attribute sets below —
-   a static form could never ask either of them.
-   ──────────────────────────────────────────────────────────────────── */
+/* ── Subjects ────────────────────────────────────────────────────────────
+   Same engine, different generated questions. That contrast IS the demo —
+   no static form could ask either set.
+   type: "scale" (single choice) | "multi" (multi-select) | "open" (free text)
+   ─────────────────────────────────────────────────────────────────────── */
 const SUBJECTS = {
-  sneaker: {
-    icon: "👟",
-    name: "Trailwind GT-3 — Women's Walking Shoe",
-    seller: "Sold by Northfield Running",
-    verified: true,
-    category: "footwear / walking",
-    variantLabel: "Which did you buy?",
-    variants: ["UK 5 · Slate", "UK 6 · Slate", "UK 6 · Sand", "UK 7 · Sand", "UK 8 · Slate"],
-    overall: "Overall, how was it?",
-    attrs: [
-      { key:"sizing_accuracy", ask:"How did the sizing compare to what you expected?",
-        why:"Fit is the single most common reason walking shoes get returned.",
-        opts:["Runs small","Slightly small","True to size","Slightly large","Runs large"] },
-      { key:"wet_grip", ask:"How did the grip hold up on wet pavement?",
-        why:"You bought these for city walking, so this one matters.",
-        opts:["Slipped","A bit uncertain","Fine","Confident","Excellent"] },
-      { key:"comfort_over_distance", ask:"After a few hours of walking, how did your feet feel?",
-        why:"Comfort on the first wear tells you less than comfort at hour three.",
-        opts:["Painful","Sore","Okay","Good","No issues at all"] },
-      { key:"durability_signs", ask:"Any signs of wear you didn't expect?",
-        why:"Early wear is hard to see in product photos.",
-        opts:["Yes, badly","Some","A little","Barely","None"] }
-    ],
-    open: "What would you tell someone considering these?",
-    openHint: "A sentence is plenty."
+  sneaker:{
+    icon:"👟", id:"trailwind-gt-3",
+    name:"Trailwind GT-3 — Women's Walking Shoe",
+    seller:"Sold by Northfield Running", verified:true, category:"footwear / walking",
+    hello:"Hi — thanks for buying the Trailwind GT-3. Mind if I ask a few quick things? It takes under a minute.",
+    variantAsk:"First — which one did you get?",
+    variantWhy:"Tagging the variant is what makes “runs small” useful to anyone else.",
+    variants:["UK 5 · Slate","UK 6 · Slate","UK 6 · Sand","UK 7 · Sand","UK 8 · Slate"],
+    overall:"How were they overall?",
+    overallWhy:"One tap. You can stop right there if you want.",
+    qs:[
+      {key:"use_case", type:"multi", ask:"What have you mainly used them for?",
+       why:"Pick as many as apply.",
+       opts:["City walking","Commuting","Travel","Light trails","Standing all day","The gym"]},
+      {key:"sizing_accuracy", type:"scale", ask:"How did the sizing compare to what you expected?",
+       why:"Fit is the most common reason walking shoes get sent back.",
+       opts:["Runs small","Slightly small","True to size","Slightly large","Runs large"]},
+      {key:"wet_grip", type:"scale", ask:"And the grip on wet pavement?",
+       why:"You bought these for London, so this one matters.",
+       opts:["Slipped","A bit uncertain","Fine","Confident","Excellent"]},
+      {key:"comfort_over_distance", type:"scale", ask:"After a few hours of walking, how did your feet feel?",
+       why:"Comfort at hour three tells you more than comfort on the first wear.",
+       opts:["Painful","Sore","Okay","Good","No issues at all"]},
+      {key:"comment", type:"open", ask:"Last one — what would you tell someone considering these?",
+       why:"A sentence is plenty. Speak it if that's easier."}
+    ]
   },
-  deck: {
-    icon: "📊",
-    name: "Expanding the trust layer to product reviews",
-    seller: "A 12–18 month strategy · Michelle Muller",
-    verified: false,
-    category: "strategy / presentation",
-    variantLabel: "How did you see it?",
-    variants: ["Presented live","Read it myself","Bit of both"],
-    overall: "Overall, how did it land?",
-    attrs: [
-      { key:"argument_clarity", ask:"How clear was the central argument?",
-        why:"If the thesis doesn't land, nothing after it does either.",
-        opts:["Lost me","Patchy","Clear enough","Clear","Very clear"] },
-      { key:"evidence_strength", ask:"How well did the evidence support the claims?",
-        why:"Strategy decks live or die on whether the proof holds.",
-        opts:["Thin","Some gaps","Adequate","Solid","Convincing"] },
-      { key:"plan_feasibility", ask:"Does the 18-month plan feel achievable?",
-        why:"Ambition is easy; sequencing is the hard part.",
-        opts:["No","Doubtful","Maybe","Mostly","Yes"] },
-      { key:"originality", ask:"How much of this had you not already considered?",
-        why:"The useful bit is the part you hadn't thought of.",
-        opts:["None of it","A little","Some","A fair amount","Most of it"] }
-    ],
-    open: "What's the weakest part?",
-    openHint: "Be blunt — that's the useful bit."
+  deck:{
+    icon:"📊", id:"trust-layer-strategy",
+    name:"Expanding the trust layer to product reviews",
+    seller:"A 12–18 month strategy · Michelle Muller", verified:false, category:"strategy / presentation",
+    hello:"Thanks for going through the deck. A few quick questions — under a minute, and please be blunt.",
+    variantAsk:"How did you see it?",
+    variantWhy:"Reading it and being walked through it are different experiences.",
+    variants:["Presented live","Read it myself","A bit of both"],
+    overall:"Overall, how did it land?",
+    overallWhy:"One tap. You can stop right there if you want.",
+    qs:[
+      {key:"strongest_parts", type:"multi", ask:"Which parts landed best?",
+       why:"Pick as many as apply.",
+       opts:["The thesis","The evidence","The two bets","The trade-offs","The roadmap","The metrics"]},
+      {key:"argument_clarity", type:"scale", ask:"How clear was the central argument?",
+       why:"If the thesis doesn't land, nothing after it does either.",
+       opts:["Lost me","Patchy","Clear enough","Clear","Very clear"]},
+      {key:"evidence_strength", type:"scale", ask:"How well did the evidence support the claims?",
+       why:"Strategy decks live or die on whether the proof holds.",
+       opts:["Thin","Some gaps","Adequate","Solid","Convincing"]},
+      {key:"plan_feasibility", type:"scale", ask:"Does the 18-month plan feel achievable?",
+       why:"Ambition is easy; sequencing is the hard part.",
+       opts:["No","Doubtful","Maybe","Mostly","Yes"]},
+      {key:"comment", type:"open", ask:"Last one — what's the weakest part?",
+       why:"Be blunt, that's the useful bit. Speak it if that's easier."}
+    ]
   }
 };
 
-/* ── State ───────────────────────────────────────────────────────────── */
-let mode = "sneaker", S, step = 0, t0 = Date.now();
-let answer = { variant:null, overall:null, attrs:{}, open:"" };
+/* ── Elements & state ───────────────────────────────────────────────── */
+const $thread=document.getElementById("thread"), $main=document.getElementById("main"),
+      $input=document.getElementById("input"), $send=document.getElementById("send"),
+      $mic=document.getElementById("mic"), $hint=document.getElementById("hint");
 
-const $flow = document.getElementById("flow");
-const $subject = document.getElementById("subject");
-const $prog = document.querySelector(".prog i");
-const $progEl = document.querySelector(".prog");
+let mode="sneaker", S, t0=Date.now(), onText=null, A;
 
-/* total steps: variant, overall, N attrs, open */
-const totalSteps = () => 2 + S.attrs.length + 1;
+const reset = () => { A={variant:null,overall:null,answers:{},freeform:{}}; };
+const scroll = () => requestAnimationFrame(()=> $main.scrollTo({top:$main.scrollHeight,behavior:"smooth"}));
+const wait = ms => new Promise(r=>setTimeout(r,ms));
 
-function setProgress(){
-  const pct = Math.min(100, Math.round((step / totalSteps()) * 100));
-  $prog.style.width = pct + "%";
-  $progEl.setAttribute("aria-valuenow", String(pct));
+/* ── Thread rendering ───────────────────────────────────────────────── */
+const BOT_AV = `<div class="av"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1.6l3.1 7.3 7.9.6-6 5.2 1.8 7.7L12 18.3l-6.8 4.1 1.8-7.7-6-5.2 7.9-.6z"/></svg></div>`;
+
+function node(html){ const d=document.createElement("div"); d.innerHTML=html.trim(); const el=d.firstElementChild; $thread.appendChild(el); scroll(); return el; }
+
+async function bot(text, sub){
+  const t = node(`<div class="msg">${BOT_AV}<div class="bub"><div class="typing"><i></i><i></i><i></i></div></div></div>`);
+  await wait(Math.min(950, 320 + text.length * 11));
+  t.querySelector(".bub").innerHTML = `<p>${text}</p>` + (sub ? `<p>${sub}</p>` : "");
+  scroll();
+}
+const me = text => node(`<div class="msg me"><div class="bub"><p>${text}</p></div></div>`);
+
+/* ── Composer ───────────────────────────────────────────────────────── */
+function composer(enabled, placeholder){
+  $input.disabled = !enabled;
+  $input.placeholder = placeholder || "Type a reply…";
+  $mic.disabled = !enabled || !SR;
+  $send.disabled = true;
+  $input.style.height = "auto";
+  if(enabled) requestAnimationFrame(()=> $input.focus({preventScroll:true}));
+}
+$input.addEventListener("input", ()=>{
+  $send.disabled = !$input.value.trim();
+  $input.style.height="auto"; $input.style.height = Math.min(120,$input.scrollHeight)+"px";
+});
+$input.addEventListener("keydown", e=>{
+  if(e.key==="Enter" && !e.shiftKey){ e.preventDefault(); if(!$send.disabled) $send.click(); }
+});
+$send.onclick = ()=>{
+  const v=$input.value.trim(); if(!v) return;
+  $input.value=""; $input.style.height="auto"; $send.disabled=true;
+  if(onText) onText(v);
+};
+
+/* ── Voice ──────────────────────────────────────────────────────────── */
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec=null, listening=false;
+if(!SR){ $mic.hidden = true; }
+else{
+  rec = new SR(); rec.lang="en-GB"; rec.interimResults=true; rec.continuous=false;
+  let base="";
+  rec.onresult = e=>{
+    let txt="";
+    for(let i=e.resultIndex;i<e.results.length;i++) txt += e.results[i][0].transcript;
+    $input.value = (base ? base+" " : "") + txt;
+    $send.disabled = !$input.value.trim();
+    $input.style.height="auto"; $input.style.height=Math.min(120,$input.scrollHeight)+"px";
+  };
+  rec.onend = ()=>{ listening=false; $mic.classList.remove("live"); $mic.setAttribute("aria-label","Answer by voice"); };
+  rec.onerror = ev=>{
+    listening=false; $mic.classList.remove("live");
+    if(ev.error==="not-allowed") $hint.textContent="Microphone blocked — allow access, or just type.";
+  };
+  $mic.onclick = ()=>{
+    if(listening){ rec.stop(); return; }
+    base = $input.value.trim();
+    try{
+      rec.start(); listening=true;
+      $mic.classList.add("live"); $mic.setAttribute("aria-label","Stop listening");
+      $hint.textContent="Listening… tap the mic again to stop.";
+    }catch(_){}
+  };
 }
 
-function starSVG(filled){
-  return `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="${filled?'var(--green)':'#e2e1dd'}"
-    d="M12 1.6l3.1 7.3 7.9.6-6 5.2 1.8 7.7L12 18.3l-6.8 4.1 1.8-7.7-6-5.2 7.9-.6z"/></svg>`;
+/* ── Question steps ─────────────────────────────────────────────────── */
+function replies(opts, onPick){
+  const el = node(`<div class="replies">${opts.map((o,i)=>`<button type="button" class="chip" data-i="${i}">${o}</button>`).join("")}</div>`);
+  el.querySelectorAll(".chip").forEach(b=> b.onclick = ()=>{ el.remove(); onPick(+b.dataset.i); });
+  return el;
 }
 
-function renderSubject(){
-  $subject.innerHTML = `
+function multi(opts, onDone){
+  const picked = new Set();
+  const el = node(`<div class="replies">
+    ${opts.map((o,i)=>`<button type="button" class="chip" data-i="${i}" aria-pressed="false">${o}</button>`).join("")}
+    <button type="button" class="chip go" data-go disabled>Continue</button>
+  </div>`);
+  const go = el.querySelector("[data-go]");
+  el.querySelectorAll(".chip:not(.go)").forEach(b=> b.onclick = ()=>{
+    const i=+b.dataset.i;
+    picked.has(i) ? picked.delete(i) : picked.add(i);
+    b.setAttribute("aria-pressed", String(picked.has(i)));
+    go.disabled = picked.size===0;
+    go.textContent = picked.size ? `Continue (${picked.size})` : "Continue";
+  });
+  go.onclick = ()=>{ el.remove(); onDone([...picked].sort().map(i=>opts[i])); };
+}
+
+function stars(onPick){
+  const svg = f => `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="${f?'var(--green)':'#e2e1dd'}" d="M12 1.6l3.1 7.3 7.9.6-6 5.2 1.8 7.7L12 18.3l-6.8 4.1 1.8-7.7-6-5.2 7.9-.6z"/></svg>`;
+  const el = node(`<div class="stars" role="group" aria-label="Rating out of 5">
+    ${[1,2,3,4,5].map(n=>`<button type="button" data-n="${n}" aria-label="${n} out of 5">${svg(false)}</button>`).join("")}</div>`);
+  const btns=[...el.querySelectorAll("button")];
+  const paint = n => btns.forEach((b,i)=> b.innerHTML = svg(i<n));
+  btns.forEach(b=>{
+    b.onmouseenter=()=>paint(+b.dataset.n); b.onfocus=()=>paint(+b.dataset.n);
+    b.onclick=()=>{ el.remove(); onPick(+b.dataset.n); };
+  });
+  el.onmouseleave=()=>paint(0);
+}
+
+/* ── Flow ───────────────────────────────────────────────────────────── */
+async function run(){
+  reset(); t0=Date.now(); onText=null;
+  $thread.innerHTML = `
     <div class="subject">
       <div class="thumb" aria-hidden="true">${S.icon}</div>
-      <div>
-        <h1>${S.name}</h1>
-        <p>${S.seller}</p>
-        ${S.verified ? `<span class="vbadge">✓ Verified purchase</span>` : ``}
-      </div>
+      <div><h1>${S.name}</h1><p>${S.seller}</p>
+      ${S.verified?`<span class="vbadge">✓ Verified purchase</span>`:``}</div>
     </div>`;
-}
+  composer(false, "Tap an option above…");
 
-/* ── Turn builders ───────────────────────────────────────────────────── */
-function turn(html){
-  const d = document.createElement("section");
-  d.className = "turn";
-  d.innerHTML = html;
-  $flow.appendChild(d);
-  requestAnimationFrame(()=> d.scrollIntoView({behavior:"smooth", block:"center"}));
-  return d;
-}
-
-function lock(el, label){
-  el.querySelectorAll("button, textarea").forEach(b => { b.disabled = true; });
-  const p = document.createElement("p");
-  p.className = "answered";
-  p.innerHTML = `<span aria-hidden="true">✓</span> ${label}`;
-  el.appendChild(p);
-}
-
-function askVariant(){
-  const el = turn(`
-    <p class="ask">${S.variantLabel}</p>
-    <p class="why">Tagging the variant is what makes “runs small” usable later.</p>
-    <div class="scale">${S.variants.map((v,i)=>
-      `<button type="button" class="chip" data-i="${i}" aria-pressed="false">${v}</button>`).join("")}</div>
-  `);
-  el.querySelectorAll(".chip").forEach(b => b.onclick = () => {
-    answer.variant = S.variants[+b.dataset.i];
-    b.setAttribute("aria-pressed","true");
-    lock(el, answer.variant);
-    step++; setProgress(); askOverall();
+  await bot(S.hello);
+  await bot(S.variantAsk, S.variantWhy);
+  replies(S.variants, async i=>{
+    A.variant = S.variants[i]; me(A.variant);
+    await bot(S.overall, S.overallWhy);
+    stars(async n=>{
+      A.overall=n; me("★".repeat(n) + `  ${n}/5`);
+      await bot("Thanks — that's logged.",
+        `Add a little detail and it becomes something an AI can actually use. About thirty seconds.`);
+      replies(["Add detail","I'm done"], async j=>{
+        if(j===1){ me("I'm done"); return finish(true); }
+        me("Add detail"); step(0);
+      });
+    });
   });
 }
 
-function askOverall(){
-  const el = turn(`
-    <p class="ask">${S.overall}</p>
-    <p class="why">One tap. You can stop here if you like.</p>
-    <div class="stars" role="group" aria-label="Rating out of 5">
-      ${[1,2,3,4,5].map(n=>`<button type="button" data-n="${n}" aria-label="${n} out of 5">${starSVG(false)}</button>`).join("")}
-    </div>
-  `);
-  const btns = [...el.querySelectorAll(".stars button")];
-  const paint = n => btns.forEach((b,i)=> b.innerHTML = starSVG(i < n));
-  btns.forEach(b=>{
-    b.onmouseenter = () => paint(+b.dataset.n);
-    b.onfocus      = () => paint(+b.dataset.n);
-    b.onclick = () => {
-      answer.overall = +b.dataset.n;
-      paint(answer.overall);
-      lock(el, `${answer.overall} out of 5`);
-      step++; setProgress(); offerDepth();
-    };
-  });
-  el.onmouseleave = () => paint(answer.overall || 0);
+async function step(i){
+  if(i >= S.qs.length) return finish(false);
+  const q = S.qs[i];
+  await bot(q.ask, q.why);
+
+  if(q.type === "multi"){
+    composer(true, "…or type your own");
+    onText = v => { A.freeform[q.key]=v; me(v); onText=null; composer(false,"Tap an option above…"); step(i+1); };
+    multi(q.opts, vals => { A.answers[q.key]={type:"multi",values:vals}; me(vals.join(" · ")); onText=null; composer(false,"Tap an option above…"); step(i+1); });
+
+  } else if(q.type === "scale"){
+    composer(true, "…or answer in your own words");
+    onText = v => { A.answers[q.key]={type:"freeform",label:v,value:null}; me(v); onText=null; composer(false,"Tap an option above…"); step(i+1); };
+    replies(q.opts, j => { A.answers[q.key]={type:"scale",label:q.opts[j],value:j+1,scale:5}; me(q.opts[j]); onText=null; composer(false,"Tap an option above…"); step(i+1); });
+
+  } else { /* open */
+    composer(true, "Type or tap the mic…");
+    const skip = replies(["Skip"], ()=>{ me("Skip"); onText=null; composer(false); step(i+1); });
+    onText = v => { A.answers[q.key]={type:"open",text:v}; me(v); skip.remove(); onText=null; composer(false); step(i+1); };
+  }
 }
 
-function offerDepth(){
-  const el = turn(`
-    <p class="ask">Thanks — that's logged.</p>
-    <p class="why">Add a bit of detail and it becomes something an AI can actually use to answer
-      “${mode==="sneaker" ? "is this right for me?" : "is this strategy any good?"}” — about 30 seconds.</p>
-    <div class="row">
-      <button type="button" class="btn btn-pri" data-go>Add detail</button>
-      <button type="button" class="btn btn-sec" data-skip>I'm done</button>
-    </div>
-  `);
-  el.querySelector("[data-go]").onclick = () => { lock(el,"Added detail"); askAttr(0); };
-  el.querySelector("[data-skip]").onclick = () => { lock(el,"Finished early"); finish(true); };
-}
-
-function askAttr(i){
-  if(i >= S.attrs.length) return askOpen();
-  const a = S.attrs[i];
-  const el = turn(`
-    <p class="ask">${a.ask}</p>
-    <p class="why">${a.why}</p>
-    <div class="scale">${a.opts.map((o,j)=>
-      `<button type="button" class="chip" data-j="${j}" aria-pressed="false">${o}</button>`).join("")}</div>
-  `);
-  el.querySelectorAll(".chip").forEach(b => b.onclick = () => {
-    const j = +b.dataset.j;
-    answer.attrs[a.key] = { label:a.opts[j], value:j+1, scale:5 };
-    b.setAttribute("aria-pressed","true");
-    lock(el, a.opts[j]);
-    step++; setProgress(); askAttr(i+1);
-  });
-}
-
-function askOpen(){
-  const el = turn(`
-    <p class="ask">${S.open}</p>
-    <p class="why">${S.openHint}</p>
-    <textarea rows="3" aria-label="${S.open}" placeholder="Optional"></textarea>
-    <div class="row">
-      <button type="button" class="btn btn-pri" data-done>Finish</button>
-    </div>
-  `);
-  const ta = el.querySelector("textarea");
-  el.querySelector("[data-done]").onclick = () => {
-    answer.open = ta.value.trim();
-    lock(el, answer.open ? "Added" : "Skipped");
-    step++; setProgress(); finish(false);
-  };
-}
-
-/* ── Payload ─────────────────────────────────────────────────────────── */
-function buildPayload(){
-  const attrs = Object.entries(answer.attrs).map(([k,v]) => ({
-    key:k, value:v.value, scale:v.scale, label:v.label
-  }));
+/* ── Payload ────────────────────────────────────────────────────────── */
+function payload(){
+  const attributes=[], comments={};
+  for(const [k,v] of Object.entries(A.answers)){
+    if(v.type==="open"){ comments[k]=v.text; continue; }
+    if(v.type==="multi") attributes.push({key:k, type:"multi", values:v.values});
+    else if(v.type==="freeform") attributes.push({key:k, type:"freeform", label:v.label, value:null, note:"unmapped — a model would score this in production"});
+    else attributes.push({key:k, type:"scale", value:v.value, scale:v.scale, label:v.label});
+  }
+  for(const [k,v] of Object.entries(A.freeform)) attributes.push({key:k, type:"freeform", label:v, value:null});
   return {
-    subject:{ id: mode==="sneaker" ? "trailwind-gt-3" : "trust-layer-strategy",
-              name: S.name, category: S.category },
-    variant: answer.variant,
-    rating:{ value: answer.overall, scale: 5 },
-    attributes: attrs,
-    comment: answer.open || null,
+    subject:{ id:S.id, name:S.name, category:S.category },
+    variant:A.variant,
+    rating:{ value:A.overall, scale:5 },
+    attributes,
+    comment: comments.comment || null,
     provenance:{
-      collected_by: "trustpilot",
-      verified_purchase: S.verified,
-      verification_level: S.verified ? "invitation_linked_transaction" : "unverified",
-      source: "conversational_collector_v1",
-      collected_at: new Date().toISOString()
+      collected_by:"trustpilot",
+      verified_purchase:S.verified,
+      verification_level:S.verified?"invitation_linked_transaction":"unverified",
+      source:"conversational_collector_v1",
+      input_modes:[...new Set(["tap", ...(usedVoice?["voice"]:[]), ...(usedType?["text"]:[])])],
+      collected_at:new Date().toISOString()
     }
   };
 }
+let usedVoice=false, usedType=false;
+if(SR) $mic.addEventListener("click", ()=>{ usedVoice=true; });
+$send.addEventListener("click", ()=>{ usedType=true; });
 
-function colour(json){
-  return json
-    .replace(/&/g,"&amp;").replace(/</g,"&lt;")
-    .replace(/"([^"]+)":/g, '<span class="k">"$1"</span>:')
-    .replace(/: "([^"]*)"/g, ': <span class="s">"$1"</span>')
-    .replace(/: (\d+|true|false|null)/g, ': <span class="n">$1</span>');
-}
+const colour = j => j.replace(/&/g,"&amp;").replace(/</g,"&lt;")
+  .replace(/"([^"]+)":/g,'<span class="k">"$1"</span>:')
+  .replace(/: "([^"]*)"/g,': <span class="s">"$1"</span>')
+  .replace(/: (\d+|true|false|null)/g,': <span class="n">$1</span>');
 
-function finish(early){
-  const secs = Math.max(1, Math.round((Date.now() - t0)/1000));
-  const p = buildPayload();
-  const n = p.attributes.length;
-  const json = JSON.stringify(p, null, 2);
+async function finish(early){
+  composer(false, "Finished");
+  $hint.textContent = "Thanks — that's everything.";
+  const secs=Math.max(1,Math.round((Date.now()-t0)/1000)), p=payload(), json=JSON.stringify(p,null,2);
+  const n=p.attributes.length;
 
-  const el = turn(`
-    <div class="done">
-      <h2>${early ? "Logged — thank you." : "That's it. Thank you."}</h2>
-      <p class="lede">${early
-        ? "Even one tap produced a usable, variant-tagged, verified rating."
-        : "Here's what an agent would actually consume."}</p>
+  await bot(early ? "Logged — thank you." : "That's everything. Thank you.");
 
-      <div class="stats">
-        <div class="stat"><b>${secs}s</b><span>to complete</span></div>
-        <div class="stat"><b>${n}</b><span>structured attribute${n===1?"":"s"}</span></div>
-        <div class="stat"><b>${answer.variant ? "Yes" : "No"}</b><span>variant tagged</span></div>
-      </div>
-
-      <div class="note">
-        <b>Today's form would have captured:</b> a star rating, and two optional generic
-        attributes most people skip. No variant. No verified-purchase field. Nothing an agent
-        can filter on.
-      </div>
-
-      <div class="payhead">
-        <h3>Structured output</h3>
-        <span>what an agent queries</span>
-      </div>
-      <pre><code>${colour(json)}</code></pre>
-
-      <div class="row">
-        <button type="button" class="btn btn-pri" data-send>${FORM_ENDPOINT ? "Send" : "Copy"}</button>
-        <button type="button" class="btn btn-sec" data-dl>Download</button>
-        <button type="button" class="btn btn-sec" data-again>Start again</button>
-      </div>
-      <p class="status" role="status"></p>
+  const el = node(`<div class="done">
+    <h2>${early ? "One tap, still usable." : "Here's what an agent would consume."}</h2>
+    <p class="lede">${early
+      ? "A variant-tagged, verified rating — from a single tap."
+      : "Structured, variant-tagged, with provenance attached."}</p>
+    <div class="stats">
+      <div class="stat"><b>${secs}s</b><span>to complete</span></div>
+      <div class="stat"><b>${n}</b><span>structured attribute${n===1?"":"s"}</span></div>
+      <div class="stat"><b>${A.variant?"Yes":"No"}</b><span>variant tagged</span></div>
     </div>
-  `);
+    <div class="note"><b>Today's form would have captured:</b> a star rating and two optional
+      generic attributes most people skip. No variant. No verified-purchase field.
+      Nothing an agent can filter on.</div>
+    <div class="payhead"><h3>Structured output</h3><span>what an agent queries</span></div>
+    <pre><code>${colour(json)}</code></pre>
+    <div class="row">
+      <button type="button" class="btn btn-pri" data-send>${FORM_ENDPOINT?"Send":"Copy"}</button>
+      <button type="button" class="btn btn-sec" data-dl>Download</button>
+      <button type="button" class="btn btn-sec" data-again>Start again</button>
+    </div>
+    <p class="status" role="status"></p>
+  </div>`);
 
-  const status = el.querySelector(".status");
-  const say = (msg, ok=true) => { status.textContent = msg; status.className = "status " + (ok?"ok":"err"); };
+  const st=el.querySelector(".status");
+  const say=(m,ok=true)=>{ st.textContent=m; st.className="status "+(ok?"ok":"err"); };
 
-  el.querySelector("[data-send]").onclick = async (e) => {
-    const btn = e.currentTarget;
-    if(FORM_ENDPOINT){
-      btn.disabled = true; say("Sending…");
-      try{
-        const res = await fetch(FORM_ENDPOINT, {
-          method:"POST",
-          headers:{ "Content-Type":"application/json", "Accept":"application/json" },
-          body: json
-        });
-        if(!res.ok) throw new Error("HTTP " + res.status);
-        say("Sent — thank you.");
-      }catch(err){
-        say("Couldn't send. Copied instead — please paste it over.", false);
-        try{ await navigator.clipboard.writeText(json); }catch(_){}
-        btn.disabled = false;
-      }
-    } else {
+  el.querySelector("[data-send]").onclick = async e=>{
+    const b=e.currentTarget;
+    if(!FORM_ENDPOINT){
       try{ await navigator.clipboard.writeText(json); say("Copied to clipboard."); }
-      catch(_){ say("Select the text above to copy.", false); }
+      catch(_){ say("Select the output above to copy.",false); }
+      return;
+    }
+    b.disabled=true; say("Sending…");
+    try{
+      await fetch(FORM_ENDPOINT,{ method:"POST", mode:"no-cors",
+        headers:{"Content-Type":"text/plain;charset=utf-8"}, body:json });
+      say("Sent — thank you.");
+    }catch(err){
+      say("Couldn't send. Copied instead — please paste it over.",false);
+      try{ await navigator.clipboard.writeText(json); }catch(_){}
+      b.disabled=false;
     }
   };
-
-  el.querySelector("[data-dl]").onclick = () => {
-    const blob = new Blob([json], {type:"application/json"});
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = `review-${p.subject.id}.json`;
-    a.click();
-    setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
-    say("Downloaded.");
+  el.querySelector("[data-dl]").onclick = ()=>{
+    const a=document.createElement("a");
+    a.href=URL.createObjectURL(new Blob([json],{type:"application/json"}));
+    a.download=`review-${p.subject.id}.json`; a.click();
+    setTimeout(()=>URL.revokeObjectURL(a.href),1000); say("Downloaded.");
   };
-
-  el.querySelector("[data-again]").onclick = () => start(mode);
-  $prog.style.width = "100%";
-  $progEl.setAttribute("aria-valuenow","100");
+  el.querySelector("[data-again]").onclick = ()=> start(mode);
 }
 
-/* ── Boot ────────────────────────────────────────────────────────────── */
+/* ── Boot ───────────────────────────────────────────────────────────── */
 function start(m){
-  mode = m; S = SUBJECTS[m];
-  step = 0; t0 = Date.now();
-  answer = { variant:null, overall:null, attrs:{}, open:"" };
-  $flow.innerHTML = "";
-  renderSubject(); setProgress(); askVariant();
-  document.querySelectorAll(".modebar button").forEach(b =>
-    b.setAttribute("aria-pressed", String(b.dataset.mode === m)));
+  mode=m; S=SUBJECTS[m]; usedVoice=false; usedType=false;
+  $hint.textContent = SR ? "Tap an option, or type — you can speak your answer too."
+                         : "Tap an option, or type your answer.";
+  document.querySelectorAll(".modebar button").forEach(b=> b.setAttribute("aria-pressed", String(b.dataset.mode===m)));
+  run();
 }
-
-document.querySelectorAll(".modebar button").forEach(b =>
-  b.onclick = () => start(b.dataset.mode));
-
-document.getElementById("sink").textContent =
-  FORM_ENDPOINT ? "" : " Responses are not being sent anywhere — copy or download to share them.";
-
+document.querySelectorAll(".modebar button").forEach(b=> b.onclick = ()=> start(b.dataset.mode));
 start("sneaker");
 </script>
 </body>
