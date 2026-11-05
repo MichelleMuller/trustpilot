@@ -6,12 +6,28 @@
 
 ## Why the US is the right place to point this
 
-### 1. It's the biggest audience and the smallest business
+### 1. It's the smallest business in the biggest economy
 
-- The **US is ~28–30% of trustpilot.com traffic** — the largest single market, ahead of the UK at ~18–20%
-- But the revenue base is UK-led, and Blair put **UK market penetration at "still low at around 5%"**
+> ⚠️ **Corrected 5 Nov 2026.** An earlier version of this note claimed the US is *"~28–30% of trustpilot.com traffic — the largest single market."* **That was wrong**, taken from an SEO aggregator without tracing. Measured sources put it materially lower, and they disagree on which market is biggest:
+>
+> | | US | UK |
+> |---|---|---|
+> | Similarweb, Sept 2026 | **19.93%** | 16.17% |
+> | Semrush, Jan 2026 | **17.94%** | **22.31%** |
+>
+> **Don't use a traffic-share claim.** These are third-party estimates of Trustpilot's own analytics — they know the real figure, and the two estimators don't even agree on the ranking. The argument below doesn't need it.
 
-If the *UK* — the mature market, the brand's home turf — is at 5%, the US is far below it. **The US has Trustpilot's largest consumer audience and its smallest commercial footprint.** That gap is the opportunity, and it is the single clearest place to point a new product line.
+**Use the CEO's own figures instead.** Blair, on the Scaling Up podcast:
+
+> *"We focus commercially on four geographies, the UK, which is about **40% of our business**, the **US at 20%**, and then Germany and Italy."*
+
+And on headroom, from the H1 results call, he puts **UK market penetration at "still low at around 5%"** — in the mature home market.
+
+**That's the argument, and it's stronger than traffic share.** The US is **half the business the UK is, in an economy many times the size** — while even the UK, where the brand is near-universal, is only ~5% penetrated. The commercial footprint is smallest exactly where the opportunity is largest.
+
+Which Blair quantifies himself:
+
+> *"If we were at the scale in the US relative to the economy that we already are in the UK, we would already be a **billion dollar plus ARR business just in the US**."*
 
 The CEO has quantified the prize elsewhere: at UK penetration levels, the US alone would be a **billion-dollar-plus ARR business**.
 

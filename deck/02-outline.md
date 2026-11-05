@@ -164,7 +164,7 @@ Ships: product lookup and comparison, **attributes as a filterable dimension**, 
 # ACT 4 — Who this is for
 
 ### 21. Where we point it: the US
-US ≈ **28–30% of traffic** — our largest market. The **UK**, our mature home market, is at *"around 5%"* penetration; the US is far below.
+**US: ~20% of the business. UK: ~40%** — in an economy many times the size. And even the UK, where the brand is near-universal, sits at *"around 5%"* penetration.
 NA H1'26: bookings **+27%**, new business **+76%**, **organic reviews +50%** against paying customers **+11%**. *Supply growing four times faster than monetised demand.*
 The rail is built: **Shopify Key Product Partner**, >14% of US ecommerce.
 

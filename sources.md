@@ -128,3 +128,16 @@ Both figures below were traced back to their originating studies. **Use these tw
 - ⚠️ **Product.ai is a vendor in AI commerce.** Same commissioned-research caveat as the Seer study: persuasive, not neutral.
 
 **Untraced — do not use:** "66% of US and UK consumers have tried or would try shopping with an AI assistant." Widely repeated, no original located.
+
+## ⚠️ Retracted: Trustpilot US traffic share
+
+An earlier note claimed the US is *"~28–30% of trustpilot.com traffic, the largest single market."* **Retracted 5 Nov 2026** — it came from an SEO aggregator and does not survive tracing:
+
+| | US | UK |
+|---|---|---|
+| [Similarweb](https://www.similarweb.com/website/trustpilot.com/), Sept 2026 | **19.93%** | 16.17% |
+| [Semrush](https://www.semrush.com/website/trustpilot.com/overview/), Jan 2026 | **17.94%** | **22.31%** |
+
+Overstated by ~10 points, and the two estimators disagree on which market is largest — so *"our largest market"* is not supportable either.
+
+**Don't put a traffic-share figure in the deck.** These are third-party estimates of Trustpilot's own analytics; they know the real number. Use Blair's own figures instead: **UK ~40% of the business, US ~20%**, with UK penetration *"around 5%"*.

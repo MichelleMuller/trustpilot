@@ -102,7 +102,7 @@ The CEO has already named the destination. Our job is to say *how Product Review
 
 **Biggest audience, smallest business.**
 
-- The **US is ~28–30% of trustpilot.com traffic** — the largest market. The **UK** — the mature home market — is at *"around 5%"* penetration. The US is far below that.
+- **US: ~20% of the business; UK: ~40%** (Blair) — in an economy many times the size, and the UK itself only ~5% penetrated.
 - At UK penetration, the US alone is a **billion-dollar-plus ARR business**
 - North America H1'26: bookings **+27%**, new business **+76% YoY**, **organic reviews +50% YoY** against paying customers **+11%**
 
