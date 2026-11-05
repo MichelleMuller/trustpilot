@@ -55,56 +55,23 @@ The closing stats are the evidence: time taken, attributes captured, variant tag
 
 ## Sending responses to your Google Sheet
 
-A sheet URL can't receive a POST. It needs a small Apps Script in front of it — about two minutes.
+A sheet URL can't receive a POST — it needs a small Apps Script in front of it.
 
-**1.** Open your sheet → **Extensions › Apps Script**
+**The script is [`apps-script.gs`](apps-script.gs).** Open that file and copy the whole thing. Don't copy from a code block in a README — the ``` fence lines come with it and break the parser.
 
-**2.** Replace everything in the editor with:
+1. Open the sheet → **Extensions › Apps Script**
+2. **Select all in the editor and delete it**, then paste the contents of `apps-script.gs`
+3. *(Optional)* run `testConnection` once — it writes a test row, so you know the sheet link works before you deploy
+4. **Deploy › New deployment** → type **Web app** → Execute as **Me** → Who has access **Anyone** → **Deploy**, and authorise when prompted
+5. Copy the **Web app URL** (it ends `/exec`) into line 1 of the script block in `review-collector.html`:
 
-```javascript
-const SHEET_ID = '1-Lir9BpgClicd_HnWKKIeXervKQfPHiA8EHaebAg-lA';
+   `const FORM_ENDPOINT = "https://script.google.com/macros/s/..../exec";`
 
-function doPost(e) {
-  const sheet = SpreadsheetApp.openById(SHEET_ID).getSheets()[0];
-  const d = JSON.parse(e.postData.contents);
+Leave it empty and the prototype falls back to copy-to-clipboard and download, so the file works either way. A failed send copies instead and says so, so nobody loses their answers.
 
-  if (sheet.getLastRow() === 0) {
-    sheet.appendRow(['Received','Subject','Variant','Rating','Attributes','Comment','Verified','Input modes']);
-  }
-
-  const attrs = (d.attributes || []).map(a =>
-    a.type === 'multi' ? `${a.key}: ${a.values.join(', ')}` : `${a.key}: ${a.label}`
-  ).join('\n');
-
-  sheet.appendRow([
-    new Date(),
-    d.subject && d.subject.name,
-    d.variant,
-    d.rating && d.rating.value,
-    attrs,
-    d.comment,
-    d.provenance && d.provenance.verified_purchase,
-    d.provenance && (d.provenance.input_modes || []).join(', ')
-  ]);
-
-  return ContentService.createTextOutput(JSON.stringify({ok: true}))
-    .setMimeType(ContentService.MimeType.JSON);
-}
-```
-
-**3.** **Deploy › New deployment** → type **Web app** → Execute as **Me** → Who has access **Anyone** → Deploy. Authorise when asked.
-
-**4.** Copy the **Web app URL** (ends `/exec`) and paste it into line 1 of the script block in `review-collector.html`:
-
-```js
-const FORM_ENDPOINT = "https://script.google.com/macros/s/..../exec";
-```
-
-That's it. Leave it empty and the prototype falls back to copy-to-clipboard and download, so the file works either way. A failed send copies instead and says so, so nobody loses their answers.
-
-*Note: the POST uses `mode: "no-cors"`, which is what Apps Script needs from a browser. The response isn't readable, so "Sent" means sent, not confirmed-stored — check the sheet when you test it.*
-
----
+> **Two things worth knowing.** The script uses no template literals or backticks, so nothing gets mangled on paste. And the browser POSTs with `mode: "no-cors"`, which is what Apps Script requires — the response can't be read, so *"Sent"* means sent, not confirmed stored. Check the sheet on your first test.
+>
+> **If you redeploy**, use *Deploy › Manage deployments › edit › New version*, or you'll get a different `/exec` URL and have to update the HTML again.
 
 ## Honest limits
 
