@@ -32,11 +32,16 @@ function doPost(e) {
     var list = d.attributes || [];
     for (var i = 0; i < list.length; i++) {
       var a = list[i];
+      var line;
       if (a.type === 'multi') {
-        attrs.push(a.key + ': ' + (a.values || []).join(', '));
+        line = a.key + ': ' + (a.values || []).join(', ');
+      } else if (a.type === 'detail_only') {
+        line = a.key + ':';
       } else {
-        attrs.push(a.key + ': ' + (a.label || ''));
+        line = a.key + ': ' + (a.label || '');
       }
+      if (a.detail) { line = line + ' — "' + a.detail + '"'; }
+      attrs.push(line);
     }
 
     sheet.appendRow([

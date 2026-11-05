@@ -72,6 +72,22 @@
   }
   @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
+  .msg.me{flex-direction:column;align-items:flex-end;gap:5px}
+  .addmore{
+    appearance:none;border:0;background:transparent;cursor:pointer;font:inherit;
+    font-size:11.5px;font-weight:650;color:var(--green-deep);padding:2px 4px;border-radius:6px;
+    display:inline-flex;align-items:center;gap:4px;
+  }
+  .addmore:hover{background:var(--green-wash)}
+  .addmore:focus-visible{outline:2px solid var(--green-deep);outline-offset:1px}
+  .detail{
+    max-width:min(82%,460px);font-size:var(--fs-4);color:var(--muted);line-height:1.5;
+    background:var(--green-wash);border-radius:13px;border-bottom-right-radius:5px;
+    padding:9px 13px;align-self:flex-end;
+  }
+  .detail b{color:var(--green-deep);font-weight:700;display:block;font-size:10.5px;
+    letter-spacing:.05em;text-transform:uppercase;margin-bottom:2px}
+
   .typing{display:flex;gap:4px;padding:3px 2px}
   .typing i{width:6px;height:6px;border-radius:50%;background:var(--muted-2);animation:blip 1.3s infinite}
   .typing i:nth-child(2){animation-delay:.18s} .typing i:nth-child(3){animation-delay:.36s}
@@ -214,13 +230,13 @@ const SUBJECTS = {
     depthAsk:"Tell me more so I can help the brand know if the purchase was good, and also share helpful details to people like you!",
     depthWhy:"Your rating is already saved — this takes about thirty seconds.",
     qs:[
-      {key:"sizing_accuracy", type:"scale", ask:"How did the size come up?",
+      {key:"sizing_accuracy", type:"scale", topic:"the size", ask:"How did the size come up?",
        why:"Fit is the most common reason walking shoes get sent back.",
        opts:["Runs small","Slightly small","True to size","Slightly large","Runs large"]},
-      {key:"cushioning", type:"scale", ask:"And the cushioning?",
+      {key:"cushioning", type:"scale", topic:"the cushioning", ask:"And the cushioning?",
        why:"Underfoot feel is the thing photos can never show you.",
        opts:["Too firm","A bit firm","Just right","A bit soft","Too soft"]},
-      {key:"use_case", type:"multi", ask:"What have you mainly used them for?",
+      {key:"use_case", type:"multi", topic:"how you use them", ask:"What have you mainly used them for?",
        why:"Pick as many as apply — it helps match them to people like you.",
        opts:["City walking","Commuting","Travel","Light trails","Standing all day","The gym"]},
       {key:"comment", type:"open", ask:"Anything else you'd add to help other shoppers?",
@@ -241,16 +257,16 @@ const SUBJECTS = {
     depthAsk:"Tell me more so Michelle knows what actually landed — and what didn't.",
     depthWhy:"Your rating is already saved — this takes about thirty seconds.",
     qs:[
-      {key:"strongest_parts", type:"multi", ask:"Which parts landed best?",
+      {key:"strongest_parts", type:"multi", topic:"what landed", ask:"Which parts landed best?",
        why:"Pick as many as apply.",
        opts:["The thesis","The evidence","The two bets","The trade-offs","The roadmap","The metrics"]},
-      {key:"argument_clarity", type:"scale", ask:"How clear was the central argument?",
+      {key:"argument_clarity", type:"scale", topic:"the argument", ask:"How clear was the central argument?",
        why:"If the thesis doesn't land, nothing after it does either.",
        opts:["Lost me","Patchy","Clear enough","Clear","Very clear"]},
-      {key:"evidence_strength", type:"scale", ask:"How well did the evidence support the claims?",
+      {key:"evidence_strength", type:"scale", topic:"the evidence", ask:"How well did the evidence support the claims?",
        why:"Strategy decks live or die on whether the proof holds.",
        opts:["Thin","Some gaps","Adequate","Solid","Convincing"]},
-      {key:"plan_feasibility", type:"scale", ask:"Does the 18-month plan feel achievable?",
+      {key:"plan_feasibility", type:"scale", topic:"the plan", ask:"Does the 18-month plan feel achievable?",
        why:"Ambition is easy; sequencing is the hard part.",
        opts:["No","Doubtful","Maybe","Mostly","Yes"]},
       {key:"comment", type:"open", ask:"Last one — what's the weakest part?",
@@ -283,6 +299,34 @@ async function bot(text, sub){
 }
 const me = text => node(`<div class="msg me"><div class="bub"><p>${text}</p></div></div>`);
 
+/* Lets someone elaborate on the answer they just gave, without costing
+   a tap for everyone who won't. The flow moves on either way. */
+let detailTarget = null;
+function offerDetail(msgEl, key, label){
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "addmore";
+  b.innerHTML = `<span aria-hidden="true">＋</span> add detail`;
+  b.setAttribute("aria-label", `Add more detail about ${label}`);
+  b.onclick = () => {
+    detailTarget = { key, label, msgEl, btn:b };
+    composer(true, `More about ${label.toLowerCase()}…`);
+    b.disabled = true; b.style.opacity = ".4";
+  };
+  msgEl.appendChild(b);
+  return b;
+}
+function saveDetail(text){
+  const t = detailTarget; detailTarget = null;
+  if(A.answers[t.key]) A.answers[t.key].detail = text;
+  else A.answers[t.key] = { type:"detail_only", detail:text };
+  const d = document.createElement("div");
+  d.className = "detail";
+  d.innerHTML = `<b>${t.label}</b>${text.replace(/</g,"&lt;")}`;
+  t.msgEl.insertAdjacentElement("afterend", d);
+  t.btn.remove();
+  scroll();
+}
+
 /* ── Composer ───────────────────────────────────────────────────────── */
 function composer(enabled, placeholder){
   $input.disabled = !enabled;
@@ -302,6 +346,7 @@ $input.addEventListener("keydown", e=>{
 $send.onclick = ()=>{
   const v=$input.value.trim(); if(!v) return;
   $input.value=""; $input.style.height="auto"; $send.disabled=true;
+  if(detailTarget){ saveDetail(v); composer(false, "Tap an option above…"); return; }
   if(onText) onText(v);
 };
 
@@ -424,15 +469,25 @@ async function step(i){
   const q = S.qs[i];
   await bot(q.ask, q.why);
 
+  const topic = q.topic || q.key.replace(/_/g," ");
+
   if(q.type === "multi"){
     composer(true, "…or type your own");
     onText = v => { A.freeform[q.key]=v; me(v); onText=null; composer(false,"Tap an option above…"); step(i+1); };
-    multi(q.opts, vals => { A.answers[q.key]={type:"multi",values:vals}; me(vals.join(" · ")); onText=null; composer(false,"Tap an option above…"); step(i+1); });
+    multi(q.opts, vals => {
+      A.answers[q.key]={type:"multi",values:vals};
+      offerDetail(me(vals.join(" · ")), q.key, topic);
+      onText=null; composer(false,"Tap an option above…"); step(i+1);
+    });
 
   } else if(q.type === "scale"){
     composer(true, "…or answer in your own words");
     onText = v => { A.answers[q.key]={type:"freeform",label:v,value:null}; me(v); onText=null; composer(false,"Tap an option above…"); step(i+1); };
-    replies(q.opts, j => { A.answers[q.key]={type:"scale",label:q.opts[j],value:j+1,scale:5}; me(q.opts[j]); onText=null; composer(false,"Tap an option above…"); step(i+1); });
+    replies(q.opts, j => {
+      A.answers[q.key]={type:"scale",label:q.opts[j],value:j+1,scale:5};
+      offerDetail(me(q.opts[j]), q.key, topic);
+      onText=null; composer(false,"Tap an option above…"); step(i+1);
+    });
 
   } else { /* open */
     composer(true, "Type or tap the mic…");
@@ -446,9 +501,11 @@ function payload(){
   const attributes=[], comments={};
   for(const [k,v] of Object.entries(A.answers)){
     if(v.type==="open"){ comments[k]=v.text; continue; }
-    if(v.type==="multi") attributes.push({key:k, type:"multi", values:v.values});
-    else if(v.type==="freeform") attributes.push({key:k, type:"freeform", label:v.label, value:null, note:"unmapped — a model would score this in production"});
-    else attributes.push({key:k, type:"scale", value:v.value, scale:v.scale, label:v.label});
+    const base = v.detail ? {detail:v.detail} : {};
+    if(v.type==="multi") attributes.push({key:k, type:"multi", values:v.values, ...base});
+    else if(v.type==="freeform") attributes.push({key:k, type:"freeform", label:v.label, value:null, note:"unmapped — a model would score this in production", ...base});
+    else if(v.type==="detail_only") attributes.push({key:k, type:"detail_only", ...base});
+    else attributes.push({key:k, type:"scale", value:v.value, scale:v.scale, label:v.label, ...base});
   }
   for(const [k,v] of Object.entries(A.freeform)) attributes.push({key:k, type:"freeform", label:v, value:null});
   return {

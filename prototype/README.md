@@ -29,6 +29,8 @@ Nothing a form could do. Switching between them in front of someone demonstrates
 - **Multi-select** — pick several, then Continue *(the "what did you use them for" question)*
 - **Open** — free text
 
+**Answer, then elaborate.** After any choice question, a small **＋ add detail** appears under your answer. The flow moves straight on to the next question either way — so it costs nothing if you ignore it, and if you use it, the text attaches to *that specific attribute* rather than floating free at the end. That's the difference between `sizing_accuracy: "Runs small"` and `sizing_accuracy: "Runs small" — "half a size at least, go up if you're between"`.
+
 **Three input modes, all available throughout:**
 - **Tap** a quick reply
 - **Type** — the composer stays live during chip questions, so anyone can answer in their own words instead
